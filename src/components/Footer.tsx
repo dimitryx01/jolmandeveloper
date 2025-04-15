@@ -1,0 +1,32 @@
+
+import { ArrowUp } from 'lucide-react';
+
+export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return (
+    <footer className="bg-gray-900 text-white py-12 px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="mb-6 md:mb-0">
+            <p className="text-xl font-semibold">Tu Nombre</p>
+            <p className="text-gray-400 mt-1">© {new Date().getFullYear()} Todos los derechos reservados</p>
+          </div>
+          
+          <button
+            onClick={scrollToTop}
+            className="p-3 bg-gray-800 rounded-full hover:bg-teal-500 transition-colors group"
+            aria-label="Scroll to top"
+          >
+            <ArrowUp size={20} />
+          </button>
+        </div>
+      </div>
+    </footer>
+  );
+}

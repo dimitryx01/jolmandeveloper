@@ -1,13 +1,66 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('.fade-in-section');
+      
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionHeight = section.getBoundingClientRect().height;
+        const windowHeight = window.innerHeight;
+        
+        // If the top of the section is within the viewport
+        if (sectionTop < windowHeight - sectionHeight / 3) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    
+    // Run once on mount
+    handleScroll();
+    
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Update document title
+  useEffect(() => {
+    document.title = 'Portfolio - Tu Nombre';
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <main className="min-h-screen">
+      <Navbar />
+      
+      <div className="fade-in-section">
+        <HeroSection />
       </div>
-    </div>
+      
+      <div className="fade-in-section">
+        <AboutSection />
+      </div>
+      
+      <div className="fade-in-section">
+        <ProjectsSection />
+      </div>
+      
+      <div className="fade-in-section">
+        <ContactSection />
+      </div>
+      
+      <Footer />
+    </main>
   );
 };
 
