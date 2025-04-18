@@ -30,18 +30,22 @@ export default function Navbar() {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 sm:px-8 md:px-12 lg:px-16 xl:px-20",
-        scrolled || isMenuOpen ? "bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        scrolled || isMenuOpen 
+          ? "bg-background/80 backdrop-blur-md border-b" 
+          : "bg-transparent"
       )}
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <a href="#home" className="text-lg font-semibold hover:text-teal-500 transition-colors">Portfolio</a>
+        <a href="#home" className="text-lg font-semibold hover:text-primary transition-colors">
+          Portfolio
+        </a>
         
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-teal-500 transition-colors"
+              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             >
               {item.name}
             </a>
@@ -60,22 +64,22 @@ export default function Navbar() {
         
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 focus:outline-none"
+          className="md:hidden p-2 hover:bg-accent/10 rounded-full transition-colors"
           aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
       
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-lg p-6 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-background/80 backdrop-blur-md border-b shadow-lg p-6 animate-fade-in">
           <div className="flex flex-col space-y-4">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-base font-medium text-gray-700 dark:text-gray-300 hover:text-teal-500 transition-colors"
+                className="text-base font-medium text-foreground/80 hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
