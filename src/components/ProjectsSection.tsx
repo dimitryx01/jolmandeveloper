@@ -46,7 +46,7 @@ export default function ProjectsSection() {
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Proyectos</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Una selección de mis proyectos recientes que muestran mis habilidades y experiencia.
           </p>
         </div>
@@ -63,10 +63,10 @@ export default function ProjectsSection() {
               </div>
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <p className="text-muted-foreground mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, idx) => (
-                    <Badge key={idx} variant="secondary" className="bg-gray-100">
+                    <Badge key={idx} variant="outline" className="bg-secondary text-secondary-foreground dark:bg-secondary/80 dark:text-secondary-foreground font-medium">
                       {tag}
                     </Badge>
                   ))}
@@ -74,7 +74,7 @@ export default function ProjectsSection() {
                 <div className="flex gap-4 mt-4">
                   <a
                     href={project.demoUrl}
-                    className="flex items-center text-teal-600 hover:text-teal-800 transition-colors text-sm font-medium"
+                    className="flex items-center text-primary hover:text-primary/80 transition-colors text-sm font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -82,7 +82,7 @@ export default function ProjectsSection() {
                   </a>
                   <a
                     href={project.repoUrl}
-                    className="flex items-center text-gray-600 hover:text-gray-800 transition-colors text-sm font-medium"
+                    className="flex items-center text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
