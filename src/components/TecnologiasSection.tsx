@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from '@/lib/utils';
+import { useCarousel } from '@/components/ui/carousel';
 
 interface Technology {
   name: string;
@@ -30,20 +31,52 @@ export default function TecnologiasSection() {
     { name: "NoSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   ];
 
+  const [carouselApi, setCarouselApi] = useState<ReturnType<typeof useCarousel>["api"]>(null);
+
+  const handleIndicatorClick = (index: number) => {
+    if (carouselApi) {
+      carouselApi.scrollTo(index);
+      setActiveIndex(index);
+    }
+    handleInteraction();
+  };
+  
+  // Callback function to handle carousel slide change
+  const handleSlideChange = useCallback(() => {
+    if (!carouselApi) return;
+    
+    const currentIndex = carouselApi.selectedScrollSnap();
+    setActiveIndex(currentIndex);
+  }, [carouselApi]);
+  
+  // Set up autoplay functionality
   useEffect(() => {
     let interval: number | undefined;
     
-    if (autoPlay) {
+    if (autoPlay && carouselApi) {
       interval = window.setInterval(() => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % technologies.length);
+        const nextIndex = (activeIndex + 1) % technologies.length;
+        carouselApi.scrollTo(nextIndex);
+        setActiveIndex(nextIndex);
       }, 5000);
     }
     
     return () => {
       if (interval) clearInterval(interval);
     };
-  }, [autoPlay, technologies.length]);
+  }, [autoPlay, activeIndex, technologies.length, carouselApi]);
   
+  // Initialize carousel event listeners
+  useEffect(() => {
+    if (!carouselApi) return;
+    
+    carouselApi.on("select", handleSlideChange);
+    
+    return () => {
+      carouselApi.off("select", handleSlideChange);
+    };
+  }, [carouselApi, handleSlideChange]);
+
   // Pause autoplay when user interacts
   const handleInteraction = () => {
     setAutoPlay(false);
@@ -66,6 +99,7 @@ export default function TecnologiasSection() {
           <Carousel
             opts={{ loop: true, align: "center" }}
             className="w-full"
+            setApi={setCarouselApi}
           >
             <CarouselContent>
               {technologies.map((tech, index) => (
@@ -94,14 +128,12 @@ export default function TecnologiasSection() {
                     key={i}
                     className={cn(
                       "w-2 h-2 rounded-full transition-all",
-                      i === activeIndex % technologies.length 
+                      i === activeIndex 
                         ? "bg-primary w-4" 
                         : "bg-secondary/70"
                     )}
-                    onClick={() => {
-                      setActiveIndex(i);
-                      handleInteraction();
-                    }}
+                    onClick={() => handleIndicatorClick(i)}
+                    aria-label={`Go to slide ${i + 1}`}
                   />
                 ))}
               </div>
