@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import TecnologiasSection from '@/components/TecnologiasSection';
 import ProjectsSection from '@/components/ProjectsSection';
+import ContratacionTarifasSection from '@/components/ContratacionTarifasSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
@@ -58,6 +59,10 @@ const Index = () => {
       
       <div className="fade-in-section">
         <ProjectsSection />
+      </div>
+      
+      <div className="fade-in-section">
+        <ContratacionTarifasSection />
       </div>
       
       <div className="fade-in-section">
