@@ -38,9 +38,29 @@
     "description": "I currently develop primarily in: Java and JSP, React, Node.js, WordPress. Additionally, I have experience with web technologies such as HTML, CSS, JavaScript, and SQL/NoSQL databases. If your project requires other technologies, don't hesitate to ask. I'm open to learning and adapting to new tools to offer you the best possible solution."
   },
   "projects": {
-    "title": "Projects",
+    "sectionTitle": "Projects",
+    "sectionDescription": "Here are some of the projects I've worked on. Click on any project to see more details.",
     "viewAll": "View all",
-    "viewProject": "View project"
+    "viewProject": "View project",
+    "codeLink": "Code",
+    "technologiesTitle": "Technologies Used",
+    "visitSiteButton": "Visit Site",
+    "viewCodeButton": "View Code",
+    "project1": {
+      "title": "E-commerce Platform",
+      "description": "A fully responsive e-commerce solution with product catalog, shopping cart, and secure payment processing.",
+      "fullDescription": "This project is a comprehensive e-commerce platform built with React and Firebase. It includes user authentication, product catalog with filtering options, shopping cart functionality, and integration with secure payment gateways. The admin panel allows for easy product and order management."
+    },
+    "project2": {
+      "title": "Task Management App",
+      "description": "A productivity application for organizing tasks, setting deadlines, and tracking progress.",
+      "fullDescription": "This task management application was built using Next.js and TypeScript with MongoDB database. It features user authentication, task creation and organization, deadline settings, progress tracking, and team collaboration tools. The app includes real-time updates and notifications to keep users informed about task changes."
+    },
+    "project3": {
+      "title": "Data Visualization Dashboard",
+      "description": "An interactive dashboard displaying complex data sets through intuitive charts and graphs.",
+      "fullDescription": "This data visualization dashboard was created using Vue.js and D3.js with an Express backend. It transforms complex data sets into intuitive visual representations through various charts and interactive graphs. Users can filter data, adjust parameters, and export visualizations. The dashboard is fully responsive and optimized for both desktop and mobile devices."
+    }
   },
   "contratacion": {
     "title": "Hiring",
