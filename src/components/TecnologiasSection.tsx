@@ -8,7 +8,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from '@/lib/utils';
-import { useCarousel } from '@/components/ui/carousel';
 
 interface Technology {
   name: string;
@@ -31,7 +30,7 @@ export default function TecnologiasSection() {
     { name: "NoSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   ];
 
-  const [carouselApi, setCarouselApi] = useState<ReturnType<typeof useCarousel>["api"]>(null);
+  const [carouselApi, setCarouselApi] = useState<any>(null);
 
   const handleIndicatorClick = (index: number) => {
     if (carouselApi) {
