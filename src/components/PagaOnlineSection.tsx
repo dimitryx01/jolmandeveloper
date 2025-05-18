@@ -6,8 +6,10 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useToast } from '@/components/ui/use-toast';
 import { CreditCard, SendHorizontal } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function PagaOnlineSection() {
+  const { t } = useTranslation();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [formData, setFormData] = useState({
     nombre: '',
@@ -28,8 +30,8 @@ export default function PagaOnlineSection() {
     // Validate form
     if (!formData.nombre || !formData.email || !formData.monto) {
       toast({
-        title: "Datos incompletos",
-        description: "Por favor completa todos los campos requeridos",
+        title: t('pagaOnline.messages.incomplete'),
+        description: t('pagaOnline.messages.requiredFields'),
         variant: "destructive",
       });
       return;
@@ -39,8 +41,8 @@ export default function PagaOnlineSection() {
       // Here you would connect to your backend to generate the PayU redirect
       // This is a placeholder - replace with actual implementation
       toast({
-        title: "Procesando tu pago",
-        description: "Serás redirigido a la pasarela de pagos en unos segundos...",
+        title: t('pagaOnline.messages.processing'),
+        description: t('pagaOnline.messages.redirect'),
       });
       
       // Simulating a backend call (replace with actual implementation)
@@ -63,8 +65,8 @@ export default function PagaOnlineSection() {
     } catch (error) {
       console.error("Error processing payment:", error);
       toast({
-        title: "Error de procesamiento",
-        description: "Hubo un problema al procesar tu solicitud. Inténtalo de nuevo.",
+        title: t('pagaOnline.messages.error'),
+        description: t('pagaOnline.messages.tryAgain'),
         variant: "destructive",
       });
     }
@@ -74,11 +76,10 @@ export default function PagaOnlineSection() {
     <section id="paga-online" className="section-padding bg-gradient-to-b from-background to-muted/30">
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-4">Realiza tu Pago</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('pagaOnline.title')}</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
-            ¿Ya acordamos tu servicio? Paga fácil y seguro directamente desde aquí utilizando nuestra 
-            pasarela de pagos segura.
+            {t('pagaOnline.description')}
           </p>
           
           <Button 
@@ -87,7 +88,7 @@ export default function PagaOnlineSection() {
             className="font-medium text-lg group hover:scale-105 transition-all duration-300"
           >
             <CreditCard className="mr-2" />
-            Realizar Pago
+            {t('pagaOnline.payButton')}
             <span className="bg-primary-foreground/10 w-8 h-8 flex items-center justify-center rounded-full ml-2 group-hover:bg-primary-foreground/20 transition-colors">
               →
             </span>
@@ -98,19 +99,19 @@ export default function PagaOnlineSection() {
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="sm:max-w-[500px]">
           <DialogHeader>
-            <DialogTitle className="text-xl">Formulario de Pago</DialogTitle>
+            <DialogTitle className="text-xl">{t('pagaOnline.form.title')}</DialogTitle>
             <DialogDescription>
-              Completa los siguientes datos para procesar tu pago de forma segura a través de PayU Latam.
+              {t('pagaOnline.form.description')}
             </DialogDescription>
           </DialogHeader>
           
           <form onSubmit={handleSubmit} className="space-y-4 mt-4">
             <div className="space-y-2">
-              <Label htmlFor="nombre">Nombre completo *</Label>
+              <Label htmlFor="nombre">{t('pagaOnline.form.name')} *</Label>
               <Input
                 id="nombre"
                 name="nombre"
-                placeholder="Tu nombre completo"
+                placeholder={t('pagaOnline.form.name')}
                 value={formData.nombre}
                 onChange={handleInputChange}
                 required
@@ -118,7 +119,7 @@ export default function PagaOnlineSection() {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="email">Correo electrónico *</Label>
+              <Label htmlFor="email">{t('pagaOnline.form.email')} *</Label>
               <Input
                 id="email"
                 name="email"
@@ -131,7 +132,7 @@ export default function PagaOnlineSection() {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="monto">Monto a pagar (USD) *</Label>
+              <Label htmlFor="monto">{t('pagaOnline.form.amount')} *</Label>
               <Input
                 id="monto"
                 name="monto"
@@ -146,11 +147,11 @@ export default function PagaOnlineSection() {
             </div>
             
             <div className="space-y-2">
-              <Label htmlFor="comentario">Descripción o comentario (opcional)</Label>
+              <Label htmlFor="comentario">{t('pagaOnline.form.comment')}</Label>
               <Input
                 id="comentario"
                 name="comentario"
-                placeholder="Detalles del servicio o proyecto"
+                placeholder={t('pagaOnline.form.comment')}
                 value={formData.comentario}
                 onChange={handleInputChange}
               />
@@ -158,11 +159,11 @@ export default function PagaOnlineSection() {
             
             <DialogFooter className="mt-6">
               <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
-                Cancelar
+                {t('pagaOnline.form.cancel')}
               </Button>
               <Button type="submit" className="gap-2">
                 <SendHorizontal size={18} />
-                Procesar Pago
+                {t('pagaOnline.form.submit')}
               </Button>
             </DialogFooter>
           </form>

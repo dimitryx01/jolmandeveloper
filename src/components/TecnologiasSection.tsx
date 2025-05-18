@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { cn } from '@/lib/utils';
+import { useTranslation } from 'react-i18next';
 
 interface Technology {
   name: string;
@@ -15,6 +16,7 @@ interface Technology {
 }
 
 export default function TecnologiasSection() {
+  const { t } = useTranslation();
   const [autoPlay, setAutoPlay] = useState<boolean>(true);
   const [activeIndex, setActiveIndex] = useState<number>(0);
   
@@ -87,10 +89,10 @@ export default function TecnologiasSection() {
     <section id="tecnologias" className="section-padding bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold mb-4">Tecnologías</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('technologies.title')}</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
-            Actualmente desarrollo principalmente en: Java y JSP, React, Node.js, WordPress. Además, tengo experiencia con tecnologías web como HTML, CSS, JavaScript y bases de datos SQL/NoSQL. Si tu proyecto requiere otras tecnologías, no dudes en consultarme. Estoy abierto a aprender y adaptarme a nuevas herramientas para ofrecerte la mejor solución posible.
+            {t('technologies.description')}
           </p>
         </div>
         

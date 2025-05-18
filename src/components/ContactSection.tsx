@@ -5,8 +5,10 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
+import { useTranslation } from 'react-i18next';
 
 export default function ContactSection() {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
@@ -27,8 +29,8 @@ export default function ContactSection() {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Mensaje enviado",
-        description: "Gracias por contactarme. Te responderé lo antes posible.",
+        title: t('contact.form.success'),
+        description: t('contact.form.thankYou'),
       });
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
@@ -45,22 +47,22 @@ export default function ContactSection() {
     <section id="contact" className="bg-gray-50 section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold mb-4">Contacto</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('contact.title')}</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            ¿Tienes alguna pregunta o quieres colaborar en un proyecto? No dudes en contactarme.
+            {t('contact.description')}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-xl font-semibold mb-6">Envíame un mensaje</h3>
+            <h3 className="text-xl font-semibold mb-6">{t('contact.form.title')}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <Input
                   type="text"
                   name="name"
-                  placeholder="Tu nombre"
+                  placeholder={t('contact.form.name')}
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -71,7 +73,7 @@ export default function ContactSection() {
                 <Input
                   type="email"
                   name="email"
-                  placeholder="Tu email"
+                  placeholder={t('contact.form.email')}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -81,7 +83,7 @@ export default function ContactSection() {
               <div>
                 <Textarea
                   name="message"
-                  placeholder="Tu mensaje"
+                  placeholder={t('contact.form.message')}
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -93,16 +95,15 @@ export default function ContactSection() {
                 className="w-full bg-teal-500 hover:bg-teal-600 text-white" 
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+                {isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
               </Button>
             </form>
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-6">Información de contacto</h3>
+            <h3 className="text-xl font-semibold mb-6">{t('contact.info.title')}</h3>
             <p className="text-gray-600 mb-8">
-              Estoy abierto a oportunidades de trabajo freelance, colaboraciones o posiciones a tiempo completo. 
-              No dudes en contactarme a través de cualquiera de los siguientes medios.
+              {t('contact.info.description')}
             </p>
             <div className="space-y-4">
               {socialLinks.map((link, index) => (

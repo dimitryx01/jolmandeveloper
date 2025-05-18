@@ -1,23 +1,26 @@
 
 import { Code, Users, Terminal } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { useTranslation } from 'react-i18next';
 
 export default function AboutSection() {
+  const { t } = useTranslation();
+  
   const skills = [
     {
       icon: <Code className="h-8 w-8 mb-4 text-teal-500" />,
-      title: 'Desarrollo Frontend',
-      description: 'Creo interfaces atractivas y responsivas utilizando HTML, CSS, JavaScript y frameworks modernos como React.'
+      title: t('about.skills.frontend.title'),
+      description: t('about.skills.frontend.description')
     },
     {
       icon: <Terminal className="h-8 w-8 mb-4 text-teal-500" />,
-      title: 'Desarrollo Backend',
-      description: 'Implemento soluciones robustas utilizando Node.js, Express, y bases de datos SQL/NoSQL.'
+      title: t('about.skills.backend.title'),
+      description: t('about.skills.backend.description')
     },
     {
       icon: <Users className="h-8 w-8 mb-4 text-teal-500" />,
-      title: 'Diseño UX/UI',
-      description: 'Diseño experiencias de usuario intuitivas y accesibles con un enfoque centrado en el usuario.'
+      title: t('about.skills.uxui.title'),
+      description: t('about.skills.uxui.description')
     }
   ];
   
@@ -25,11 +28,10 @@ export default function AboutSection() {
     <section id="about" className="bg-gray-50 section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
-          <h2 className="text-3xl font-bold mb-4">Sobre Mí</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('about.title')}</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones modernas. 
-            Mi objetivo es combinar diseño atractivo con funcionalidad intuitiva para crear experiencias digitales memorables.
+            {t('about.description')}
           </p>
         </div>
         

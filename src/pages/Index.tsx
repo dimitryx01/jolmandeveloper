@@ -1,5 +1,6 @@
 
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
@@ -11,6 +12,8 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll('.fade-in-section');
@@ -37,9 +40,9 @@ const Index = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Update document title
+  // Update document title with i18n
   useEffect(() => {
-    document.title = 'Portfolio - Tu Nombre';
+    document.title = 'Portfolio - Jolman';
   }, []);
 
   return (

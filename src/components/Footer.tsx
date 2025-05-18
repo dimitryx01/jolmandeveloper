@@ -1,7 +1,10 @@
 
 import { ArrowUp } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t } = useTranslation();
+  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -15,7 +18,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <p className="text-xl font-semibold">Tu Nombre</p>
-            <p className="text-gray-400 mt-1">© {new Date().getFullYear()} Todos los derechos reservados</p>
+            <p className="text-gray-400 mt-1">© {new Date().getFullYear()} {t('footer.rights')}</p>
           </div>
           
           <button
