@@ -73,7 +73,7 @@ export default function ContratacionTarifasSection() {
             <h3 className="text-lg font-bold text-primary">{t('contratacion.fullContent.quienPuedeContratarme.title')}</h3>
             <p>{t('contratacion.fullContent.quienPuedeContratarme.intro')}</p>
             <ul className="list-disc ml-6 space-y-1">
-              {t('contratacion.fullContent.quienPuedeContratarme.list', { returnObjects: true }).map((item: string, index: number) => (
+              {(t('contratacion.fullContent.quienPuedeContratarme.list', { returnObjects: true }) as string[]).map((item: string, index: number) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
@@ -134,7 +134,7 @@ export default function ContratacionTarifasSection() {
             
             <h3 className="text-lg font-bold text-primary">{t('tarifas.fullContent.aclaraciones.title')}</h3>
             <ul className="list-disc ml-6 space-y-1">
-              {t('tarifas.fullContent.aclaraciones.list', { returnObjects: true }).map((item: any, index: number) => (
+              {(t('tarifas.fullContent.aclaraciones.list', { returnObjects: true }) as Array<{title: string, content: string}>).map((item, index: number) => (
                 <li key={index}>
                   <span className="font-medium">{item.title}</span> {item.content}
                 </li>
