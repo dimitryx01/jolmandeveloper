@@ -64,7 +64,7 @@
   },
   "contratacion": {
     "title": "Contratación",
-    "summary": "Profesional independiente en Colombia, cumpliendo con todas las normativas legales. Desarrollo en Java, React, Node.js y WordPress. Abierto a proyectos en Colombia y en el extranjero. Confidencialidad garantizada y pagos flexibles, incluyendo pagos online seguros.",
+    "summary": "Todo lo que necesitas saber antes de contratar mis servicios: aspectos legales, facturación, confidencialidad y opciones de pago.",
     "viewMore": "Ver más",
     "fullContent": {
       "intro": "Como profesional independiente en Colombia, cumplo con todas las normativas legales vigentes para la prestación de servicios de desarrollo de software. Puedo emitir facturas válidas tanto para clientes en Colombia como en el extranjero.",
@@ -98,24 +98,24 @@
   },
   "tarifas": {
     "title": "Tarifas",
-    "summary": "Precios de referencia para los servicios más comunes: Página web con CMS desde 120 USD, tienda online desde 280 USD, página a medida desde 450 USD, app híbrida desde 900 USD. Hosting a cargo del cliente.",
+    "summary": "Precios de referencia para diversos proyectos web y apps. ¡Consulta por tu proyecto personalizado!",
     "viewMore": "Ver más",
     "fullContent": {
       "intro": "Estos son los precios de referencia para los trabajos más comunes que suelo realizar. Sin embargo, estoy abierto a cualquier tipo de proyecto que requiera programación. ¡No dudes en consultarme!",
       "cms": {
-        "title": "Página web con CMS (WordPress, etc.): Desde 120 USD",
+        "title": "Página web con CMS (WordPress, etc.): Desde 200 USD",
         "content": "Este tipo de proyecto se basa en una plantilla adaptable a un diseño o requerimientos gráficos específicos. Incluye la instalación de plugins estándar (SEO, aviso de cookies, caché, etc.) y los plugins adicionales que el cliente necesite. También se incluye la importación de datos, la configuración multi-idioma y cualquier otro ajuste necesario para lograr el resultado deseado."
       },
       "tiendaOnline": {
-        "title": "Tienda online con CMS (WooCommerce): Desde 280 USD",
+        "title": "Tienda online con CMS (WooCommerce): Desde 400 USD",
         "content": "Similar al anterior, pero con un mayor nivel de complejidad debido a la configuración de tarifas, productos, variaciones, descuentos, pasarelas de pago, etc. También puede incluir integraciones con TPV/ERP o APIs de diversas agencias de transporte."
       },
       "webAMedida": {
-        "title": "Página web a medida: Desde 450 USD",
+        "title": "Página web a medida: Desde 650 USD",
         "content": "Este tipo de desarrollo ofrece total libertad en cuanto a la temática y funcionalidades de la página: portales, tiendas online, paneles de administración, etc. El diseño puede ser a medida o basado en una plantilla. Si el cliente ha realizado un estudio de SEO, puedo aplicar las conclusiones al desarrollo. Suelo programar en entornos MERN, pero también puedo trabajar con otras tecnologías según sea necesario. La página puede ser multi-idioma sin costo adicional. Puedo adaptar la página para cumplir con estándares de accesibilidad (WCAG AA, etc.)."
       },
       "appHibrida": {
-        "title": "App híbrida para iOS y Android: Desde 900 USD",
+        "title": "App híbrida para iOS y Android: Desde 950 USD",
         "content": "Desarrolladas con React Native. Este tipo de desarrollo es fácil de mantener, se adapta a cualquier diseño, es económico y compatible con todos los dispositivos. Incluye el servicio API Rest y el panel de administración de datos."
       },
       "aclaraciones": {

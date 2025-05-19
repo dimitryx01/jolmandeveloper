@@ -64,7 +64,7 @@
   },
   "contratacion": {
     "title": "Hiring",
-    "summary": "Independent professional in Colombia, complying with all legal regulations. Development in Java, React, Node.js, and WordPress. Open to projects in Colombia and abroad. Guaranteed confidentiality and flexible payments, including secure online payments.",
+    "summary": "Everything you need to know before hiring my services: legal aspects, invoicing, confidentiality, and payment options.",
     "viewMore": "View more",
     "fullContent": {
       "intro": "As an independent professional in Colombia, I comply with all current legal regulations for providing software development services. I can issue valid invoices for clients in both Colombia and abroad.",
@@ -98,24 +98,24 @@
   },
   "tarifas": {
     "title": "Rates",
-    "summary": "Reference prices for the most common services: Website with CMS from 120 USD, online store from 280 USD, custom website from 450 USD, hybrid app from 900 USD. Hosting at the client's expense.",
+    "summary": "Reference prices for various web and app projects. Inquire about your custom project!",
     "viewMore": "View more",
     "fullContent": {
       "intro": "These are the reference prices for the most common jobs I usually do. However, I am open to any type of project that requires programming. Feel free to ask!",
       "cms": {
-        "title": "Website with CMS (WordPress, etc.): From 120 USD",
+        "title": "Website with CMS (WordPress, etc.): From 200 USD",
         "content": "This type of project is based on a template adaptable to specific design or graphic requirements. It includes the installation of standard plugins (SEO, cookie notice, cache, etc.) and additional plugins that the client needs. It also includes data import, multi-language configuration, and any other adjustments needed to achieve the desired result."
       },
       "tiendaOnline": {
-        "title": "Online store with CMS (WooCommerce): From 280 USD",
+        "title": "Online store with CMS (WooCommerce): From 400 USD",
         "content": "Similar to the previous one, but with a higher level of complexity due to the configuration of rates, products, variations, discounts, payment gateways, etc. It can also include integrations with POS/ERP or APIs from various transport agencies."
       },
       "webAMedida": {
-        "title": "Custom website: From 450 USD",
+        "title": "Custom website: From 650 USD",
         "content": "This type of development offers total freedom regarding the theme and functionality of the page: portals, online stores, administration panels, etc. The design can be custom or based on a template. If the client has conducted an SEO study, I can apply the conclusions to the development. I usually program in MERN environments, but I can also work with other technologies as needed. The page can be multi-language at no additional cost. I can adapt the page to comply with accessibility standards (WCAG AA, etc.)."
       },
       "appHibrida": {
-        "title": "Hybrid app for iOS and Android: From 900 USD",
+        "title": "Hybrid app for iOS and Android: From 950 USD",
         "content": "Developed with React Native. This type of development is easy to maintain, adapts to any design, is economical, and compatible with all devices. It includes the API Rest service and the data administration panel."
       },
       "aclaraciones": {
