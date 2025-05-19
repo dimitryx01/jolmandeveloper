@@ -157,6 +157,18 @@ export default function PagaOnlineSection() {
               />
             </div>
             
+            {/* Banner de PayU */}
+            <div className="flex justify-center mt-6 mb-2">
+              <img 
+                src="https://prod-developers.s3.amazonaws.com/latam/images/BlancoVerde/Medios_Pago_Blanco_Verde_468x60.jpg" 
+                title="PayU - Medios de pago"
+                alt="PayU - Medios de pago"
+                width="468"
+                height="60"
+                className="max-w-full h-auto"
+              />
+            </div>
+            
             <DialogFooter className="mt-6">
               <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
                 {t('pagaOnline.form.cancel')}
