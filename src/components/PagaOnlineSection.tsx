@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
@@ -19,16 +18,36 @@ export default function PagaOnlineSection() {
   });
   const { toast } = useToast();
 
+  // Función para validar el formato del email
+  const isValidEmail = (email: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
+  // Función modificada para manejar el cambio en los inputs
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    
+    // Si es el campo monto, asegurarse de que solo se ingresen números y un punto decimal
+    if (name === 'monto') {
+      // Eliminar caracteres no numéricos excepto el punto decimal
+      const formattedValue = value.replace(/[^\d.]/g, '');
+      // Asegurarse de que solo haya un punto decimal
+      const parts = formattedValue.split('.');
+      if (parts.length > 2) return;
+      // Si hay decimales, limitar a 2
+      if (parts[1] && parts[1].length > 2) return;
+      
+      setFormData(prev => ({ ...prev, [name]: formattedValue }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Validate form
-    if (!formData.nombre || !formData.email || !formData.monto) {
+  
+    // Validaciones mejoradas
+    if (!formData.nombre.trim() || !formData.email.trim() || !formData.monto) {
       toast({
         title: t('pagaOnline.messages.incomplete'),
         description: t('pagaOnline.messages.requiredFields'),
@@ -37,31 +56,79 @@ export default function PagaOnlineSection() {
       return;
     }
 
+    // Validar formato de email
+    if (!isValidEmail(formData.email)) {
+      toast({
+        title: t('pagaOnline.messages.error'),
+        description: t('pagaOnline.messages.invalidEmail'),
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Validar que el monto sea mayor a 0
+    const montoNumerico = parseFloat(formData.monto);
+    if (isNaN(montoNumerico) || montoNumerico <= 0) {
+      toast({
+        title: t('pagaOnline.messages.error'),
+        description: t('pagaOnline.messages.invalidAmount'),
+        variant: "destructive",
+      });
+      return;
+    }
+  
     try {
-      // Here you would connect to your backend to generate the PayU redirect
-      // This is a placeholder - replace with actual implementation
       toast({
         title: t('pagaOnline.messages.processing'),
         description: t('pagaOnline.messages.redirect'),
       });
-      
-      // Simulating a backend call (replace with actual implementation)
-      setTimeout(() => {
-        // Redirect to PayU would happen here from your backend
-        console.log("Payment data submitted:", formData);
+  
+      // Formatear el monto a dos decimales
+      const montoFormateado = montoNumerico.toFixed(2);
+
+      // Enviar los datos al backend
+      const response = await fetch('https://payu-backend-delta.vercel.app/api/payu-checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          nombre: formData.nombre.trim(),
+          email: formData.email.trim(),
+          monto: montoFormateado,
+          comentario: formData.comentario.trim(),
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      const html = await response.text();
+  
+      // Abrir el HTML en una nueva ventana
+      const payuWindow = window.open('', '_blank');
+      if (payuWindow) {
+        payuWindow.document.write(html);
+        payuWindow.document.close();
         
-        // Close the dialog
+        // Cerrar el diálogo y resetear el formulario
         setIsDialogOpen(false);
-        
-        // Reset form
         setFormData({
           nombre: '',
           email: '',
           monto: '',
           comentario: '',
         });
-        
-      }, 2000);
+      } else {
+        // Si no se puede abrir una nueva ventana, mostrar error
+        toast({
+          title: t('pagaOnline.messages.error'),
+          description: t('pagaOnline.messages.popupBlocked'),
+          variant: "destructive",
+        });
+      }
+  
     } catch (error) {
       console.error("Error processing payment:", error);
       toast({
@@ -136,13 +203,13 @@ export default function PagaOnlineSection() {
               <Input
                 id="monto"
                 name="monto"
-                type="number"
-                min="1"
-                step="0.01"
+                type="text" // Cambiado a text para mejor control
                 placeholder="100.00"
                 value={formData.monto}
                 onChange={handleInputChange}
                 required
+                pattern="\d+(\.\d{0,2})?" // Permite números y hasta 2 decimales
+                title={t('pagaOnline.form.amountFormat')}
               />
             </div>
             
@@ -157,7 +224,6 @@ export default function PagaOnlineSection() {
               />
             </div>
             
-            {/* Banner de PayU */}
             <div className="flex justify-center mt-6 mb-2">
               <img 
                 src="https://prod-developers.s3.amazonaws.com/latam/images/BlancoVerde/Medios_Pago_Blanco_Verde_575x40.jpg" 
