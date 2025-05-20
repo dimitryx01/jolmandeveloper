@@ -11,7 +11,17 @@ export default function ContratacionTarifasSection() {
   const [tarifasModalOpen, setTarifasModalOpen] = useState(false);
   
   // Define the list items as an array to ensure proper type handling
-  const quienPuedeContratarmeList = t('contratacion.fullContent.quienPuedeContratarme.list', { returnObjects: true }) as string[];
+  const quienPuedeContratarmeList = t('contratacion.fullContent.quienPuedeContratarme.list', { returnObjects: true });
+  const aclaracionesList = t('tarifas.fullContent.aclaraciones.list', { returnObjects: true });
+
+  // Ensure lists are treated as arrays
+  const safeQuienPuedeContratarmeList = Array.isArray(quienPuedeContratarmeList) 
+    ? quienPuedeContratarmeList 
+    : [t('contratacion.fullContent.quienPuedeContratarme.list')];
+  
+  const safeAclaracionesList = Array.isArray(aclaracionesList) 
+    ? aclaracionesList 
+    : [{ title: '', content: t('tarifas.fullContent.aclaraciones.fallback') }];
 
   return (
     <section id="contratacion-tarifas" className="section-padding bg-background">
@@ -76,12 +86,9 @@ export default function ContratacionTarifasSection() {
             <h3 className="text-lg font-bold text-primary">{t('contratacion.fullContent.quienPuedeContratarme.title')}</h3>
             <p>{t('contratacion.fullContent.quienPuedeContratarme.intro')}</p>
             <ul className="list-disc ml-6 space-y-1">
-              {Array.isArray(quienPuedeContratarmeList) ? 
-                quienPuedeContratarmeList.map((item: string, index: number) => (
-                  <li key={index}>{item}</li>
-                )) : 
-                <li>{t('contratacion.fullContent.quienPuedeContratarme.list')}</li>
-              }
+              {safeQuienPuedeContratarmeList.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
             <p>
               {t('contratacion.fullContent.quienPuedeContratarme.additional')}
@@ -140,16 +147,11 @@ export default function ContratacionTarifasSection() {
             
             <h3 className="text-lg font-bold text-primary">{t('tarifas.fullContent.aclaraciones.title')}</h3>
             <ul className="list-disc ml-6 space-y-1">
-              {(() => {
-                const aclaracionesList = t('tarifas.fullContent.aclaraciones.list', { returnObjects: true });
-                return Array.isArray(aclaracionesList) ? 
-                  aclaracionesList.map((item: any, index: number) => (
-                    <li key={index}>
-                      <span className="font-medium">{item.title}</span> {item.content}
-                    </li>
-                  )) :
-                  <li>{t('tarifas.fullContent.aclaraciones.fallback')}</li>;
-              })()}
+              {safeAclaracionesList.map((item, index) => (
+                <li key={index}>
+                  {item.title && <span className="font-medium">{item.title}</span>} {item.content || item}
+                </li>
+              ))}
             </ul>
           </div>
         </DialogContent>

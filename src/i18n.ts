@@ -26,13 +26,20 @@ i18n
   .init({
     resources,
     fallbackLng: 'es',
+    debug: process.env.NODE_ENV === 'development',
     interpolation: {
       escapeValue: false // React already safes from xss
     },
     detection: {
       order: ['navigator', 'htmlTag', 'cookie', 'localStorage'],
       caches: ['localStorage', 'cookie']
+    },
+    react: {
+      useSuspense: false // To prevent issues with Suspense component
     }
   });
+
+// Force load all translations to ensure they are available
+i18n.loadNamespaces(['translation']);
 
 export default i18n;

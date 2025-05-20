@@ -18,8 +18,12 @@ export default function Footer() {
   };
 
   // Get legal and privacy content as arrays
-  const legalContent = t('legalNotice.content', { returnObjects: true }) as string[];
-  const privacyContent = t('privacyPolicy.content', { returnObjects: true }) as string[];
+  const legalContent = t('legalNotice.content', { returnObjects: true });
+  const privacyContent = t('privacyPolicy.content', { returnObjects: true });
+
+  // Ensure lists are treated as arrays
+  const safeLegalContent = Array.isArray(legalContent) ? legalContent : [t('legalNotice.content')];
+  const safePrivacyContent = Array.isArray(privacyContent) ? privacyContent : [t('privacyPolicy.content')];
 
   return (
     <>
@@ -63,7 +67,7 @@ export default function Footer() {
           <DialogTitle>{t('legalNotice.title')}</DialogTitle>
           <ScrollArea className="h-[calc(80vh-8rem)]">
             <div className="p-1 text-sm space-y-4">
-              {legalContent.map((paragraph, index) => (
+              {safeLegalContent.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
@@ -77,7 +81,7 @@ export default function Footer() {
           <DialogTitle>{t('privacyPolicy.title')}</DialogTitle>
           <ScrollArea className="h-[calc(80vh-8rem)]">
             <div className="p-1 text-sm space-y-4">
-              {privacyContent.map((paragraph, index) => (
+              {safePrivacyContent.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
