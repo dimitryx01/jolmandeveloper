@@ -17,6 +17,10 @@ export default function Footer() {
     });
   };
 
+  // Get legal and privacy content as arrays
+  const legalContent = t('legalNotice.content', { returnObjects: true }) as string[];
+  const privacyContent = t('privacyPolicy.content', { returnObjects: true }) as string[];
+
   return (
     <>
       <footer className="bg-gray-900 text-white py-12 px-6">
@@ -59,7 +63,7 @@ export default function Footer() {
           <DialogTitle>{t('legalNotice.title')}</DialogTitle>
           <ScrollArea className="h-[calc(80vh-8rem)]">
             <div className="p-1 text-sm space-y-4">
-              {t('legalNotice.content', { returnObjects: true }).map((paragraph, index) => (
+              {legalContent.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
@@ -73,7 +77,7 @@ export default function Footer() {
           <DialogTitle>{t('privacyPolicy.title')}</DialogTitle>
           <ScrollArea className="h-[calc(80vh-8rem)]">
             <div className="p-1 text-sm space-y-4">
-              {t('privacyPolicy.content', { returnObjects: true }).map((paragraph, index) => (
+              {privacyContent.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
