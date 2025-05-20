@@ -67,5 +67,82 @@
       "Jolman Developer no garantiza la disponibilidad y continuidad del sitio web ni se hace responsable de cualesquiera daños y perjuicios producidos o que puedan producirse en el futuro, ni de los defectos técnicos, cualquiera que sea su naturaleza, que se deriven del uso de la información y de los contenidos del sitio web.",
       "Con los límites establecidos en la Ley, Jolman Developer no asume ninguna responsabilidad derivada de la falta de actualización y precisión de los datos o informaciones que se contienen en sus páginas de Internet."
     ]
+  },
+  "contratacion": {
+    "title": "Contratación",
+    "summary": "Conoce mi proceso de contratación y cómo podemos trabajar juntos.",
+    "viewMore": "Ver Más",
+    "fullContent": {
+      "intro": "Ofrezco mis servicios como desarrollador a través de programación directa o consultoría especializada.",
+      "programacionDirecta": {
+        "title": "Programación Directa",
+        "content": "Puedes contratarme para trabajo de programación directa en tu proyecto, ya sea un nuevo desarrollo o manteniendo código existente."
+      },
+      "quienPuedeContratarme": {
+        "title": "¿Quién Puede Contratarme?",
+        "intro": "Mis servicios están disponibles para:",
+        "list": [
+          "Empresas que buscan transformación digital",
+          "Startups que necesitan experiencia técnica",
+          "Negocios establecidos que requieren mantenimiento",
+          "Particulares con proyectos técnicos específicos"
+        ],
+        "additional": "Trabajo con clientes de todos los tamaños, desde pequeñas empresas hasta grandes corporaciones."
+      },
+      "confidencialidad": {
+        "title": "Confidencialidad",
+        "content": "Todos los proyectos son manejados con estricta confidencialidad. Puedo firmar acuerdos de confidencialidad cuando sea necesario."
+      },
+      "pagos": {
+        "title": "Pagos",
+        "content": "Ofrezco opciones de pago flexibles basadas en los requisitos y cronograma del proyecto."
+      },
+      "pagosOnline": {
+        "title": "Pagos Online",
+        "content": "Para tu comodidad, acepto pagos online a través de pasarelas de pago seguras."
+      }
+    }
+  },
+  "tarifas": {
+    "title": "Tarifas",
+    "summary": "Información sobre mis tarifas de servicio y estructura de precios.",
+    "viewMore": "Ver Más",
+    "fullContent": {
+      "intro": "Mis tarifas son competitivas y se basan en la complejidad, el cronograma y los requisitos del proyecto.",
+      "cms": {
+        "title": "Sistemas de Gestión de Contenido",
+        "content": "Los sitios básicos de WordPress o CMS similares comienzan en $500, con opciones de personalización disponibles."
+      },
+      "tiendaOnline": {
+        "title": "Tiendas Online",
+        "content": "Las soluciones de comercio electrónico comienzan en $1,200, incluyendo configuración de productos e integración de pagos."
+      },
+      "webAMedida": {
+        "title": "Sitios Web a Medida",
+        "content": "Las aplicaciones web personalizadas tienen un precio basado en requisitos específicos, generalmente comenzando en $2,000."
+      },
+      "appHibrida": {
+        "title": "Aplicaciones Híbridas",
+        "content": "Las aplicaciones móviles multiplataforma comienzan en $3,500, incluyendo versiones para iOS y Android."
+      },
+      "aclaraciones": {
+        "title": "Notas Importantes",
+        "fallback": "Contacta conmigo para información detallada sobre precios.",
+        "list": [
+          {
+            "title": "Mantenimiento:",
+            "content": "Paquetes de soporte y mantenimiento continuo disponibles desde $200/mes."
+          },
+          {
+            "title": "Alojamiento:",
+            "content": "Los servicios de hosting son separados y pueden ser organizados según las necesidades del cliente."
+          },
+          {
+            "title": "Consultas:",
+            "content": "Las consultas iniciales son gratuitas."
+          }
+        ]
+      }
+    }
   }
 }

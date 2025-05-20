@@ -67,5 +67,82 @@
       "Jolman Developer does not guarantee the availability and continuity of the website nor is it responsible for any damages produced or that may be produced in the future, nor for technical defects, whatever their nature, that derive from the use of the information and contents of the website.",
       "Within the limits established by Law, Jolman Developer assumes no responsibility derived from the lack of updating and accuracy of the data or information contained in its Internet pages."
     ]
+  },
+  "contratacion": {
+    "title": "Hiring",
+    "summary": "Learn about my hiring process and how we can work together.",
+    "viewMore": "View More",
+    "fullContent": {
+      "intro": "I offer my services as a developer through direct programming or specialized consulting.",
+      "programacionDirecta": {
+        "title": "Direct Programming",
+        "content": "You can hire me for direct programming work on your project, whether it's a new development or maintaining existing code."
+      },
+      "quienPuedeContratarme": {
+        "title": "Who Can Hire Me",
+        "intro": "My services are available to:",
+        "list": [
+          "Companies looking for digital transformation",
+          "Startups needing technical expertise",
+          "Established businesses requiring maintenance",
+          "Individuals with specific technical projects"
+        ],
+        "additional": "I work with clients of all sizes, from small businesses to large corporations."
+      },
+      "confidencialidad": {
+        "title": "Confidentiality",
+        "content": "All projects are handled with strict confidentiality. I can sign NDAs when required."
+      },
+      "pagos": {
+        "title": "Payments",
+        "content": "I offer flexible payment options based on project requirements and timeline."
+      },
+      "pagosOnline": {
+        "title": "Online Payments",
+        "content": "For your convenience, I accept online payments through secure payment gateways."
+      }
+    }
+  },
+  "tarifas": {
+    "title": "Rates",
+    "summary": "Information about my service rates and pricing structure.",
+    "viewMore": "View More",
+    "fullContent": {
+      "intro": "My rates are competitive and based on project complexity, timeline, and requirements.",
+      "cms": {
+        "title": "Content Management Systems",
+        "content": "Basic WordPress or similar CMS sites start at $500, with customization options available."
+      },
+      "tiendaOnline": {
+        "title": "Online Stores",
+        "content": "E-commerce solutions start at $1,200, including product setup and payment integration."
+      },
+      "webAMedida": {
+        "title": "Custom Websites",
+        "content": "Custom web applications are priced based on specific requirements, typically starting at $2,000."
+      },
+      "appHibrida": {
+        "title": "Hybrid Applications",
+        "content": "Cross-platform mobile applications start at $3,500, including both iOS and Android versions."
+      },
+      "aclaraciones": {
+        "title": "Important Notes",
+        "fallback": "Please contact me for detailed pricing information.",
+        "list": [
+          {
+            "title": "Maintenance:",
+            "content": "Ongoing support and maintenance packages available starting at $200/month."
+          },
+          {
+            "title": "Hosting:",
+            "content": "Hosting services are separate and can be arranged based on client needs."
+          },
+          {
+            "title": "Consultations:",
+            "content": "Initial consultations are free of charge."
+          }
+        ]
+      }
+    }
   }
 }
