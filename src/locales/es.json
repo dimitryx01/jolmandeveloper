@@ -1,186 +1,71 @@
 
 {
-  "navbar": {
-    "home": "Inicio",
-    "about": "Sobre mí",
-    "projects": "Proyectos",
-    "contact": "Contacto",
-    "changeTheme": "Cambiar tema"
-  },
-  "hero": {
-    "hello": "Hola, soy",
-    "role": "Diseñador & Desarrollador Web",
-    "description": "Creo experiencias digitales atractivas y funcionales con un enfoque minimalista y centrado en el usuario.",
-    "contactMe": "Contáctame",
-    "downloadCV": "Descargar CV",
-    "learnMore": "Saber más"
-  },
-  "about": {
-    "title": "Sobre Mí",
-    "description": "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones modernas. Mi objetivo es combinar diseño atractivo con funcionalidad intuitiva para crear experiencias digitales memorables.",
-    "skills": {
-      "frontend": {
-        "title": "Desarrollo Frontend",
-        "description": "Creo interfaces atractivas y responsivas utilizando HTML, CSS, JavaScript y frameworks modernos como React."
-      },
-      "backend": {
-        "title": "Desarrollo Backend",
-        "description": "Implemento soluciones robustas utilizando Node.js, Express, y bases de datos SQL/NoSQL."
-      },
-      "uxui": {
-        "title": "Diseño UX/UI",
-        "description": "Diseño experiencias de usuario intuitivas y accesibles con un enfoque centrado en el usuario."
-      }
-    }
-  },
-  "technologies": {
-    "title": "Tecnologías",
-    "description": "Actualmente desarrollo principalmente en: Java y JSP, React, Node.js, WordPress. Además, tengo experiencia con tecnologías web como HTML, CSS, JavaScript y bases de datos SQL/NoSQL. Si tu proyecto requiere otras tecnologías, no dudes en consultarme. Estoy abierto a aprender y adaptarme a nuevas herramientas para ofrecerte la mejor solución posible."
-  },
-  "projects": {
-    "sectionTitle": "Proyectos",
-    "sectionDescription": "Aquí hay algunos de los proyectos en los que he trabajado. Haz clic en cualquier proyecto para ver más detalles.",
-    "viewAll": "Ver todos",
-    "viewProject": "Ver proyecto",
-    "codeLink": "Código",
-    "technologiesTitle": "Tecnologías Utilizadas",
-    "visitSiteButton": "Visitar Sitio",
-    "viewCodeButton": "Ver Código",
-    "project1": {
-      "title": "Plataforma de E-commerce",
-      "description": "Una solución de comercio electrónico totalmente responsive con catálogo de productos, carrito de compras y procesamiento seguro de pagos.",
-      "fullDescription": "Este proyecto es una plataforma integral de comercio electrónico desarrollada con React y Firebase. Incluye autenticación de usuarios, catálogo de productos con opciones de filtrado, funcionalidad de carrito de compras e integración con pasarelas de pago seguras. El panel de administración permite gestionar fácilmente productos y pedidos."
-    },
-    "project2": {
-      "title": "Aplicación de Gestión de Tareas",
-      "description": "Una aplicación de productividad para organizar tareas, establecer fechas límite y seguir el progreso.",
-      "fullDescription": "Esta aplicación de gestión de tareas fue construida usando Next.js y TypeScript con base de datos MongoDB. Incluye autenticación de usuarios, creación y organización de tareas, configuración de fechas límite, seguimiento de progreso y herramientas de colaboración en equipo. La aplicación incluye actualizaciones en tiempo real y notificaciones para mantener a los usuarios informados sobre los cambios en las tareas."
-    },
-    "project3": {
-      "title": "Panel de Visualización de Datos",
-      "description": "Un panel interactivo que muestra conjuntos de datos complejos a través de gráficos e infografías intuitivas.",
-      "fullDescription": "Este panel de visualización de datos fue creado utilizando Vue.js y D3.js con un backend en Express. Transforma conjuntos de datos complejos en representaciones visuales intuitivas a través de varios gráficos e infografías interactivas. Los usuarios pueden filtrar datos, ajustar parámetros y exportar visualizaciones. El panel es totalmente responsive y está optimizado tanto para dispositivos de escritorio como móviles."
-    }
-  },
-  "contratacion": {
-    "title": "Contratación",
-    "summary": "Todo lo que necesitas saber antes de contratar mis servicios: aspectos legales, facturación, confidencialidad y opciones de pago.",
-    "viewMore": "Ver más",
-    "fullContent": {
-      "intro": "Como profesional independiente en Colombia, cumplo con todas las normativas legales vigentes para la prestación de servicios de desarrollo de software. Puedo emitir facturas válidas tanto para clientes en Colombia como en el extranjero.",
-      "programacionDirecta": {
-        "title": "Programación Directa:",
-        "content": "Quiero destacar que yo mismo desarrollo en todas las tecnologías que menciono en mi portafolio. Esto significa que los proyectos son realizados directamente por mí, garantizando un alto nivel de calidad y atención al detalle. Solo recurro a la subcontratación en casos muy específicos que requieran habilidades o conocimientos fuera de mi área de expertise."
-      },
-      "quienPuedeContratarme": {
-        "title": "¿Quién puede contratarme?",
-        "intro": "Estoy disponible para trabajar con:",
-        "list": [
-          "Particulares y empresas en Colombia y en el extranjero.",
-          "Proyectos propios o como parte de un equipo de desarrollo.",
-          "Proyectos completos o colaboraciones específicas."
-        ],
-        "additional": "Tengo experiencia trabajando con sistemas de control de versiones en entornos colaborativos. A menudo colaboro con empresas de diseño gráfico y multimedia que necesitan un programador para complementar sus proyectos visuales."
-      },
-      "confidencialidad": {
-        "title": "Confidencialidad:",
-        "content": "Para garantizar la seguridad de tu proyecto, puedo firmar un acuerdo de confidencialidad (NDA) en el que me comprometo a no divulgar información sensible o detalles específicos acordados."
-      },
-      "pagos": {
-        "title": "Pagos:",
-        "content": "Estoy abierto a discutir diferentes modalidades de pago que se ajusten a tus necesidades, siempre y cuando se cumplan los términos acordados."
-      },
-      "pagosOnline": {
-        "title": "Pagos Online:",
-        "content": "Para mayor comodidad de mis clientes, especialmente aquellos en el extranjero, acepto pagos online a través de la pasarela de pagos segura PayU Latam integrada en mi sitio web. Esto facilita las transacciones y garantiza la seguridad de los pagos."
-      }
-    }
-  },
-  "tarifas": {
-    "title": "Tarifas",
-    "summary": "Precios de referencia para diversos proyectos web y apps. ¡Consulta por tu proyecto personalizado!",
-    "viewMore": "Ver más",
-    "fullContent": {
-      "intro": "Estos son los precios de referencia para los trabajos más comunes que suelo realizar. Sin embargo, estoy abierto a cualquier tipo de proyecto que requiera programación. ¡No dudes en consultarme!",
-      "cms": {
-        "title": "Página web con CMS (WordPress, etc.): Desde 200 USD",
-        "content": "Este tipo de proyecto se basa en una plantilla adaptable a un diseño o requerimientos gráficos específicos. Incluye la instalación de plugins estándar (SEO, aviso de cookies, caché, etc.) y los plugins adicionales que el cliente necesite. También se incluye la importación de datos, la configuración multi-idioma y cualquier otro ajuste necesario para lograr el resultado deseado."
-      },
-      "tiendaOnline": {
-        "title": "Tienda online con CMS (WooCommerce): Desde 400 USD",
-        "content": "Similar al anterior, pero con un mayor nivel de complejidad debido a la configuración de tarifas, productos, variaciones, descuentos, pasarelas de pago, etc. También puede incluir integraciones con TPV/ERP o APIs de diversas agencias de transporte."
-      },
-      "webAMedida": {
-        "title": "Página web a medida: Desde 650 USD",
-        "content": "Este tipo de desarrollo ofrece total libertad en cuanto a la temática y funcionalidades de la página: portales, tiendas online, paneles de administración, etc. El diseño puede ser a medida o basado en una plantilla. Si el cliente ha realizado un estudio de SEO, puedo aplicar las conclusiones al desarrollo. Suelo programar en entornos MERN, pero también puedo trabajar con otras tecnologías según sea necesario. La página puede ser multi-idioma sin costo adicional. Puedo adaptar la página para cumplir con estándares de accesibilidad (WCAG AA, etc.)."
-      },
-      "appHibrida": {
-        "title": "App híbrida para iOS y Android: Desde 950 USD",
-        "content": "Desarrolladas con React Native. Este tipo de desarrollo es fácil de mantener, se adapta a cualquier diseño, es económico y compatible con todos los dispositivos. Incluye el servicio API Rest y el panel de administración de datos."
-      },
-      "aclaraciones": {
-        "title": "Aclaraciones importantes:",
-        "list": [
-          {
-            "title": "Hosting:",
-            "content": "Los servicios de hosting son responsabilidad del cliente, quien puede administrarlos a través de plataformas como GoDaddy o la que prefiera."
-          },
-          {
-            "title": "Otros desarrollos:",
-            "content": "Si tienes un proyecto en mente que no se ajusta a las categorías anteriores, ¡no dudes en consultarme! He trabajado en proyectos diversos, incluyendo desarrollos con IA, bots, programación de IoT, etc."
-          }
-        ]
-      }
-    }
-  },
-  "pagaOnline": {
-    "title": "Realiza tu Pago",
-    "description": "¿Ya acordamos tu servicio? Paga fácil y seguro directamente desde aquí utilizando nuestra pasarela de pagos segura.",
-    "payButton": "Realizar Pago",
-    "form": {
-      "title": "Formulario de Pago",
-      "description": "Completa los siguientes datos para procesar tu pago de forma segura a través de PayU Latam.",
-      "name": "Nombre completo",
-      "email": "Correo electrónico",
-      "amount": "Monto a pagar (USD)",
-      "comment": "Descripción o comentario (opcional)",
-      "cancel": "Cancelar",
-      "submit": "Procesar Pago"
-    },
-    "messages": {
-      "processing": "Procesando tu pago",
-      "redirect": "Serás redirigido a la pasarela de pagos en unos segundos...",
-      "incomplete": "Datos incompletos",
-      "requiredFields": "Por favor completa todos los campos requeridos",
-      "error": "Error de procesamiento",
-      "tryAgain": "Hubo un problema al procesar tu solicitud. Inténtalo de nuevo."
-    }
-  },
-  "contact": {
-    "title": "Contacto",
-    "description": "¿Tienes alguna pregunta o quieres colaborar en un proyecto? No dudes en contactarme.",
-    "form": {
-      "title": "Envíame un mensaje",
-      "name": "Tu nombre",
-      "email": "Tu email",
-      "message": "Tu mensaje",
-      "sending": "Enviando...",
-      "send": "Enviar mensaje",
-      "success": "Mensaje enviado",
-      "thankYou": "Gracias por contactarme. Te responderé lo antes posible."
-    },
-    "info": {
-      "title": "Información de contacto",
-      "description": "Estoy abierto a oportunidades de trabajo freelance, colaboraciones o posiciones a tiempo completo. No dudes en contactarme a través de cualquiera de los siguientes medios."
-    }
-  },
   "footer": {
-    "rights": "Todos los derechos reservados"
+    "rights": "Todos los derechos reservados",
+    "legal": "Aviso Legal",
+    "privacy": "Política de Privacidad"
   },
-  "thanks": {
-    "title": "¡Gracias por tu pago!",
-    "description": "Hemos recibido correctamente tu transacción y nos pondremos en contacto contigo a la brevedad para confirmar los detalles.",
-    "emailInfo": "Se ha enviado un comprobante de pago a tu correo electrónico. Si tienes alguna pregunta, no dudes en contactarme.",
-    "backHome": "Volver al inicio"
+  "legalNotice": {
+    "title": "Aviso Legal y Condiciones de Uso",
+    "content": [
+      "Esta página web cumple con la Ley 1581 de 2012 de Protección de Datos Personales, el Decreto 1377 de 2013, la Ley 1266 de 2008, la Ley 527 de 1999 sobre comercio electrónico y la Ley 23 de 1982 sobre derechos de autor, así como demás normas aplicables en la República de Colombia.",
+      "Las presentes Condiciones Generales regulan el acceso y uso del sitio web de Jolman Developer, incluyendo los contenidos y servicios puestos a disposición en él. Toda persona que acceda a la web https://jolmandeveloper.com acepta someterse a las Condiciones Generales vigentes en cada momento.",
+      "El usuario se compromete a utilizar el sitio web, sus servicios y contenidos conforme a la legislación colombiana, la buena fe y el orden público.",
+      "Queda prohibido el uso de la web con fines ilícitos o lesivos, o que de cualquier forma puedan causar perjuicio o impedir el normal funcionamiento del sitio web. Respecto de los contenidos de esta web, se prohíbe:",
+      "Su reproducción, distribución o modificación, total o parcial, a menos que se cuente con autorización expresa de Jolman Developer como legítimo titular.",
+      "Cualquier vulneración de los derechos del prestador o de Jolman Developer como legítimo titular.",
+      "Su utilización para fines comerciales o publicitarios sin autorización.",
+      "El usuario se compromete a no llevar a cabo ninguna conducta que pueda dañar la imagen, los intereses y los derechos de Jolman Developer o de terceros, o que pueda dañar, inutilizar o sobrecargar el portal https://jolmandeveloper.com, o que impida, de cualquier forma, la normal utilización de la web.",
+      "En virtud de lo dispuesto en la Ley 23 de 1982 y demás normas sobre derechos de autor, quedan expresamente prohibidas la reproducción, distribución y comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Jolman Developer. El usuario se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de Jolman Developer.",
+      "El usuario conoce y acepta que la totalidad del sitio web, textos, contenidos (incluyendo estructura, selección, ordenación y presentación de los mismos), fotografías, material audiovisual y gráficos, está protegida por marcas, derechos de autor y otros derechos legítimos, de acuerdo con los tratados internacionales y la legislación colombiana vigente.",
+      "En caso de que un usuario o un tercero considere que se ha producido una violación de sus legítimos derechos de propiedad intelectual por la introducción de un determinado contenido en la web, deberá notificar dicha circunstancia a Jolman Developer indicando:",
+      "Datos personales del interesado titular de los derechos presuntamente infringidos, o indicar la representación con la que actúa en caso de que la reclamación la presente un tercero distinto del interesado.",
+      "Señalar los contenidos protegidos por los derechos de propiedad intelectual y su ubicación en la web, la acreditación de los derechos de propiedad intelectual señalados y declaración expresa en la que el interesado se responsabiliza de la veracidad de las informaciones facilitadas en la notificación.",
+      "Jolman Developer autoriza el establecimiento de enlaces entre otras webs y la suya, siempre que se respeten las siguientes condiciones:",
+      "Que el enlace no se establezca desde una web cuyos contenidos resulten contrarios a la Ley, a la moral y al orden público.",
+      "Que no se ofrezca una imagen de Jolman Developer o de sus productos que resulte distorsionada, perjudicial o equivocada.",
+      "Que no se cree la impresión de que concurre una inexistente relación o vinculación comercial entre Jolman Developer y los titulares, responsables o anunciantes desde la que se crea el enlace, cuando éste no sea el caso.",
+      "Que no se cree la impresión de que los contenidos o web de Jolman Developer pertenecen o han sido diseñados por los titulares, responsables o anunciantes en la web desde la que se establece el enlace.",
+      "Jolman Developer no otorga ninguna garantía ni se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran traer causa de:",
+      "La falta de disponibilidad, mantenimiento y efectivo funcionamiento de la web, o de sus servicios y contenidos.",
+      "La existencia de malware, programas maliciosos o lesivos en los contenidos.",
+      "El uso ilícito, negligente, fraudulento o contrario a este Aviso Legal.",
+      "La falta de licitud, calidad, fiabilidad, utilidad y disponibilidad de los servicios prestados por terceros y puestos a disposición de los usuarios en el sitio web.",
+      "El prestador no se hace responsable bajo ningún concepto de los daños que pudieran dimanar del uso ilegal o indebido de la presente página web.",
+      "Con carácter general, las relaciones entre Jolman Developer con los usuarios de sus servicios telemáticos presentes en esta web se encuentran sometidas a la legislación y jurisdicción de la República de Colombia y a sus tribunales ordinarios.",
+      "En caso de que cualquier usuario tuviese alguna duda acerca de estas Condiciones legales o cualquier comentario sobre la web https://jolmandeveloper.com, por favor diríjase a info@jolmandeveloper.com."
+    ]
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad de Jolman Developer",
+    "content": [
+      "Jolman Developer, como responsable de este sitio web, asume el compromiso de procesar la información de los usuarios y clientes con plenas garantías y cumplir con los requisitos nacionales e internacionales que regulan la recopilación y uso de los datos personales, en especial la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia, así como, en lo posible, los principios del Reglamento (UE) 2016/679 (RGPD) del Parlamento Europeo.",
+      "Los datos personales comunicados por el usuario a Jolman Developer pueden ser almacenados en bases de datos cuya titularidad corresponde en exclusiva a Jolman Developer, asumiendo todas las medidas técnicas, organizativas y de seguridad que garantizan la confidencialidad, integridad y calidad de la información contenida en las mismas, de acuerdo con la normativa vigente en protección de datos. La comunicación entre los usuarios y la web utiliza un canal seguro, y los datos transmitidos son cifrados gracias a protocolos HTTPS, garantizando así las mejores condiciones de seguridad para la confidencialidad de los usuarios.",
+      "Compromisos de Jolman Developer:",
+      "No solicitar información personal a menos que realmente sea necesaria para prestar un servicio concreto.",
+      "Nunca compartir información personal de usuarios con nadie, excepto para cumplir con la ley o en caso de contar con su autorización expresa.",
+      "Nunca utilizar datos personales con una finalidad diferente a la expresada en esta Política de Privacidad.",
+      "Esta Política de Privacidad podría variar en función de exigencias legislativas o de autorregulación. Será aplicable en caso de que los usuarios decidan rellenar algún formulario de contacto o formulario de pago online donde se recaben datos de carácter personal.",
+      "Recopilación de datos",
+      "Este sitio web recoge datos de los usuarios de las siguientes formas:",
+      "Formulario de contacto: Para consultas, solicitudes o comunicación directa.",
+      "Formulario de pago online: Para la gestión de pagos y abonos a través de la pasarela de pagos PayU.",
+      "Principios aplicados al tratamiento de datos personales",
+      "En el tratamiento de datos personales, se aplicarán los siguientes principios:",
+      "Licitud, lealtad y transparencia: Siempre se requerirá el consentimiento del usuario para el tratamiento de sus datos personales, informando de forma clara la finalidad.",
+      "Minimización de datos: Solo se solicitarán los datos estrictamente necesarios para cada caso.",
+      "Limitación del plazo de conservación: Los datos serán mantenidos durante no más tiempo del necesario para los fines del tratamiento.",
+      "Integridad y confidencialidad: Los datos serán tratados de tal manera que se garantice una seguridad adecuada y confidencialidad.",
+      "Jolman Developer se compromete a cancelar los datos personales cuando hayan dejado de ser necesarios o pertinentes para la finalidad para la cual fueron recogidos y a atender a las peticiones de información, actualización o borrado de datos solicitadas por el usuario, siendo el responsable del tratamiento Jolman Developer.",
+      "Derechos de los usuarios",
+      "El usuario podrá ejercer sus derechos de acceso, corrección, supresión, revocación o reclamo por infracción sobre sus datos, mediante solicitud escrita dirigida a info@jolmandeveloper.com, indicando en el asunto \"Protección de Datos\".",
+      "Uso de cookies",
+      "Se informa a los usuarios del uso de cookies para obtener información y realizar análisis estadísticos sobre el uso del sitio web. Las cookies utilizadas por Jolman Developer son anónimas y no se refieren a datos personales del usuario ni permiten acceder a datos del disco duro del usuario. La identidad del usuario nunca es insertada directamente en la cookie y, por tanto, no se le puede identificar.",
+      "Limitación de responsabilidad",
+      "Jolman Developer declina toda responsabilidad en caso de que el acceso o las visitas a su web se vieran imposibilitadas o dificultadas debido a una interrupción o defectuosa prestación del suministro eléctrico, telefónico o de otros proveedores de telecomunicaciones ajenos a Jolman Developer, o en el caso de producirse conflictos sociales u otros supuestos de fuerza mayor, o cualquier actuación de un tercero, incluidos los requerimientos u órdenes administrativas o judiciales, sabotajes o saturaciones, intencionadas o no.",
+      "Se declina igualmente toda responsabilidad derivada de los daños y perjuicios que pudiera sufrir el visitante en sus medios informáticos o telemáticos a consecuencia de la producción de cualquiera de las circunstancias anteriormente expuestas.",
+      "Jolman Developer no garantiza la disponibilidad y continuidad del sitio web ni se hace responsable de cualesquiera daños y perjuicios producidos o que puedan producirse en el futuro, ni de los defectos técnicos, cualquiera que sea su naturaleza, que se deriven del uso de la información y de los contenidos del sitio web.",
+      "Con los límites establecidos en la Ley, Jolman Developer no asume ninguna responsabilidad derivada de la falta de actualización y precisión de los datos o informaciones que se contienen en sus páginas de Internet."
+    ]
   }
 }
