@@ -50,7 +50,8 @@ export default function ContactSection() {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          time: new Date().toLocaleString()
+          time: new Date().toLocaleString(),
+          'g-recaptcha-response': recaptchaToken,
         },
         PUBLIC_KEY
       );
@@ -71,13 +72,8 @@ export default function ContactSection() {
 
   const socialLinks = [
     { icon: <Mail className="h-5 w-5" />, label: 'Email', href: 'mailto:info@jolmandeveloper.com' },
-    { icon: <FaWhatsapp className="h-5 w-5" />, label: 'WhatsApp', href: 'https://wa.me/573108801832?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios%20de%20desarrollo%20web.' },
-      {/* 
-        { icon: <Github className="h-5 w-5" />, label: 'GitHub', href: 'https://github.com/tu-usuario' },
-      { icon: <Linkedin className="h-5 w-5" />, label: 'LinkedIn', href: 'https://linkedin.com/in/tu-usuario' }
-
-          */}    
-    
+    { icon: <FaWhatsapp className="h-5 w-5" />, label: 'WhatsApp', href: 'https://wa.me/573108801832?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios%20de%20desarrollo%20web.' }
+      //{/*   { icon: <Github className="h-5 w-5" />, label: 'GitHub', href: 'https://github.com/tu-usuario' }, { icon: <Linkedin className="h-5 w-5" />, label: 'LinkedIn', href: 'https://linkedin.com/in/tu-usuario' }  */}    
   ];
 
   return (

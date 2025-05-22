@@ -22,8 +22,8 @@ export default function Footer() {
            
 
           </div>
-          <p className="text-gray-400 mt-1">Aviso legal</p>
-          <p className="text-gray-400 mt-1">Política de Privacidad</p>
+          <a href="/aviso_legal.html" className="text-gray-400 mt-1">Aviso legal</a>
+          <a href="/politicas_privacidad.html" className="text-gray-400 mt-1">Política de Privacidad</a>
           <button
             onClick={scrollToTop}
             className="p-3 bg-gray-800 rounded-full hover:bg-teal-500 transition-colors group"
