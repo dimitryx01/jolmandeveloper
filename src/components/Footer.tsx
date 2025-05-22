@@ -17,10 +17,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <p className="text-xl font-semibold">Tu Nombre</p>
+            <p className="text-xl font-semibold">Jolman Developer</p>
             <p className="text-gray-400 mt-1">© {new Date().getFullYear()} {t('footer.rights')}</p>
+           
+
           </div>
-          
+          <p className="text-gray-400 mt-1">Aviso legal</p>
+          <p className="text-gray-400 mt-1">Política de Privacidad</p>
           <button
             onClick={scrollToTop}
             className="p-3 bg-gray-800 rounded-full hover:bg-teal-500 transition-colors group"

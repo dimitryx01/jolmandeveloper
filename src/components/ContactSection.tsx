@@ -1,5 +1,6 @@
-
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -7,38 +8,74 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
 
+const SERVICE_ID = 'service_kydr2v4';
+const TEMPLATE_ID = 'template_86gpnve';
+const PUBLIC_KEY = 'egqgJTklNtO9Hnsnh';
+const RECAPTCHA_SITE_KEY = '6LdAtEQrAAAAAG_P_SoVbJGKgTA9kriebU_73cgA';
+
 export default function ContactSection() {
   const { t } = useTranslation();
   const { toast } = useToast();
+  const formRef = useRef<HTMLFormElement>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+
+    const token = await recaptchaRef.current?.executeAsync();
+    recaptchaRef.current?.reset();
+
+    if (!token) {
+      toast({
+        title: t('contact.form.error'),
+        description: t('contact.form.recaptchaFail'),
+        variant: 'destructive',
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    emailjs.send(
+      SERVICE_ID,
+      TEMPLATE_ID,
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+        'g-recaptcha-response': token
+      },
+      PUBLIC_KEY
+    ).then(() => {
       toast({
         title: t('contact.form.success'),
         description: t('contact.form.thankYou'),
       });
       setFormData({ name: '', email: '', message: '' });
-      setIsSubmitting(false);
-    }, 1000);
+    }).catch((error) => {
+      console.error(error);
+      toast({
+        title: t('contact.form.error'),
+        description: t('contact.form.fail'),
+        variant: 'destructive',
+      });
+    }).finally(() => setIsSubmitting(false));
   };
 
   const socialLinks = [
-    { icon: <Mail className="h-5 w-5" />, label: 'Email', href: 'mailto:tu-email@ejemplo.com' },
+    { icon: <Mail className="h-5 w-5" />, label: 'Email', href: 'mailto:info@jolmandeveloper.com' },
     { icon: <Github className="h-5 w-5" />, label: 'GitHub', href: 'https://github.com/tu-usuario' },
     { icon: <Linkedin className="h-5 w-5" />, label: 'LinkedIn', href: 'https://linkedin.com/in/tu-usuario' }
   ];
@@ -57,42 +94,39 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-xl font-semibold mb-6">{t('contact.form.title')}</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Input
-                  type="text"
-                  name="name"
-                  placeholder={t('contact.form.name')}
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                />
-              </div>
-              <div>
-                <Input
-                  type="email"
-                  name="email"
-                  placeholder={t('contact.form.email')}
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="border-gray-300 focus:border-teal-500 focus:ring-teal-500"
-                />
-              </div>
-              <div>
-                <Textarea
-                  name="message"
-                  placeholder={t('contact.form.message')}
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  className="border-gray-300 focus:border-teal-500 focus:ring-teal-500 min-h-[150px]"
-                />
-              </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white" 
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
+              <Input
+                type="text"
+                name="name"
+                placeholder={t('contact.form.name')}
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <Input
+                type="email"
+                name="email"
+                placeholder={t('contact.form.email')}
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              <Textarea
+                name="message"
+                placeholder={t('contact.form.message')}
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="min-h-[150px]"
+              />
+              <ReCAPTCHA
+                sitekey={RECAPTCHA_SITE_KEY}
+                size="invisible"
+                ref={recaptchaRef}
+              />
+              <Button
+                type="submit"
+                className="w-full bg-teal-500 hover:bg-teal-600 text-white"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
@@ -107,11 +141,11 @@ export default function ContactSection() {
             </p>
             <div className="space-y-4">
               {socialLinks.map((link, index) => (
-                <a 
+                <a
                   key={index}
                   href={link.href}
                   className="flex items-center text-gray-700 hover:text-teal-500 transition-colors p-2 -ml-2"
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="bg-gray-100 p-2 rounded-full mr-3">{link.icon}</span>

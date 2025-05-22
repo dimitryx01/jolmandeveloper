@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
@@ -19,50 +18,99 @@ export default function PagaOnlineSection() {
   });
   const { toast } = useToast();
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  // Función para validar el formato del email
+  const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  // Función modificada para manejar el cambio en los inputs
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    if (name === 'monto') {
+      const formattedValue = value.replace(/[^\d.]/g, '');
+      const parts = formattedValue.split('.');
+      if (parts.length > 2) return;
+      if (parts[1] && parts[1].length > 2) return;
+      setFormData(prev => ({ ...prev, [name]: formattedValue }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // --- CORREGIDO: Abre el popup justo al hacer submit ---
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Validate form
-    if (!formData.nombre || !formData.email || !formData.monto) {
+
+    // Abre la ventana aquí, en respuesta directa al click
+    const payuWindow = window.open('', '_blank');
+
+    // Validaciones
+    if (!formData.nombre.trim() || !formData.email.trim() || !formData.monto) {
       toast({
         title: t('pagaOnline.messages.incomplete'),
         description: t('pagaOnline.messages.requiredFields'),
         variant: "destructive",
       });
+      if (payuWindow) payuWindow.close();
+      return;
+    }
+
+    if (!isValidEmail(formData.email)) {
+      toast({
+        title: t('pagaOnline.messages.error'),
+        description: t('pagaOnline.messages.invalidEmail'),
+        variant: "destructive",
+      });
+      if (payuWindow) payuWindow.close();
+      return;
+    }
+
+    const montoNumerico = parseFloat(formData.monto);
+    if (isNaN(montoNumerico) || montoNumerico <= 0) {
+      toast({
+        title: t('pagaOnline.messages.error'),
+        description: t('pagaOnline.messages.invalidAmount'),
+        variant: "destructive",
+      });
+      if (payuWindow) payuWindow.close();
       return;
     }
 
     try {
-      // Here you would connect to your backend to generate the PayU redirect
-      // This is a placeholder - replace with actual implementation
       toast({
         title: t('pagaOnline.messages.processing'),
         description: t('pagaOnline.messages.redirect'),
       });
-      
-      // Simulating a backend call (replace with actual implementation)
-      setTimeout(() => {
-        // Redirect to PayU would happen here from your backend
-        console.log("Payment data submitted:", formData);
-        
-        // Close the dialog
+
+      const montoFormateado = montoNumerico.toFixed(2);
+
+      const response = await fetch('https://payu-backend-delta.vercel.app/api/payu-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nombre: formData.nombre.trim(),
+          email: formData.email.trim(),
+          monto: montoFormateado,
+          comentario: formData.comentario.trim(),
+        }),
+      });
+
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+      const html = await response.text();
+
+      if (payuWindow) {
+        payuWindow.document.write(html);
+        payuWindow.document.close();
         setIsDialogOpen(false);
-        
-        // Reset form
-        setFormData({
-          nombre: '',
-          email: '',
-          monto: '',
-          comentario: '',
+        setFormData({ nombre: '', email: '', monto: '', comentario: '' });
+      } else {
+        toast({
+          title: t('pagaOnline.messages.error'),
+          description: t('pagaOnline.messages.popupBlocked'),
+          variant: "destructive",
         });
-        
-      }, 2000);
+      }
     } catch (error) {
+      if (payuWindow) payuWindow.close();
       console.error("Error processing payment:", error);
       toast({
         title: t('pagaOnline.messages.error'),
@@ -81,7 +129,6 @@ export default function PagaOnlineSection() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
             {t('pagaOnline.description')}
           </p>
-          
           <Button 
             size="lg" 
             onClick={() => setIsDialogOpen(true)}
@@ -95,7 +142,6 @@ export default function PagaOnlineSection() {
           </Button>
         </div>
       </div>
-      
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="sm:max-w-[500px]">
           <DialogHeader>
@@ -104,7 +150,6 @@ export default function PagaOnlineSection() {
               {t('pagaOnline.form.description')}
             </DialogDescription>
           </DialogHeader>
-          
           <form onSubmit={handleSubmit} className="space-y-4 mt-4">
             <div className="space-y-2">
               <Label htmlFor="nombre">{t('pagaOnline.form.name')} *</Label>
@@ -117,7 +162,6 @@ export default function PagaOnlineSection() {
                 required
               />
             </div>
-            
             <div className="space-y-2">
               <Label htmlFor="email">{t('pagaOnline.form.email')} *</Label>
               <Input
@@ -130,22 +174,20 @@ export default function PagaOnlineSection() {
                 required
               />
             </div>
-            
             <div className="space-y-2">
               <Label htmlFor="monto">{t('pagaOnline.form.amount')} *</Label>
               <Input
                 id="monto"
                 name="monto"
-                type="number"
-                min="1"
-                step="0.01"
+                type="text"
                 placeholder="100.00"
                 value={formData.monto}
                 onChange={handleInputChange}
                 required
+                pattern="\d+(\.\d{0,2})?"
+                title={t('pagaOnline.form.amountFormat')}
               />
             </div>
-            
             <div className="space-y-2">
               <Label htmlFor="comentario">{t('pagaOnline.form.comment')}</Label>
               <Input
@@ -156,8 +198,6 @@ export default function PagaOnlineSection() {
                 onChange={handleInputChange}
               />
             </div>
-            
-            {/* Banner de PayU */}
             <div className="flex justify-center mt-6 mb-2">
               <img 
                 src="https://prod-developers.s3.amazonaws.com/latam/images/BlancoVerde/Medios_Pago_Blanco_Verde_575x40.jpg" 
@@ -168,7 +208,6 @@ export default function PagaOnlineSection() {
                 className="max-w-full h-auto"
               />
             </div>
-            
             <DialogFooter className="mt-6">
               <Button type="button" variant="outline" onClick={() => setIsDialogOpen(false)}>
                 {t('pagaOnline.form.cancel')}

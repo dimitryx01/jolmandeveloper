@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Thanks from "./pages/Thanks";
+import PayuResponse from './pages/PayuResponse';
+
 
 
 const queryClient = new QueryClient();
@@ -24,6 +26,7 @@ const App = () => (
             <Route path="/thanks" element={<Thanks />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
+            <Route path="/response" element={<PayuResponse />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

@@ -40,7 +40,7 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <a href="#home" className="text-lg font-semibold hover:text-primary transition-colors">
-          Portfolio
+          Jolman Developer
         </a>
         
         <div className="hidden md:flex items-center space-x-4">
