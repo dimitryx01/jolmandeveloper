@@ -142,7 +142,7 @@
       "description": "Complete the following information to securely process your payment through PayU Latam.",
       "name": "Full name",
       "email": "Email address",
-      "amount": "Amount to pay (USD)",
+      "amount": "Amount to pay in Colombian Pesos (COP), without periods or commas.",
       "comment": "Description or comment (optional)",
       "cancel": "Cancel",
       "submit": "Process Payment"

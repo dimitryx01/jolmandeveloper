@@ -142,7 +142,7 @@
       "description": "Completa los siguientes datos para procesar tu pago de forma segura a través de PayU Latam.",
       "name": "Nombre completo",
       "email": "Correo electrónico",
-      "amount": "Monto a pagar (USD)",
+      "amount": "Monto a pagar en Peso Colombiano(COP), sin puntos ni comas",
       "comment": "Descripción o comentario (opcional)",
       "cancel": "Cancelar",
       "submit": "Procesar Pago"
