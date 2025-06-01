@@ -27,17 +27,17 @@ export default function ProjectsSection() {
     {
       title: t('projects.project1.title'),
       description: t('projects.project1.description'),
-      imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["React", "Tailwind CSS", "Firebase"],
-      demoUrl: "#",
+      imageUrl: "autovidrios2peque.jpg",
+      tags: ["Wordpress"],
+      demoUrl: "https://autovidriosdeoriente.com/",
       repoUrl: "#",
       fullDescription: t('projects.project1.fullDescription')
     },
     {
       title: t('projects.project2.title'),
       description: t('projects.project2.description'),
-      imageUrl: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Next.js", "TypeScript", "MongoDB"],
+      imageUrl: "heropeque.jpg",
+      tags: ["Vite","React","TypeScript","JavaScript","Vercel"],
       demoUrl: "#",
       repoUrl: "#",
       fullDescription: t('projects.project2.fullDescription')

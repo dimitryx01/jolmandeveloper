@@ -47,14 +47,14 @@
     "visitSiteButton": "Visit Site",
     "viewCodeButton": "View Code",
     "project1": {
-      "title": "E-commerce Platform",
-      "description": "A fully responsive e-commerce solution with product catalog, shopping cart, and secure payment processing.",
-      "fullDescription": "This project is a comprehensive e-commerce platform built with React and Firebase. It includes user authentication, product catalog with filtering options, shopping cart functionality, and integration with secure payment gateways. The admin panel allows for easy product and order management."
+      "title": "Auto Vidrios de Oriente (2021)",
+      "description": "Web solution for automotive glass company, featuring aerial promotional video, services, contact, and online quote.",
+      "fullDescription": "Corporate website developed in WordPress for a company specializing in the sale, installation, and repair of automotive glass. The portal (created in 2021) presents main services (repair, windshield replacement, waterproofing, tinting), contact information, branch locations, and an online quote form. Additionally, a promotional video with aerial shots taken by drone was produced and is featured in the main section of the site."
     },
     "project2": {
-      "title": "Task Management App",
-      "description": "A productivity application for organizing tasks, setting deadlines, and tracking progress.",
-      "fullDescription": "This task management application was built using Next.js and TypeScript with MongoDB database. It features user authentication, task creation and organization, deadline settings, progress tracking, and team collaboration tools. The app includes real-time updates and notifications to keep users informed about task changes."
+      "title": "Jolman Developer",
+      "description": "Professional personal portfolio, featuring projects, skills, contact, and online payment integration.",
+      "fullDescription": "Personal portfolio website developed with Vite, React, and TypeScript, deployed on Vercel. Showcases a selection of featured projects, professional background, technical skills, contact form, and online payment integration. Perfect as a reference for anyone seeking a modern, mobile-optimized personal website with advanced features."
     },
     "project3": {
       "title": "Data Visualization Dashboard",

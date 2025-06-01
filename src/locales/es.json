@@ -47,14 +47,14 @@
     "visitSiteButton": "Visitar Sitio",
     "viewCodeButton": "Ver Código",
     "project1": {
-      "title": "Plataforma de E-commerce",
-      "description": "Una solución de comercio electrónico totalmente responsive con catálogo de productos, carrito de compras y procesamiento seguro de pagos.",
-      "fullDescription": "Este proyecto es una plataforma integral de comercio electrónico desarrollada con React y Firebase. Incluye autenticación de usuarios, catálogo de productos con opciones de filtrado, funcionalidad de carrito de compras e integración con pasarelas de pago seguras. El panel de administración permite gestionar fácilmente productos y pedidos."
+      "title": "Auto Vidrios de Oriente",
+      "description": "Solución web para empresa de vidrios automotrices, con video publicitario aéreo, servicios, contacto y cotización online.",
+      "fullDescription": "Sitio web corporativo desarrollado en WordPress para una empresa especializada en la venta, instalación y reparación de vidrios automotrices. El portal (realizado en 2021) presenta los servicios principales (reparación, cambio de parabrisas, impermeabilización, polarizados), información de contacto, ubicación de sucursales y formulario de cotización en línea. Adicionalmente, se realizó la producción de un video publicitario con tomas aéreas realizadas con dron, que se muestra en la sección principal del sitio."
     },
     "project2": {
-      "title": "Aplicación de Gestión de Tareas",
-      "description": "Una aplicación de productividad para organizar tareas, establecer fechas límite y seguir el progreso.",
-      "fullDescription": "Esta aplicación de gestión de tareas fue construida usando Next.js y TypeScript con base de datos MongoDB. Incluye autenticación de usuarios, creación y organización de tareas, configuración de fechas límite, seguimiento de progreso y herramientas de colaboración en equipo. La aplicación incluye actualizaciones en tiempo real y notificaciones para mantener a los usuarios informados sobre los cambios en las tareas."
+      "title": "JolmanDeveloper.com",
+      "description": "Portafolio personal profesional, con proyectos, habilidades, contacto e integración de pagos en línea.",
+      "fullDescription": "Sitio web de portafolio personal desarrollado con Vite, React y TypeScript, desplegado en Vercel. Presenta una selección de proyectos destacados, información profesional, habilidades técnicas, formulario de contacto e integración de pagos en línea. Ideal como referencia para quienes buscan una web de presentación personal, moderna, optimizada para dispositivos móviles y con funcionalidades avanzadas."
     },
     "project3": {
       "title": "Panel de Visualización de Datos",
