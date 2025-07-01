@@ -57,9 +57,9 @@
       "fullDescription": "Sitio web de portafolio personal desarrollado con Vite, React y TypeScript, desplegado en Vercel. Presenta una selección de proyectos destacados, información profesional, habilidades técnicas, formulario de contacto e integración de pagos en línea. Ideal como referencia para quienes buscan una web de presentación personal, moderna, optimizada para dispositivos móviles y con funcionalidades avanzadas."
     },
     "project3": {
-      "title": "Panel de Visualización de Datos",
-      "description": "Un panel interactivo que muestra conjuntos de datos complejos a través de gráficos e infografías intuitivas.",
-      "fullDescription": "Este panel de visualización de datos fue creado utilizando Vue.js y D3.js con un backend en Express. Transforma conjuntos de datos complejos en representaciones visuales intuitivas a través de varios gráficos e infografías interactivas. Los usuarios pueden filtrar datos, ajustar parámetros y exportar visualizaciones. El panel es totalmente responsive y está optimizado tanto para dispositivos de escritorio como móviles."
+      "title": "Induscom",
+      "description": "Importadora de repuestos para camiones y maquinaria pesada, especializada en motores diésel chinos, transmisiones y embragues.",
+      "fullDescription": "Portal corporativo para Induscom Colombia, importadora directa de repuestos para camiones y maquinaria pesada. Desarrollada en 2025, la web presenta un diseño claro de sus líneas de producto —motores diésel chinos, transmisiones, embragues y accesorios especializados—, con énfasis en asesoría técnica, envíos en menos de 24 horas y soporte por WhatsApp. Incluye secciones de productos destacados, formulario de cotización rápida, testimonios de clientes y recursos educativos (blog). La plataforma transmite confianza mediante mensaje de garantía y atención personalizada."
     }
   },
   "contratacion": {

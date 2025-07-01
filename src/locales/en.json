@@ -57,9 +57,9 @@
       "fullDescription": "Personal portfolio website developed with Vite, React, and TypeScript, deployed on Vercel. Showcases a selection of featured projects, professional background, technical skills, contact form, and online payment integration. Perfect as a reference for anyone seeking a modern, mobile-optimized personal website with advanced features."
     },
     "project3": {
-      "title": "Data Visualization Dashboard",
-      "description": "An interactive dashboard displaying complex data sets through intuitive charts and graphs.",
-      "fullDescription": "This data visualization dashboard was created using Vue.js and D3.js with an Express backend. It transforms complex data sets into intuitive visual representations through various charts and interactive graphs. Users can filter data, adjust parameters, and export visualizations. The dashboard is fully responsive and optimized for both desktop and mobile devices."
+      "title": "Induscom",
+      "description": "Importer of spare parts for trucks and heavy machinery, specialized in Chinese diesel engines, transmissions, and clutches.",
+      "fullDescription": "Corporate website for Induscom Colombia, a direct importer of spare parts for trucks and heavy machinery. Launched in 2025, the site features a clean layout showcasing their main product lines—Chinese diesel engines, transmissions, clutches, and specialized accessories—with a strong focus on technical advice, shipping within 24 hours, and WhatsApp support. It includes highlighted product sections, a quick quote request form, customer testimonials, and educational resources (blog). The platform builds trust through a clear warranty message and personalized assistance."
     }
   },
   "contratacion": {

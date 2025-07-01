@@ -45,12 +45,13 @@ export default function ProjectsSection() {
     {
       title: t('projects.project3.title'),
       description: t('projects.project3.description'),
-      imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tags: ["Vue.js", "D3.js", "Express"],
-      demoUrl: "#",
+      imageUrl: "portafolio_repuestos_3.jpg",
+      tags: ["Wordpress"],
+      demoUrl: "https://induscom.com.co",
       repoUrl: "#",
       fullDescription: t('projects.project3.fullDescription')
     }
+    
   ];
 
   const handleOpenModal = (project: Project) => {
