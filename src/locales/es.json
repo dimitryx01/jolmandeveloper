@@ -192,5 +192,9 @@
     "description": "Hemos recibido correctamente tu transacción y nos pondremos en contacto contigo a la brevedad para confirmar los detalles.",
     "emailInfo": "Se ha enviado un comprobante de pago a tu correo electrónico. Si tienes alguna pregunta, no dudes en contactarme.",
     "backHome": "Volver al inicio"
-  }
+  },
+  "meta": {
+  "title": "Jolman Developer | Desarrollo Web Freelance Profesional en Bogotá, Barcelona y Melbourne",
+  "description": "Soy Jolman Developer, experto en crear soluciones web que impulsan tu negocio. Desarrollo web profesional y personalizado. ¡Contáctame hoy!"
+}
 }

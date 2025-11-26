@@ -1,16 +1,18 @@
-
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/hooks/useLanguage';
 
 export default function LanguageSelector() {
   const { i18n } = useTranslation();
-  const [currentLang, setCurrentLang] = useState(i18n.language);
+  const { lang } = useLanguage();
+  const navigate = useNavigate();
+  const location = useLocation();
   
   const toggleLanguage = () => {
-    const newLang = currentLang === 'es' ? 'en' : 'es';
-    i18n.changeLanguage(newLang);
-    setCurrentLang(newLang);
+    const newLang = lang === 'es' ? 'en' : 'es';
+    const currentPath = location.pathname.replace(`/${lang}`, '');
+    navigate(`/${newLang}${currentPath}`);
   };
   
   return (
@@ -20,7 +22,7 @@ export default function LanguageSelector() {
       onClick={toggleLanguage} 
       className="font-medium"
     >
-      {currentLang === 'es' ? 'EN' : 'ES'}
+      {lang === 'es' ? 'EN' : 'ES'}
     </Button>
   );
 }

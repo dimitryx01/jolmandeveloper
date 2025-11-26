@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jolman Developer</title>
+    <script>
+      const path = window.location.pathname.slice(1);
+      const query = window.location.search;
+      const hash = window.location.hash;
+      
+      window.sessionStorage.setItem('redirect', path + query + hash);
+      window.location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>

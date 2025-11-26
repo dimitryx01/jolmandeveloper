@@ -1,10 +1,11 @@
-
 import { Button } from '@/components/ui/button';
 import { Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useLanguage } from '@/hooks/useLanguage';
 
 export default function Thanks() {
+  const { lang } = useLanguage();
   const { t } = useTranslation();
   
   return (
@@ -27,7 +28,7 @@ export default function Thanks() {
         </div>
         
         <Button asChild size="lg" className="mt-6">
-          <Link to="/">{t('thanks.backHome')}</Link>
+          <Link to={`/${lang}`}>{t('thanks.backHome')}</Link>
         </Button>
       </div>
     </div>

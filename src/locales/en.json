@@ -191,5 +191,9 @@
     "description": "We have correctly received your transaction and will contact you shortly to confirm the details.",
     "emailInfo": "A payment receipt has been sent to your email. If you have any questions, don't hesitate to contact me.",
     "backHome": "Back to home"
-  }
+  },
+  "meta": {
+  "title": "Jolman Developer | Professional Freelance Web Development in Bogotá, Barcelona and Melbourne",
+  "description": "I'm Jolman Developer, expert in creating web solutions that boost your business. Professional and customized web development. Contact me today!"
+}
 }
