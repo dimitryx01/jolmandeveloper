@@ -2,10 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
+import fs from 'fs';
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Base URL para GitHub Pages con tu repositorio
   base: '/',
 
   server: {
@@ -13,7 +12,6 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
   },
 
-  // Configuración de build para producción
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
@@ -24,23 +22,31 @@ export default defineConfig(({ mode }) => ({
 
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
+    {
+      name: 'generate-spa-fallback',
+      closeBundle() {
+        const distPath = path.resolve(__dirname, 'dist');
+        const indexHtml = fs.readFileSync(path.join(distPath, 'index.html'), 'utf-8');
+        
+        const routes = ['es', 'en'];
+        
+        routes.forEach(lang => {
+          const langDir = path.join(distPath, lang);
+          if (!fs.existsSync(langDir)) {
+            fs.mkdirSync(langDir, { recursive: true });
+          }
+          fs.writeFileSync(path.join(langDir, 'index.html'), indexHtml);
+        });
+        
+        console.log('✓ Generated SPA fallback files for /es and /en');
+      }
+    }
   ].filter(Boolean),
 
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-  },
-
-  // Optimizaciones para producción
-  optimizeDeps: {
-    include: ['react', 'react-dom'],
-  },
-
-  // Configuración específica para diferentes modos
-  define: {
-    __DEV__: mode === 'development',
   },
 }));
