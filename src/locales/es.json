@@ -57,9 +57,19 @@
       "fullDescription": "Sitio web de portafolio personal desarrollado con Vite, React y TypeScript, desplegado en Vercel. Presenta una selección de proyectos destacados, información profesional, habilidades técnicas, formulario de contacto e integración de pagos en línea. Ideal como referencia para quienes buscan una web de presentación personal, moderna, optimizada para dispositivos móviles y con funcionalidades avanzadas."
     },
     "project3": {
-      "title": "Induscom",
+      "title": "Induscom Colombia",
       "description": "Importadora de repuestos para camiones y maquinaria pesada, especializada en motores diésel chinos, transmisiones y embragues.",
       "fullDescription": "Portal corporativo para Induscom Colombia, importadora directa de repuestos para camiones y maquinaria pesada. Desarrollada en 2025, la web presenta un diseño claro de sus líneas de producto —motores diésel chinos, transmisiones, embragues y accesorios especializados—, con énfasis en asesoría técnica, envíos en menos de 24 horas y soporte por WhatsApp. Incluye secciones de productos destacados, formulario de cotización rápida, testimonios de clientes y recursos educativos (blog). La plataforma transmite confianza mediante mensaje de garantía y atención personalizada."
+    },
+    "project4": {
+      "title": "Fundación Kalida - España",
+      "description": "Desarrollo y mantenimiento de landings y módulo de Agenda para la web de Fundació Kālida, incluyendo implementación de nuevas funcionalidades, optimización de componentes y resolución de incidencias en producción.",
+      "fullDescription": "Colaboré en el desarrollo y mantenimiento de la web de Fundació Kālida, trabajando sobre un entorno en producción orientado a alto tráfico y contenido dinámico. Mis tareas incluyeron la creación y refactorización de landing pages (campañas, contenidos informativos y secciones online), asegurando un marcado semántico correcto, buen rendimiento y consistencia con el diseño global del sitio. También participé en la evolución del módulo de Agenda, implementando ajustes funcionales y de interfaz a partir de tickets de soporte: corrección de bugs, pequeños cambios de comportamiento, mejoras en la presentación de actividades y alineación con los requisitos del equipo de comunicación. Todo ello siguiendo buenas prácticas de mantenibilidad, revisión continua de cambios y enfoque en la experiencia de usuario."
+    },
+    "project5": {
+      "title": "Feel Hospitality Advisor - España",
+      "description": "Desarrollo end-to-end de la web corporativa Feel Hospitality: arquitectura, maquetación responsive, integración de formularios de contacto y optimización de rendimiento y accesibilidad (WordPress).",
+      "fullDescription": "Desarrollo completo de la web corporativa de Feel Hospitality, una consultora especializada en accesibilidad turística. Partiendo de cero, definí la arquitectura de la información, implementé la maquetación responsive y personalicé el tema en WordPress alineado con la identidad de marca. Integré formularios de contacto con validación y mensajes de estado, optimicé el rendimiento (carga de imágenes, estructura HTML y recursos) y cuidé aspectos básicos de accesibilidad (jerarquía de encabezados, contraste, textos alternativos y foco en formularios), coherentes con el enfoque inclusivo del proyecto. El resultado es una landing clara orientada a conversión, fácil de mantener y preparada para escalar contenidos y servicios de la marca."
     }
   },
   "contratacion": {

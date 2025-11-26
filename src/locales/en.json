@@ -1,4 +1,3 @@
-
 {
   "navbar": {
     "home": "Home",
@@ -60,6 +59,16 @@
       "title": "Induscom",
       "description": "Importer of spare parts for trucks and heavy machinery, specialized in Chinese diesel engines, transmissions, and clutches.",
       "fullDescription": "Corporate website for Induscom Colombia, a direct importer of spare parts for trucks and heavy machinery. Launched in 2025, the site features a clean layout showcasing their main product lines—Chinese diesel engines, transmissions, clutches, and specialized accessories—with a strong focus on technical advice, shipping within 24 hours, and WhatsApp support. It includes highlighted product sections, a quick quote request form, customer testimonials, and educational resources (blog). The platform builds trust through a clear warranty message and personalized assistance."
+    },
+    "project4": {
+      "title": "Fundació Kālida – Spain",
+      "description": "Development and maintenance of landing pages and the Agenda module for the Fundació Kālida website, including implementation of new features, component optimization, and production incident resolution.",
+      "fullDescription": "I collaborated on the development and maintenance of the Fundació Kālida website, working in a production environment oriented to high traffic and dynamic content. My tasks included creating and refactoring landing pages (campaigns, informational content, and online sections), ensuring correct semantic markup, solid performance, and consistency with the site’s global design. I also contributed to the evolution of the Agenda module, implementing functional and UI adjustments based on support tickets: bug fixing, minor behavior changes, improvements in the presentation of activities, and alignment with the communication team’s requirements. All of this following good maintainability practices, continuous review of changes, and a strong focus on user experience."
+    },
+    "project5": {
+      "title": "Feel Hospitality Advisor – Spain",
+      "description": "End‑to‑end development of the Feel Hospitality corporate website: architecture, responsive layout, contact form integration, and performance and accessibility optimization (WordPress).",
+      "fullDescription": "Complete development of the Feel Hospitality corporate website, a consultancy specialized in tourism accessibility. Starting from scratch, I defined the information architecture, implemented the responsive layout, and customized the WordPress theme in line with the brand’s identity. I integrated contact forms with validation and status messages, optimized performance (image loading, HTML structure, and assets), and took care of key accessibility aspects (heading hierarchy, contrast, alternative texts, and focus states in forms), aligned with the inclusive approach of the project. The result is a clear, conversion‑oriented landing experience that is easy to maintain and ready to scale in terms of content and services."
     }
   },
   "contratacion": {

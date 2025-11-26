@@ -24,24 +24,35 @@ export default function ProjectsSection() {
   const { t } = useTranslation();
 
   const projects: Project[] = [
+
     {
-      title: t('projects.project1.title'),
-      description: t('projects.project1.description'),
-      imageUrl: "autovidrios2peque.jpg",
+      title: t('projects.project5.title'),
+      description: t('projects.project5.description'),
+      imageUrl: "portafolio_feelhospitality.jpg",
       tags: ["Wordpress"],
-      demoUrl: "https://autovidriosdeoriente.com/",
+      demoUrl: "https://feelhospitality.es",
       repoUrl: "#",
-      fullDescription: t('projects.project1.fullDescription')
+      fullDescription: t('projects.project5.fullDescription')
+    },
+    {
+      title: t('projects.project4.title'),
+      description: t('projects.project4.description'),
+      imageUrl: "portafolio_fundacion.jpg",
+      tags: ["Wordpress", "PHP"],
+      demoUrl: "https://www.fundaciokalida.org",
+      repoUrl: "#",
+      fullDescription: t('projects.project4.fullDescription')
     },
     {
       title: t('projects.project2.title'),
       description: t('projects.project2.description'),
       imageUrl: "heropeque.jpg",
-      tags: ["Vite","React","TypeScript","JavaScript","Vercel"],
+      tags: ["Vite", "React", "TypeScript", "JavaScript", "Vercel"],
       demoUrl: "#",
       repoUrl: "#",
       fullDescription: t('projects.project2.fullDescription')
     },
+
     {
       title: t('projects.project3.title'),
       description: t('projects.project3.description'),
@@ -50,8 +61,18 @@ export default function ProjectsSection() {
       demoUrl: "https://induscom.com.co",
       repoUrl: "#",
       fullDescription: t('projects.project3.fullDescription')
+    },
+
+    {
+      title: t('projects.project1.title'),
+      description: t('projects.project1.description'),
+      imageUrl: "autovidrios2peque.jpg",
+      tags: ["Wordpress"],
+      demoUrl: "https://autovidriosdeoriente.com/",
+      repoUrl: "#",
+      fullDescription: t('projects.project1.fullDescription')
     }
-    
+
   ];
 
   const handleOpenModal = (project: Project) => {
@@ -72,8 +93,8 @@ export default function ProjectsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="overflow-hidden border-none shadow-md hover:shadow-xl transition-shadow group cursor-pointer"
               onClick={() => handleOpenModal(project)}
             >
@@ -127,7 +148,7 @@ export default function ProjectsSection() {
                 <DialogHeader>
                   <DialogTitle className="text-2xl font-bold">{selectedProject.title}</DialogTitle>
                 </DialogHeader>
-                
+
                 <ScrollArea className="pr-4 max-h-[calc(90vh-8rem)]">
                   <div className="mt-6">
                     {/* Mini Hero con captura de pantalla */}
@@ -143,7 +164,7 @@ export default function ProjectsSection() {
                     {/* Descripción detallada */}
                     <div className="space-y-4">
                       <p className="text-foreground">{selectedProject.fullDescription}</p>
-                      
+
                       {/* Tecnologías */}
                       <div>
                         <h3 className="text-lg font-semibold mb-2">{t('projects.technologiesTitle')}</h3>
@@ -158,11 +179,11 @@ export default function ProjectsSection() {
                     </div>
                   </div>
                 </ScrollArea>
-                
+
                 {/* Enlaces - Mantenerlos fuera del ScrollArea para que estén siempre visibles */}
                 <div className="flex flex-wrap gap-4 pt-4 mt-4 border-t border-border">
                   <Button asChild>
-                    <a 
+                    <a
                       href={selectedProject.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -171,9 +192,9 @@ export default function ProjectsSection() {
                       <ExternalLink size={16} /> {t('projects.visitSiteButton')}
                     </a>
                   </Button>
-                  
+
                   <Button variant="outline" asChild>
-                    <a 
+                    <a
                       href={selectedProject.repoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
