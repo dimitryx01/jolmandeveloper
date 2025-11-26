@@ -41,22 +41,31 @@ const Index = () => {
 
   return (
     <>
-      <Helmet>
-        <html lang={lang} />
-        <title>{t('meta.title')}</title>
-        <meta name="description" content={t('meta.description')} />
-        
-        <link rel="canonical" href={`${baseUrl}/${lang}`} />
-        <link rel="alternate" hrefLang="es" href={`${baseUrl}/es`} />
-        <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
-        <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/es`} />
-        
-        <meta property="og:title" content={t('meta.title')} />
-        <meta property="og:description" content={t('meta.description')} />
-        <meta property="og:url" content={`${baseUrl}/${lang}`} />
-        <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
-        <meta property="og:locale:alternate" content={lang === 'es' ? 'en_US' : 'es_ES'} />
-      </Helmet>
+    <Helmet>
+  <html lang={lang} />
+  <title>{t('meta.title')}</title>
+  <meta name="description" content={t('meta.description')} />
+  
+  <link rel="canonical" href={`${baseUrl}/${lang}`} />
+  <link rel="alternate" hrefLang="es" href={`${baseUrl}/es`} />
+  <link rel="alternate" hrefLang="en" href={`${baseUrl}/en`} />
+  <link rel="alternate" hrefLang="x-default" href={`${baseUrl}/es`} />
+  
+  <meta property="og:title" content={t('meta.title')} />
+  <meta property="og:description" content={t('meta.description')} />
+  <meta property="og:url" content={`${baseUrl}/${lang}`} />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={`${baseUrl}/social.jpg`} />
+  <meta property="og:image:alt" content="Portafolio de Jolman Developer - Desarrollo Web Freelance" />
+  <meta property="og:locale" content={lang === 'es' ? 'es_ES' : 'en_US'} />
+  <meta property="og:locale:alternate" content={lang === 'es' ? 'en_US' : 'es_ES'} />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@jolmandeveloper" />
+  <meta name="twitter:title" content={t('meta.title')} />
+  <meta name="twitter:description" content={t('meta.description')} />
+  <meta name="twitter:image" content={`${baseUrl}/social.jpg`} />
+</Helmet>
 
       <main className="min-h-screen">
         <Navbar />
