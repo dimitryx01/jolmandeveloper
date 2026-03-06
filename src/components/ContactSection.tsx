@@ -8,12 +8,10 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
 import { FaWhatsapp } from 'react-icons/fa';
+import { env, validateEnv } from '@/config/env';
 
-
-const SERVICE_ID = 'service_kydr2v4';
-const TEMPLATE_ID = 'template_86gpnve';
-const PUBLIC_KEY = 'egqgJTklNtO9Hnsnh';
-const RECAPTCHA_SITE_KEY = '6LdAtEQrAAAAAG_P_SoVbJGKgTA9kriebU_73cgA';
+// Validate environment variables on module load
+validateEnv();
 
 export default function ContactSection() {
   const { t } = useTranslation();
@@ -44,8 +42,8 @@ export default function ContactSection() {
 
     try {
       await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
+        env.emailjs.serviceId,
+        env.emailjs.templateId,
         {
           name: formData.name,
           email: formData.email,
@@ -53,7 +51,7 @@ export default function ContactSection() {
           time: new Date().toLocaleString(),
           'g-recaptcha-response': recaptchaToken,
         },
-        PUBLIC_KEY
+        env.emailjs.publicKey
       );
 
       toast({
@@ -73,7 +71,6 @@ export default function ContactSection() {
   const socialLinks = [
     { icon: <Mail className="h-5 w-5" />, label: 'Email', href: 'mailto:info@jolmandeveloper.com' },
     { icon: <FaWhatsapp className="h-5 w-5" />, label: 'WhatsApp', href: 'https://wa.me/573108801832?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios%20de%20desarrollo%20web.' }
-      //{/*   { icon: <Github className="h-5 w-5" />, label: 'GitHub', href: 'https://github.com/tu-usuario' }, { icon: <Linkedin className="h-5 w-5" />, label: 'LinkedIn', href: 'https://linkedin.com/in/tu-usuario' }  */}    
   ];
 
   return (
@@ -115,37 +112,37 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="border-gray-300 focus:border-teal-500 focus:ring-teal-500 min-h-[150px]"
+                rows={5}
+                className="border-gray-300 focus:border-teal-500 focus:ring-teal-500"
               />
-              <ReCAPTCHA
-                sitekey={RECAPTCHA_SITE_KEY}
-                onChange={handleReCAPTCHA}
-              />
-              <Button 
-                type="submit" 
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white" 
+              <div className="flex justify-center">
+                <ReCAPTCHA
+                  sitekey={env.recaptcha.siteKey}
+                  onChange={handleReCAPTCHA}
+                />
+              </div>
+              <Button
+                type="submit"
                 disabled={isSubmitting}
+                className="w-full bg-teal-500 hover:bg-teal-600 text-white"
               >
                 {isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
               </Button>
             </form>
           </div>
 
-          <div>
+          <div className="flex flex-col justify-center">
             <h3 className="text-xl font-semibold mb-6">{t('contact.info.title')}</h3>
-            <p className="text-gray-600 mb-8">
-              {t('contact.info.description')}
-            </p>
             <div className="space-y-4">
               {socialLinks.map((link, index) => (
-                <a 
+                <a
                   key={index}
                   href={link.href}
-                  className="flex items-center text-gray-700 hover:text-teal-500 transition-colors p-2 -ml-2"
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
+                  className="flex items-center space-x-3 text-gray-600 hover:text-teal-500 transition-colors"
                 >
-                  <span className="bg-gray-100 p-2 rounded-full mr-3">{link.icon}</span>
+                  {link.icon}
                   <span>{link.label}</span>
                 </a>
               ))}
