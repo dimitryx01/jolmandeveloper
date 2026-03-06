@@ -1,4 +1,3 @@
-
 {
   "footer": {
     "rights": "All rights reserved",
@@ -36,37 +35,40 @@
       "If any user has any doubts about these Legal Conditions or any comments about the website https://jolmandeveloper.com, please contact info@jolmandeveloper.com."
     ]
   },
-  "privacyPolicy": {
-    "title": "Privacy Policy of Jolman Developer",
-    "content": [
-      "Jolman Developer, as the responsible party for this website, assumes the commitment to process user and client information with full guarantees and comply with national and international requirements that regulate the collection and use of personal data, especially Law 1581 of 2012 and Decree 1377 of 2013 of the Republic of Colombia, as well as, whenever possible, the principles of Regulation (EU) 2016/679 (GDPR) of the European Parliament.",
-      "Personal data communicated by the user to Jolman Developer may be stored in databases whose ownership corresponds exclusively to Jolman Developer, assuming all technical, organizational and security measures that guarantee the confidentiality, integrity and quality of the information contained therein, in accordance with current data protection regulations. The communication between users and the website uses a secure channel, and the transmitted data is encrypted thanks to HTTPS protocols, thus guaranteeing the best security conditions for user confidentiality.",
-      "Jolman Developer's commitments:",
-      "Not to request personal information unless it is really necessary to provide a specific service.",
-      "Never share personal information of users with anyone, except to comply with the law or if we have your express authorization.",
-      "Never use personal data for a purpose other than that expressed in this Privacy Policy.",
-      "This Privacy Policy may vary according to legislative or self-regulatory requirements. It will be applicable in case users decide to fill out any contact form or online payment form where personal data is collected.",
-      "Data collection",
-      "This website collects user data in the following ways:",
-      "Contact form: For inquiries, requests or direct communication.",
-      "Online payment form: For the management of payments and credits through the PayU payment gateway.",
-      "Principles applied to personal data processing",
-      "In the processing of personal data, the following principles will be applied:",
-      "Lawfulness, fairness and transparency: User consent will always be required for the processing of their personal data, clearly informing the purpose.",
-      "Data minimization: Only the strictly necessary data will be requested for each case.",
-      "Storage limitation: Data will be kept for no longer than necessary for the purposes of processing.",
-      "Integrity and confidentiality: Data will be processed in such a way as to ensure adequate security and confidentiality.",
-      "Jolman Developer undertakes to cancel personal data when it is no longer necessary or relevant for the purpose for which it was collected and to attend to requests for information, updating or deletion of data requested by the user, being Jolman Developer the responsible for the processing.",
-      "User rights",
-      "The user may exercise their rights of access, correction, deletion, revocation or claim for infringement of their data, by means of a written request addressed to info@jolmandeveloper.com, indicating in the subject \"Data Protection\".",
-      "Use of cookies",
-      "Users are informed of the use of cookies to obtain information and perform statistical analysis on the use of the website. The cookies used by Jolman Developer are anonymous and do not refer to personal data of the user nor do they allow access to data on the user's hard drive. The user's identity is never directly inserted into the cookie and, therefore, they cannot be identified.",
-      "Limitation of liability",
-      "Jolman Developer declines all responsibility in the event that access to or visits to its website are made impossible or difficult due to an interruption or defective provision of the electricity, telephone or other telecommunications providers outside Jolman Developer, or in the case of social conflicts or other cases of force majeure, or any action by a third party, including administrative or judicial requirements or orders, sabotage or saturation, intentional or not.",
-      "All liability is also declined for damages that the visitor may suffer in their computer or telematic means as a consequence of the occurrence of any of the circumstances mentioned above.",
-      "Jolman Developer does not guarantee the availability and continuity of the website nor is it responsible for any damages produced or that may be produced in the future, nor for technical defects, whatever their nature, that derive from the use of the information and contents of the website.",
-      "Within the limits established by Law, Jolman Developer assumes no responsibility derived from the lack of updating and accuracy of the data or information contained in its Internet pages."
-    ]
+  "projects": {
+    "sectionTitle": "Projects",
+    "sectionDescription": "Here are some of the projects I've worked on. Click on any project to see more details.",
+    "viewAll": "View all",
+    "viewProject": "View project",
+    "codeLink": "Code",
+    "technologiesTitle": "Technologies Used",
+    "visitSiteButton": "Visit Site",
+    "viewCodeButton": "View Code",
+    "project1": {
+      "title": "Auto Vidrios de Oriente (2021)",
+      "description": "Web solution for automotive glass company, featuring aerial promotional video, services, contact, and online quote.",
+      "fullDescription": "Corporate website developed in WordPress for a company specializing in the sale, installation, and repair of automotive glass. The portal (created in 2021) presents main services (repair, windshield replacement, waterproofing, tinting), contact information, branch locations, and an online quote form. Additionally, a promotional video with aerial shots taken by drone was produced and is featured in the main section of the site."
+    },
+    "project2": {
+      "title": "Jolman Developer",
+      "description": "Professional personal portfolio, featuring projects, skills, contact, and online payment integration.",
+      "fullDescription": "Personal portfolio website developed with Vite, React, and TypeScript, deployed on Vercel. Showcases a selection of featured projects, professional background, technical skills, contact form, and online payment integration. Perfect as a reference for anyone seeking a modern, mobile-optimized personal website with advanced features."
+    },
+    "project3": {
+      "title": "Induscom",
+      "description": "Importer of spare parts for trucks and heavy machinery, specialized in Chinese diesel engines, transmissions, and clutches.",
+      "fullDescription": "Corporate website for Induscom Colombia, a direct importer of spare parts for trucks and heavy machinery. Launched in 2025, the site features a clean layout showcasing their main product lines—Chinese diesel engines, transmissions, clutches, and specialized accessories—with a strong focus on technical advice, shipping within 24 hours, and WhatsApp support. It includes highlighted product sections, a quick quote request form, customer testimonials, and educational resources (blog). The platform builds trust through a clear warranty message and personalized assistance."
+    },
+    "project4": {
+      "title": "Fundació Kālida – Spain",
+      "description": "Development and maintenance of landing pages and the Agenda module for the Fundació Kālida website, including implementation of new features, component optimization, and production incident resolution.",
+      "fullDescription": "I collaborated on the development and maintenance of the Fundació Kālida website, working in a production environment oriented to high traffic and dynamic content. My tasks included creating and refactoring landing pages (campaigns, informational content, and online sections), ensuring correct semantic markup, solid performance, and consistency with the site’s global design. I also contributed to the evolution of the Agenda module, implementing functional and UI adjustments based on support tickets: bug fixing, minor behavior changes, improvements in the presentation of activities, and alignment with the communication team’s requirements. All of this following good maintainability practices, continuous review of changes, and a strong focus on user experience."
+    },
+    "project5": {
+      "title": "Feel Hospitality Advisor – Spain",
+      "description": "End‑to‑end development of the Feel Hospitality corporate website: architecture, responsive layout, contact form integration, and performance and accessibility optimization (WordPress).",
+      "fullDescription": "Complete development of the Feel Hospitality corporate website, a consultancy specialized in tourism accessibility. Starting from scratch, I defined the information architecture, implemented the responsive layout, and customized the WordPress theme in line with the brand’s identity. I integrated contact forms with validation and status messages, optimized performance (image loading, HTML structure, and assets), and took care of key accessibility aspects (heading hierarchy, contrast, alternative texts, and focus states in forms), aligned with the inclusive approach of the project. The result is a clear, conversion‑oriented landing experience that is easy to maintain and ready to scale in terms of content and services."
+    }
   },
   "contratacion": {
     "title": "Hiring",
@@ -144,5 +146,59 @@
         ]
       }
     }
-  }
+  },
+  "pagaOnline": {
+    "title": "Make Your Payment",
+    "description": "Have we already agreed on your service? Pay easily and securely directly from here using our secure payment gateway.",
+    "payButton": "Make Payment",
+    "form": {
+      "title": "Payment Form",
+      "description": "Complete the following information to securely process your payment through PayU Latam.",
+      "name": "Full name",
+      "email": "Email address",
+      "amount": "Amount to pay in Colombian Pesos (COP), without periods or commas.",
+      "comment": "Description or comment (optional)",
+      "cancel": "Cancel",
+      "submit": "Process Payment"
+    },
+    "messages": {
+      "processing": "Processing your payment",
+      "redirect": "You will be redirected to the payment gateway in a few seconds...",
+      "incomplete": "Incomplete data",
+      "requiredFields": "Please complete all required fields",
+      "error": "Processing error",
+      "tryAgain": "There was a problem processing your request. Please try again."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Do you have a question or want to collaborate on a project? Don't hesitate to contact me.",
+    "form": {
+      "title": "Send me a message",
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "sending": "Sending...",
+      "send": "Send message",
+      "success": "Message sent",
+      "thankYou": "Thank you for contacting me. I will respond as soon as possible."
+    },
+    "info": {
+      "title": "Contact information",
+      "description": "I am open to freelance work opportunities, collaborations, or full-time positions. Don't hesitate to contact me through any of the following means."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "thanks": {
+    "title": "Thank you for your payment!",
+    "description": "We have correctly received your transaction and will contact you shortly to confirm the details.",
+    "emailInfo": "A payment receipt has been sent to your email. If you have any questions, don't hesitate to contact me.",
+    "backHome": "Back to home"
+  },
+  "meta": {
+  "title": "Jolman Developer | Professional Freelance Web Development in Bogotá, Barcelona and Melbourne",
+  "description": "I'm Jolman Developer, expert in creating web solutions that boost your business. Professional and customized web development. Contact me today!"
+}
 }

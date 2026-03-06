@@ -41,7 +41,7 @@ export default function AboutSection() {
               <CardContent className="p-6 text-center">
                 {skill.icon}
                 <h3 className="text-xl font-semibold mb-2">{skill.title}</h3>
-                <p className="text-gray-600">{skill.description}</p>
+                <p className="text-gray-400">{skill.description}</p>
               </CardContent>
             </Card>
           ))}

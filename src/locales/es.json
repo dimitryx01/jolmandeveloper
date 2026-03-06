@@ -36,37 +36,40 @@
       "En caso de que cualquier usuario tuviese alguna duda acerca de estas Condiciones legales o cualquier comentario sobre la web https://jolmandeveloper.com, por favor diríjase a info@jolmandeveloper.com."
     ]
   },
-  "privacyPolicy": {
-    "title": "Política de Privacidad de Jolman Developer",
-    "content": [
-      "Jolman Developer, como responsable de este sitio web, asume el compromiso de procesar la información de los usuarios y clientes con plenas garantías y cumplir con los requisitos nacionales e internacionales que regulan la recopilación y uso de los datos personales, en especial la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia, así como, en lo posible, los principios del Reglamento (UE) 2016/679 (RGPD) del Parlamento Europeo.",
-      "Los datos personales comunicados por el usuario a Jolman Developer pueden ser almacenados en bases de datos cuya titularidad corresponde en exclusiva a Jolman Developer, asumiendo todas las medidas técnicas, organizativas y de seguridad que garantizan la confidencialidad, integridad y calidad de la información contenida en las mismas, de acuerdo con la normativa vigente en protección de datos. La comunicación entre los usuarios y la web utiliza un canal seguro, y los datos transmitidos son cifrados gracias a protocolos HTTPS, garantizando así las mejores condiciones de seguridad para la confidencialidad de los usuarios.",
-      "Compromisos de Jolman Developer:",
-      "No solicitar información personal a menos que realmente sea necesaria para prestar un servicio concreto.",
-      "Nunca compartir información personal de usuarios con nadie, excepto para cumplir con la ley o en caso de contar con su autorización expresa.",
-      "Nunca utilizar datos personales con una finalidad diferente a la expresada en esta Política de Privacidad.",
-      "Esta Política de Privacidad podría variar en función de exigencias legislativas o de autorregulación. Será aplicable en caso de que los usuarios decidan rellenar algún formulario de contacto o formulario de pago online donde se recaben datos de carácter personal.",
-      "Recopilación de datos",
-      "Este sitio web recoge datos de los usuarios de las siguientes formas:",
-      "Formulario de contacto: Para consultas, solicitudes o comunicación directa.",
-      "Formulario de pago online: Para la gestión de pagos y abonos a través de la pasarela de pagos PayU.",
-      "Principios aplicados al tratamiento de datos personales",
-      "En el tratamiento de datos personales, se aplicarán los siguientes principios:",
-      "Licitud, lealtad y transparencia: Siempre se requerirá el consentimiento del usuario para el tratamiento de sus datos personales, informando de forma clara la finalidad.",
-      "Minimización de datos: Solo se solicitarán los datos estrictamente necesarios para cada caso.",
-      "Limitación del plazo de conservación: Los datos serán mantenidos durante no más tiempo del necesario para los fines del tratamiento.",
-      "Integridad y confidencialidad: Los datos serán tratados de tal manera que se garantice una seguridad adecuada y confidencialidad.",
-      "Jolman Developer se compromete a cancelar los datos personales cuando hayan dejado de ser necesarios o pertinentes para la finalidad para la cual fueron recogidos y a atender a las peticiones de información, actualización o borrado de datos solicitadas por el usuario, siendo el responsable del tratamiento Jolman Developer.",
-      "Derechos de los usuarios",
-      "El usuario podrá ejercer sus derechos de acceso, corrección, supresión, revocación o reclamo por infracción sobre sus datos, mediante solicitud escrita dirigida a info@jolmandeveloper.com, indicando en el asunto \"Protección de Datos\".",
-      "Uso de cookies",
-      "Se informa a los usuarios del uso de cookies para obtener información y realizar análisis estadísticos sobre el uso del sitio web. Las cookies utilizadas por Jolman Developer son anónimas y no se refieren a datos personales del usuario ni permiten acceder a datos del disco duro del usuario. La identidad del usuario nunca es insertada directamente en la cookie y, por tanto, no se le puede identificar.",
-      "Limitación de responsabilidad",
-      "Jolman Developer declina toda responsabilidad en caso de que el acceso o las visitas a su web se vieran imposibilitadas o dificultadas debido a una interrupción o defectuosa prestación del suministro eléctrico, telefónico o de otros proveedores de telecomunicaciones ajenos a Jolman Developer, o en el caso de producirse conflictos sociales u otros supuestos de fuerza mayor, o cualquier actuación de un tercero, incluidos los requerimientos u órdenes administrativas o judiciales, sabotajes o saturaciones, intencionadas o no.",
-      "Se declina igualmente toda responsabilidad derivada de los daños y perjuicios que pudiera sufrir el visitante en sus medios informáticos o telemáticos a consecuencia de la producción de cualquiera de las circunstancias anteriormente expuestas.",
-      "Jolman Developer no garantiza la disponibilidad y continuidad del sitio web ni se hace responsable de cualesquiera daños y perjuicios producidos o que puedan producirse en el futuro, ni de los defectos técnicos, cualquiera que sea su naturaleza, que se deriven del uso de la información y de los contenidos del sitio web.",
-      "Con los límites establecidos en la Ley, Jolman Developer no asume ninguna responsabilidad derivada de la falta de actualización y precisión de los datos o informaciones que se contienen en sus páginas de Internet."
-    ]
+  "projects": {
+    "sectionTitle": "Proyectos",
+    "sectionDescription": "Aquí hay algunos de los proyectos en los que he trabajado. Haz clic en cualquier proyecto para ver más detalles.",
+    "viewAll": "Ver todos",
+    "viewProject": "Ver proyecto",
+    "codeLink": "Código",
+    "technologiesTitle": "Tecnologías Utilizadas",
+    "visitSiteButton": "Visitar Sitio",
+    "viewCodeButton": "Ver Código",
+    "project1": {
+      "title": "Auto Vidrios de Oriente",
+      "description": "Solución web para empresa de vidrios automotrices, con video publicitario aéreo, servicios, contacto y cotización online.",
+      "fullDescription": "Sitio web corporativo desarrollado en WordPress para una empresa especializada en la venta, instalación y reparación de vidrios automotrices. El portal (realizado en 2021) presenta los servicios principales (reparación, cambio de parabrisas, impermeabilización, polarizados), información de contacto, ubicación de sucursales y formulario de cotización en línea. Adicionalmente, se realizó la producción de un video publicitario con tomas aéreas realizadas con dron, que se muestra en la sección principal del sitio."
+    },
+    "project2": {
+      "title": "JolmanDeveloper.com",
+      "description": "Portafolio personal profesional, con proyectos, habilidades, contacto e integración de pagos en línea.",
+      "fullDescription": "Sitio web de portafolio personal desarrollado con Vite, React y TypeScript, desplegado en Vercel. Presenta una selección de proyectos destacados, información profesional, habilidades técnicas, formulario de contacto e integración de pagos en línea. Ideal como referencia para quienes buscan una web de presentación personal, moderna, optimizada para dispositivos móviles y con funcionalidades avanzadas."
+    },
+    "project3": {
+      "title": "Induscom Colombia",
+      "description": "Importadora de repuestos para camiones y maquinaria pesada, especializada en motores diésel chinos, transmisiones y embragues.",
+      "fullDescription": "Portal corporativo para Induscom Colombia, importadora directa de repuestos para camiones y maquinaria pesada. Desarrollada en 2025, la web presenta un diseño claro de sus líneas de producto —motores diésel chinos, transmisiones, embragues y accesorios especializados—, con énfasis en asesoría técnica, envíos en menos de 24 horas y soporte por WhatsApp. Incluye secciones de productos destacados, formulario de cotización rápida, testimonios de clientes y recursos educativos (blog). La plataforma transmite confianza mediante mensaje de garantía y atención personalizada."
+    },
+    "project4": {
+      "title": "Fundación Kalida - España",
+      "description": "Desarrollo y mantenimiento de landings y módulo de Agenda para la web de Fundació Kālida, incluyendo implementación de nuevas funcionalidades, optimización de componentes y resolución de incidencias en producción.",
+      "fullDescription": "Colaboré en el desarrollo y mantenimiento de la web de Fundació Kālida, trabajando sobre un entorno en producción orientado a alto tráfico y contenido dinámico. Mis tareas incluyeron la creación y refactorización de landing pages (campañas, contenidos informativos y secciones online), asegurando un marcado semántico correcto, buen rendimiento y consistencia con el diseño global del sitio. También participé en la evolución del módulo de Agenda, implementando ajustes funcionales y de interfaz a partir de tickets de soporte: corrección de bugs, pequeños cambios de comportamiento, mejoras en la presentación de actividades y alineación con los requisitos del equipo de comunicación. Todo ello siguiendo buenas prácticas de mantenibilidad, revisión continua de cambios y enfoque en la experiencia de usuario."
+    },
+    "project5": {
+      "title": "Feel Hospitality Advisor - España",
+      "description": "Desarrollo end-to-end de la web corporativa Feel Hospitality: arquitectura, maquetación responsive, integración de formularios de contacto y optimización de rendimiento y accesibilidad (WordPress).",
+      "fullDescription": "Desarrollo completo de la web corporativa de Feel Hospitality, una consultora especializada en accesibilidad turística. Partiendo de cero, definí la arquitectura de la información, implementé la maquetación responsive y personalicé el tema en WordPress alineado con la identidad de marca. Integré formularios de contacto con validación y mensajes de estado, optimicé el rendimiento (carga de imágenes, estructura HTML y recursos) y cuidé aspectos básicos de accesibilidad (jerarquía de encabezados, contraste, textos alternativos y foco en formularios), coherentes con el enfoque inclusivo del proyecto. El resultado es una landing clara orientada a conversión, fácil de mantener y preparada para escalar contenidos y servicios de la marca."
+    }
   },
   "contratacion": {
     "title": "Contratación",
@@ -144,5 +147,59 @@
         ]
       }
     }
-  }
+  },
+  "pagaOnline": {
+    "title": "Realiza tu Pago",
+    "description": "¿Ya acordamos tu servicio? Paga fácil y seguro directamente desde aquí utilizando nuestra pasarela de pagos segura.",
+    "payButton": "Realizar Pago",
+    "form": {
+      "title": "Formulario de Pago",
+      "description": "Completa los siguientes datos para procesar tu pago de forma segura a través de PayU Latam.",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "amount": "Monto a pagar en Peso Colombiano(COP), sin puntos ni comas",
+      "comment": "Descripción o comentario (opcional)",
+      "cancel": "Cancelar",
+      "submit": "Procesar Pago"
+    },
+    "messages": {
+      "processing": "Procesando tu pago",
+      "redirect": "Serás redirigido a la pasarela de pagos en unos segundos...",
+      "incomplete": "Datos incompletos",
+      "requiredFields": "Por favor completa todos los campos requeridos",
+      "error": "Error de procesamiento",
+      "tryAgain": "Hubo un problema al procesar tu solicitud. Inténtalo de nuevo."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes alguna pregunta o quieres colaborar en un proyecto? No dudes en contactarme.",
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Tu nombre",
+      "email": "Tu email",
+      "message": "Tu mensaje",
+      "sending": "Enviando...",
+      "send": "Enviar mensaje",
+      "success": "Mensaje enviado",
+      "thankYou": "Gracias por contactarme. Te responderé lo antes posible."
+    },
+    "info": {
+      "title": "Información de contacto",
+      "description": "Estoy abierto a oportunidades de trabajo freelance, colaboraciones o posiciones a tiempo completo. No dudes en contactarme a través de cualquiera de los siguientes medios."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  },
+  "thanks": {
+    "title": "¡Gracias por tu pago!",
+    "description": "Hemos recibido correctamente tu transacción y nos pondremos en contacto contigo a la brevedad para confirmar los detalles.",
+    "emailInfo": "Se ha enviado un comprobante de pago a tu correo electrónico. Si tienes alguna pregunta, no dudes en contactarme.",
+    "backHome": "Volver al inicio"
+  },
+  "meta": {
+  "title": "Jolman Developer | Desarrollo Web Freelance Profesional en Bogotá, Barcelona y Melbourne",
+  "description": "Soy Jolman Developer, experto en crear soluciones web que impulsan tu negocio. Desarrollo web profesional y personalizado. ¡Contáctame hoy!"
+}
 }
