@@ -1,9 +1,14 @@
 
 import { ArrowUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import { useState } from 'react';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const [legalOpen, setLegalOpen] = useState(false);
+  const [privacyOpen, setPrivacyOpen] = useState(false);
   
   const scrollToTop = () => {
     window.scrollTo({
@@ -12,7 +17,16 @@ export default function Footer() {
     });
   };
 
+  // Get legal and privacy content as arrays
+  const legalContent = t('legalNotice.content', { returnObjects: true });
+  const privacyContent = t('privacyPolicy.content', { returnObjects: true });
+
+  // Ensure lists are treated as arrays
+  const safeLegalContent = Array.isArray(legalContent) ? legalContent : [t('legalNotice.content')];
+  const safePrivacyContent = Array.isArray(privacyContent) ? privacyContent : [t('privacyPolicy.content')];
+
   return (
+
     <footer className="bg-gray-900 text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center">
@@ -31,8 +45,37 @@ export default function Footer() {
           >
             <ArrowUp size={20} />
           </button>
+
         </div>
-      </div>
-    </footer>
+      </footer>
+
+      {/* Aviso Legal Modal */}
+      <Dialog open={legalOpen} onOpenChange={setLegalOpen}>
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-hidden">
+          <DialogTitle>{t('legalNotice.title')}</DialogTitle>
+          <ScrollArea className="h-[calc(80vh-8rem)]">
+            <div className="p-1 text-sm space-y-4">
+              {safeLegalContent.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </ScrollArea>
+        </DialogContent>
+      </Dialog>
+
+      {/* Política de Privacidad Modal */}
+      <Dialog open={privacyOpen} onOpenChange={setPrivacyOpen}>
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-hidden">
+          <DialogTitle>{t('privacyPolicy.title')}</DialogTitle>
+          <ScrollArea className="h-[calc(80vh-8rem)]">
+            <div className="p-1 text-sm space-y-4">
+              {safePrivacyContent.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </ScrollArea>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 }

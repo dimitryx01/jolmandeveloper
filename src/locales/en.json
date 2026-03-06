@@ -1,40 +1,39 @@
 {
-  "navbar": {
-    "home": "Home",
-    "about": "About me",
-    "projects": "Projects",
-    "contact": "Contact",
-    "changeTheme": "Toggle theme"
+  "footer": {
+    "rights": "All rights reserved",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy"
   },
-  "hero": {
-    "hello": "Hello, I'm",
-    "role": "Web Designer & Developer",
-    "description": "I create attractive and functional digital experiences with a minimalist and user-centered approach.",
-    "contactMe": "Contact me",
-    "downloadCV": "Download CV",
-    "learnMore": "Learn more"
-  },
-  "about": {
-    "title": "About Me",
-    "description": "I am a passionate web developer with experience in creating modern websites and applications. My goal is to combine attractive design with intuitive functionality to create memorable digital experiences.",
-    "skills": {
-      "frontend": {
-        "title": "Frontend Development",
-        "description": "I create attractive and responsive interfaces using HTML, CSS, JavaScript and modern frameworks like React."
-      },
-      "backend": {
-        "title": "Backend Development",
-        "description": "I implement robust solutions using Node.js, Express, and SQL/NoSQL databases."
-      },
-      "uxui": {
-        "title": "UX/UI Design",
-        "description": "I design intuitive and accessible user experiences with a user-centered approach."
-      }
-    }
-  },
-  "technologies": {
-    "title": "Technologies",
-    "description": "I currently develop primarily in: Java and JSP, React, Node.js, WordPress. Additionally, I have experience with web technologies such as HTML, CSS, JavaScript, and SQL/NoSQL databases. If your project requires other technologies, don't hesitate to ask. I'm open to learning and adapting to new tools to offer you the best possible solution."
+  "legalNotice": {
+    "title": "Legal Notice and Terms of Use",
+    "content": [
+      "This website complies with Law 1581 of 2012 on Personal Data Protection, Decree 1377 of 2013, Law 1266 of 2008, Law 527 of 1999 on electronic commerce and Law 23 of 1982 on copyright, as well as other applicable regulations in the Republic of Colombia.",
+      "These General Conditions regulate access to and use of Jolman Developer's website, including the contents and services made available on it. Any person accessing the website https://jolmandeveloper.com agrees to abide by the General Conditions in force at any given time.",
+      "The user undertakes to use the website, its services and contents in accordance with Colombian legislation, good faith and public order.",
+      "The use of the website for illicit or harmful purposes, or in any way that may cause damage or prevent the normal functioning of the website, is prohibited. Regarding the contents of this website, the following are prohibited:",
+      "Its reproduction, distribution or modification, in whole or in part, unless expressly authorized by Jolman Developer as the legitimate owner.",
+      "Any violation of the rights of the provider or of Jolman Developer as the legitimate owner.",
+      "Its use for commercial or advertising purposes without authorization.",
+      "The user undertakes not to engage in any conduct that may damage the image, interests and rights of Jolman Developer or third parties, or that may damage, disable or overload the portal https://jolmandeveloper.com, or that prevents, in any way, the normal use of the website.",
+      "By virtue of the provisions of Law 23 of 1982 and other regulations on copyright, the reproduction, distribution and public communication, including its mode of making available, of all or part of the contents of this website, for commercial purposes, on any medium and by any technical means, without the authorization of Jolman Developer, is expressly prohibited. The user undertakes to respect the Intellectual and Industrial Property rights owned by Jolman Developer.",
+      "The user knows and accepts that the entire website, texts, contents (including structure, selection, ordering and presentation thereof), photographs, audiovisual material and graphics, is protected by trademarks, copyright and other legitimate rights, in accordance with international treaties and current Colombian legislation.",
+      "In the event that a user or a third party considers that a violation of their legitimate intellectual property rights has occurred due to the introduction of certain content on the website, they must notify this circumstance to Jolman Developer, indicating:",
+      "Personal data of the interested party holding the allegedly infringed rights, or indicate the representation with which they act in the event that the claim is presented by a third party other than the interested party.",
+      "Indicate the contents protected by intellectual property rights and their location on the website, the accreditation of the indicated intellectual property rights and express declaration in which the interested party takes responsibility for the truthfulness of the information provided in the notification.",
+      "Jolman Developer authorizes the establishment of links between other websites and its own, provided that the following conditions are respected:",
+      "That the link is not established from a website whose contents are contrary to the Law, morals and public order.",
+      "That an image of Jolman Developer or its products is not offered that is distorted, harmful or mistaken.",
+      "That the impression is not created that there is a non-existent commercial relationship or link between Jolman Developer and the owners, managers or advertisers from which the link is created, when this is not the case.",
+      "That the impression is not created that the contents or website of Jolman Developer belong to or have been designed by the owners, managers or advertisers on the website from which the link is established.",
+      "Jolman Developer does not grant any guarantee and is not responsible, in any case, for damages of any nature that could arise from:",
+      "The lack of availability, maintenance and effective functioning of the website, or its services and contents.",
+      "The existence of malware, malicious or harmful programs in the contents.",
+      "Unlawful, negligent, fraudulent use or contrary to this Legal Notice.",
+      "The lack of lawfulness, quality, reliability, usefulness and availability of services provided by third parties and made available to users on the website.",
+      "The provider is not responsible under any circumstances for damages that may arise from the illegal or improper use of this website.",
+      "In general, the relationships between Jolman Developer and the users of its telematic services present on this website are subject to the legislation and jurisdiction of the Republic of Colombia and its ordinary courts.",
+      "If any user has any doubts about these Legal Conditions or any comments about the website https://jolmandeveloper.com, please contact info@jolmandeveloper.com."
+    ]
   },
   "projects": {
     "sectionTitle": "Projects",
@@ -73,70 +72,76 @@
   },
   "contratacion": {
     "title": "Hiring",
-    "summary": "Everything you need to know before hiring my services: legal aspects, invoicing, confidentiality, and payment options.",
-    "viewMore": "View more",
+    "summary": "Learn about my hiring process and how we can work together.",
+    "viewMore": "View More",
     "fullContent": {
-      "intro": "As an independent professional in Colombia, I comply with all current legal regulations for providing software development services. I can issue valid invoices for clients in both Colombia and abroad.",
+      "intro": "I offer my services as a developer through direct programming or specialized consulting.",
       "programacionDirecta": {
-        "title": "Direct Programming:",
-        "content": "I want to emphasize that I personally develop in all the technologies mentioned in my portfolio. This means that projects are carried out directly by me, guaranteeing a high level of quality and attention to detail. I only resort to subcontracting in very specific cases that require skills or knowledge outside my area of expertise."
+        "title": "Direct Programming",
+        "content": "You can hire me for direct programming work on your project, whether it's a new development or maintaining existing code."
       },
       "quienPuedeContratarme": {
-        "title": "Who can hire me?",
-        "intro": "I am available to work with:",
+        "title": "Who Can Hire Me",
+        "intro": "My services are available to:",
         "list": [
-          "Individuals and companies in Colombia and abroad.",
-          "Own projects or as part of a development team.",
-          "Complete projects or specific collaborations."
+          "Companies looking for digital transformation",
+          "Startups needing technical expertise",
+          "Established businesses requiring maintenance",
+          "Individuals with specific technical projects"
         ],
-        "additional": "I have experience working with version control systems in collaborative environments. I often collaborate with graphic and multimedia design companies that need a programmer to complement their visual projects."
+        "additional": "I work with clients of all sizes, from small businesses to large corporations."
       },
       "confidencialidad": {
-        "title": "Confidentiality:",
-        "content": "To ensure the security of your project, I can sign a non-disclosure agreement (NDA) in which I commit not to disclose sensitive information or specific agreed details."
+        "title": "Confidentiality",
+        "content": "All projects are handled with strict confidentiality. I can sign NDAs when required."
       },
       "pagos": {
-        "title": "Payments:",
-        "content": "I am open to discussing different payment modalities that suit your needs, as long as the agreed terms are met."
+        "title": "Payments",
+        "content": "I offer flexible payment options based on project requirements and timeline."
       },
       "pagosOnline": {
-        "title": "Online Payments:",
-        "content": "For the convenience of my clients, especially those abroad, I accept online payments through the secure PayU Latam payment gateway integrated into my website. This facilitates transactions and guarantees payment security."
+        "title": "Online Payments",
+        "content": "For your convenience, I accept online payments through secure payment gateways."
       }
     }
   },
   "tarifas": {
     "title": "Rates",
-    "summary": "Reference prices for various web and app projects. Inquire about your custom project!",
-    "viewMore": "View more",
+    "summary": "Information about my service rates and pricing structure.",
+    "viewMore": "View More",
     "fullContent": {
-      "intro": "These are the reference prices for the most common jobs I usually do. However, I am open to any type of project that requires programming. Feel free to ask!",
+      "intro": "My rates are competitive and based on project complexity, timeline, and requirements.",
       "cms": {
-        "title": "Website with CMS (WordPress, etc.): From 200 USD",
-        "content": "This type of project is based on a template adaptable to specific design or graphic requirements. It includes the installation of standard plugins (SEO, cookie notice, cache, etc.) and additional plugins that the client needs. It also includes data import, multi-language configuration, and any other adjustments needed to achieve the desired result."
+        "title": "Content Management Systems",
+        "content": "Basic WordPress or similar CMS sites start at $500, with customization options available."
       },
       "tiendaOnline": {
-        "title": "Online store with CMS (WooCommerce): From 400 USD",
-        "content": "Similar to the previous one, but with a higher level of complexity due to the configuration of rates, products, variations, discounts, payment gateways, etc. It can also include integrations with POS/ERP or APIs from various transport agencies."
+        "title": "Online Stores",
+        "content": "E-commerce solutions start at $1,200, including product setup and payment integration."
       },
       "webAMedida": {
-        "title": "Custom website: From 650 USD",
-        "content": "This type of development offers total freedom regarding the theme and functionality of the page: portals, online stores, administration panels, etc. The design can be custom or based on a template. If the client has conducted an SEO study, I can apply the conclusions to the development. I usually program in MERN environments, but I can also work with other technologies as needed. The page can be multi-language at no additional cost. I can adapt the page to comply with accessibility standards (WCAG AA, etc.)."
+        "title": "Custom Websites",
+        "content": "Custom web applications are priced based on specific requirements, typically starting at $2,000."
       },
       "appHibrida": {
-        "title": "Hybrid app for iOS and Android: From 950 USD",
-        "content": "Developed with React Native. This type of development is easy to maintain, adapts to any design, is economical, and compatible with all devices. It includes the API Rest service and the data administration panel."
+        "title": "Hybrid Applications",
+        "content": "Cross-platform mobile applications start at $3,500, including both iOS and Android versions."
       },
       "aclaraciones": {
-        "title": "Important clarifications:",
+        "title": "Important Notes",
+        "fallback": "Please contact me for detailed pricing information.",
         "list": [
           {
-            "title": "Hosting:",
-            "content": "Hosting services are the client's responsibility, who can manage them through platforms like GoDaddy or their preferred one."
+            "title": "Maintenance:",
+            "content": "Ongoing support and maintenance packages available starting at $200/month."
           },
           {
-            "title": "Other developments:",
-            "content": "If you have a project in mind that doesn't fit into the above categories, don't hesitate to ask me! I have worked on diverse projects, including developments with AI, bots, IoT programming, etc."
+            "title": "Hosting:",
+            "content": "Hosting services are separate and can be arranged based on client needs."
+          },
+          {
+            "title": "Consultations:",
+            "content": "Initial consultations are free of charge."
           }
         ]
       }

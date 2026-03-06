@@ -9,6 +9,11 @@ export default function LanguageSelector() {
   const navigate = useNavigate();
   const location = useLocation();
   
+  // Sync state with i18n.language when component mounts
+  useEffect(() => {
+    setCurrentLang(i18n.language);
+  }, [i18n.language]);
+  
   const toggleLanguage = () => {
     const newLang = lang === 'es' ? 'en' : 'es';
     const currentPath = location.pathname.replace(`/${lang}`, '');
