@@ -28,7 +28,7 @@ export default function ProjectsSection() {
     {
       title: t('projects.project5.title'),
       description: t('projects.project5.description'),
-      imageUrl: "portafolio_feelhospitality.jpg",
+      imageUrl: "/portafolio_feelhospitality.jpg",
       tags: ["Wordpress"],
       demoUrl: "https://feelhospitality.es",
       repoUrl: "#",
@@ -37,7 +37,7 @@ export default function ProjectsSection() {
     {
       title: t('projects.project4.title'),
       description: t('projects.project4.description'),
-      imageUrl: "portafolio_fundacion.jpg",
+      imageUrl: "/portafolio_fundacion.jpg",
       tags: ["Wordpress", "PHP"],
       demoUrl: "https://www.fundaciokalida.org",
       repoUrl: "#",
@@ -46,7 +46,7 @@ export default function ProjectsSection() {
     {
       title: t('projects.project2.title'),
       description: t('projects.project2.description'),
-      imageUrl: "heropeque.jpg",
+      imageUrl: "/heropeque.jpg",
       tags: ["Vite", "React", "TypeScript", "JavaScript", "Vercel"],
       demoUrl: "#",
       repoUrl: "#",
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
     {
       title: t('projects.project3.title'),
       description: t('projects.project3.description'),
-      imageUrl: "portafolio_repuestos_3.jpg",
+      imageUrl: "/portafolio_repuestos_3.jpg",
       tags: ["Wordpress"],
       demoUrl: "https://induscom.com.co",
       repoUrl: "#",
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
     {
       title: t('projects.project1.title'),
       description: t('projects.project1.description'),
-      imageUrl: "autovidrios2peque.jpg",
+      imageUrl: "/autovidrios2peque.jpg",
       tags: ["Wordpress"],
       demoUrl: "https://autovidriosdeoriente.com/",
       repoUrl: "#",
