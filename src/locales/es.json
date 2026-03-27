@@ -13,7 +13,8 @@
     "description": "Creo experiencias digitales atractivas y funcionales con un enfoque minimalista y centrado en el usuario.",
     "contactMe": "Contáctame",
     "downloadCV": "Descargar CV",
-    "learnMore": "Saber más"
+    "learnMore": "Saber más",
+    "guru": "O tu gurú informático 👨🏼‍💻"
   },
   "about": {
     "title": "Sobre Mí",
@@ -191,9 +192,11 @@
     "rights": "Todos los derechos reservados"
   },
   "thanks": {
-    "title": "¡Gracias por tu pago!",
-    "description": "Hemos recibido correctamente tu transacción y nos pondremos en contacto contigo a la brevedad para confirmar los detalles.",
-    "emailInfo": "Se ha enviado un comprobante de pago a tu correo electrónico. Si tienes alguna pregunta, no dudes en contactarme.",
+    "title": "¡Gracias por tu confianza!",
+    "description": "Estamos procesando tu pago. Pronto recibirás un correo electrónico por parte de PayULatam con el estado de tu transacción.",
+    "appreciation": "Aprecio enormemente que hayas elegido mis servicios para desarrollar tu proyecto web. Tu visión es importante para mí, y estoy comprometido a entregarla con la más alta calidad y profesionalismo.",
+    "contact": "Mientras tanto, puedes contactarme si tienes cualquier pregunta sobre nuestro proyecto.",
+    "excited": "¡Estoy emocionado por comenzar a trabajar juntos!",
     "backHome": "Volver al inicio"
   },
   "legal": {

@@ -21,10 +21,10 @@ export default function Thanks() {
           {t('thanks.description')}
         </p>
         
-        <div className="bg-secondary/30 rounded-lg p-6 my-6">
-          <p className="text-sm text-muted-foreground">
-            {t('thanks.emailInfo')}
-          </p>
+        <div className="bg-secondary/30 rounded-lg p-6 my-6 text-sm text-foreground/80 space-y-4 text-left">
+          <p>{t('thanks.appreciation')}</p>
+          <p>{t('thanks.contact')}</p>
+          <p className="font-semibold text-primary">{t('thanks.excited')}</p>
         </div>
         
         <Button asChild size="lg" className="mt-6">

@@ -13,7 +13,8 @@
     "description": "I create attractive and functional digital experiences with a minimalist and user-centered approach.",
     "contactMe": "Contact me",
     "downloadCV": "Download CV",
-    "learnMore": "Learn more"
+    "learnMore": "Learn more",
+    "guru": "Or your IT guru 👨🏼‍💻"
   },
   "about": {
     "title": "About Me",
@@ -191,9 +192,11 @@
     "rights": "All rights reserved"
   },
   "thanks": {
-    "title": "Thank you for your payment!",
-    "description": "We have correctly received your transaction and will contact you shortly to confirm the details.",
-    "emailInfo": "A payment receipt has been sent to your email. If you have any questions, don't hesitate to contact me.",
+    "title": "Thank you for your trust!",
+    "description": "We are processing your payment. You will soon receive an email from PayULatam with the status of your transaction.",
+    "appreciation": "I greatly appreciate that you have chosen my services to develop your web project. Your vision is important to me, and I am committed to delivering it with the highest quality and professionalism.",
+    "contact": "In the meantime, you can contact me if you have any questions about our project.",
+    "excited": "I am excited to start working together!",
     "backHome": "Back to home"
   },
   "legal": {
