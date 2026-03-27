@@ -4,7 +4,8 @@
     "about": "About me",
     "projects": "Projects",
     "contact": "Contact",
-    "changeTheme": "Toggle theme"
+    "changeTheme": "Toggle theme",
+    "menu": "Menu"
   },
   "hero": {
     "hello": "Hello, I'm",
@@ -192,8 +193,68 @@
     "emailInfo": "A payment receipt has been sent to your email. If you have any questions, don't hesitate to contact me.",
     "backHome": "Back to home"
   },
+  "legal": {
+    "avisoTitle": "Legal",
+    "avisoContent": [
+      "This website complies with Law 1581 of 2012 on Personal Data Protection, Decree 1377 of 2013, Law 1266 of 2008, Law 527 of 1999 on Electronic Commerce and Law 23 of 1982 on Copyrights, as well as other applicable regulations in the Republic of Colombia.",
+      "These General Conditions regulate the access and use of Jolman Developer's website, including the contents and services made available on it. Any person accessing the website https://jolmandeveloper.com agrees to be bound by the General Conditions in force at any time.",
+      "The user agrees to use the website, its services, and contents in accordance with Colombian legislation, good faith, and public order.",
+      "The use of the website for illegal or harmful purposes, or in any way that may cause damage or prevent the normal functioning of the website, is prohibited. Regarding the contents of this website, the following is prohibited:",
+      "• Its reproduction, distribution, or modification, totally or partially, unless expressly authorized by Jolman Developer as the legitimate owner.",
+      "• Any violation of the rights of the provider or Jolman Developer as the legitimate owner.",
+      "• Its use for commercial or advertising purposes without authorization.",
+      "The user agrees not to engage in any conduct that could damage the image, interests, and rights of Jolman Developer or third parties, or that could damage, disable, or overload the portal https://jolmandeveloper.com, or that prevents, in any way, the normal use of the web.",
+      "In accordance with the provisions of Law 23 of 1982 and other copyright regulations, the reproduction, distribution, and public communication, including its modality of making available, of all or part of the contents of this website for commercial purposes, on any medium and by any technical means, without the authorization of Jolman Developer, are expressly prohibited. The user commits to respecting the Intellectual and Industrial Property rights owned by Jolman Developer.",
+      "The user acknowledges and accepts that the entire website, texts, contents (including the structure, selection, arrangement, and presentation thereof), photographs, audiovisual material, and graphics, are protected by trademarks, copyrights, and other legitimate rights, in accordance with international treaties and current Colombian legislation.",
+      "In the event that a user or a third party considers that a violation of their legitimate intellectual property rights has occurred due to the introduction of a specific content on the web, they must notify Jolman Developer of this circumstance indicating:",
+      "• Personal data of the interested party holding the rights allegedly infringed, or indicate the representation with which they are acting in the event that the claim is presented by a third party other than the interested party.",
+      "• Point out the contents protected by intellectual property rights and their location on the web, the accreditation of the intellectual property rights indicated, and an express declaration in which the interested party takes responsibility for the veracity of the information provided in the notification.",
+      "Jolman Developer authorizes the establishment of links between other websites and its own, provided that the following conditions are met:",
+      "• The link is not established from a website whose contents are contrary to the Law, morality, and public order.",
+      "• An image of Jolman Developer or its products is not offered that is distorted, harmful, or incorrect.",
+      "• The impression is not created that there is a non-existent commercial relationship or link between Jolman Developer and the owners, managers, or advertisers from which the link is created, when this is not the case.",
+      "• The impression is not created that the contents or website of Jolman Developer belong to or have been designed by the owners, managers, or advertisers of the website from which the link is established.",
+      "Jolman Developer grants no guarantee and is not responsible, in any case, for damages of any kind that could be caused by:",
+      "• The lack of availability, maintenance, and effective functioning of the web, or its services and contents.",
+      "• The existence of malware, malicious or harmful programs in the contents.",
+      "• The illegal, negligent, fraudulent use or contrary to this Legal Notice.",
+      "• The lack of legality, quality, reliability, usefulness, and availability of the services provided by third parties and made available to users on the website.",
+      "The provider is not responsible under any circumstances for the damages that may result from the illegal or improper use of this webpage.",
+      "Generally, the relations between Jolman Developer and the users of its telematics services present on this website are subject to the legislation and jurisdiction of the Republic of Colombia and its ordinary courts.",
+      "If any user has any doubt concerning these Legal Conditions or any comment on the portal https://jolmandeveloper.com, please contact info@jolmandeveloper.com."
+    ],
+    "privacidadTitle": "Privacy Policy",
+    "privacidadContent": [
+      "Jolman Developer, as responsible for this website, undertakes the commitment to process user and client information with full guarantees and comply with the national and international requirements regulating the collection and use of personal data, specifically Law 1581 of 2012 and Decree 1377 of 2013 of the Republic of Colombia, as well as, where possible, the principles of Regulation (EU) 2016/679 (GDPR) of the European Parliament.",
+      "The personal data communicated by the user to Jolman Developer may be stored in automated databases whose ownership belongs exclusively to Jolman Developer, assuming all technical, organizational, and security measures guaranteeing the confidentiality, integrity, and quality of the information contained therein, in accordance with current data protection regulations. Communication between users and the website uses a secure channel, and the transmitted data is encrypted thanks to HTTPS protocols, thus guaranteeing the best security conditions for user confidentiality.",
+      "Commitments of Jolman Developer:",
+      "• Not to request personal information unless it is completely necessary to provide a specific service.",
+      "• Never to share personal user information with anyone except to comply with the law or if expressly authorized.",
+      "• Never to use personal data for a purpose other than that expressed in this Privacy Policy.",
+      "This Privacy Policy may vary depending on legislative or self-regulatory requirements. It will apply if users choose to fill out any contact form or online payment form where personal data is collected.",
+      "Data Collection",
+      "This website collects user data in the following ways:",
+      "• Contact form: For inquiries, requests, or direct communication.",
+      "• Online payment form: For payment management processing via the PayU gateway.",
+      "Principles applied to personal data processing",
+      "• Lawfulness, loyalty, and transparency: We will always request the user's consent for the processing of their personal data, clearly indicating the intent.",
+      "• Data minimization: We will only request the data strictly necessary.",
+      "• Limitation of the storage period: The data will be kept for no longer than necessary for the purposes of the processing.",
+      "• Integrity and confidentiality: Your data will be processed in a way that guarantees adequate security to confidential personal data.",
+      "Jolman Developer agrees to cancel personal data when they are no longer necessary or relevant for the purpose for which they were collected, and to attend to requests for information, update, or deletion of data made by the user, with Jolman Developer being responsible for processing.",
+      "User Rights",
+      "Users may exercise their rights of access, correction, deletion, revocation, or claim for infringement of their data via a written request sent to info@jolmandeveloper.com, indicating 'Data Protection' in the subject line.",
+      "Use of cookies",
+      "Users are informed of the use of cookies to gather information and perform statistical analysis on the use of the website. The cookies used by Jolman Developer are anonymous and do not refer strictly to the user's personal data or allow access to data from the user's hard drive. The user's identity is never directly linked in the cookie, so they cannot be personally identified.",
+      "Limitation of Liability",
+      "Jolman Developer declines all responsibility in the event of access and website navigation being impossible or hindered due to an interruption, malfunctioning electricity telecommunications network, external servers outside of Jolman Developer's control, or in case of force majeure, cyber-sabotage, social conflicts, or court/administrative injunctions.",
+      "Any liability is equally declined for damages the visitor might sustain in their IT systems deriving from the aforementioned occurrences.",
+      "Jolman Developer does not guarantee the availability and continuous web portal service, nor assumes any responsibility for damages potentially occurring in the future from tech malfunctions related to reading the information here included.",
+      "Within the limits established by the Law, Jolman Developer assumes no responsibility arising from incomplete or outdated data or information found in its Internet pages."
+    ]
+  },
   "meta": {
-  "title": "Jolman Developer | Professional Freelance Web Development in Bogotá, Barcelona and Melbourne",
-  "description": "I'm Jolman Developer, expert in creating web solutions that boost your business. Professional and customized web development. Contact me today!"
-}
+    "title": "Jolman Developer | Professional Freelance Web Development in Bogotá, Barcelona and Melbourne",
+    "description": "I'm Jolman Developer, expert in creating web solutions that boost your business. Professional and customized web development. Contact me today!"
+  }
 }

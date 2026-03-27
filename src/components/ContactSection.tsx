@@ -74,12 +74,12 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="bg-gray-50 section-padding">
+    <section id="contact" className="bg-muted/30 section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold mb-4">{t('contact.title')}</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
             {t('contact.description')}
           </p>
         </div>
@@ -95,7 +95,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="border-gray-300 focus:border-teal-500 focus:ring-teal-500"
+                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background"
               />
               <Input
                 type="email"
@@ -104,7 +104,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="border-gray-300 focus:border-teal-500 focus:ring-teal-500"
+                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background"
               />
               <Textarea
                 name="message"
@@ -113,7 +113,7 @@ export default function ContactSection() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="border-gray-300 focus:border-teal-500 focus:ring-teal-500"
+                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background"
               />
               <div className="flex justify-center">
                 <ReCAPTCHA
@@ -140,7 +140,7 @@ export default function ContactSection() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-gray-600 hover:text-teal-500 transition-colors"
+                  className="flex items-center space-x-3 text-foreground/70 hover:text-teal-500 transition-colors"
                 >
                   {link.icon}
                   <span>{link.label}</span>

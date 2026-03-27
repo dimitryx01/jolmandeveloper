@@ -25,12 +25,12 @@ export default function AboutSection() {
   ];
   
   return (
-    <section id="about" className="bg-gray-50 section-padding">
+    <section id="about" className="bg-muted/30 section-padding">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center">
           <h2 className="text-3xl font-bold mb-4">{t('about.title')}</h2>
           <div className="h-1 w-20 bg-teal-400 mx-auto mb-8"></div>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto">
             {t('about.description')}
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function AboutSection() {
               <CardContent className="p-6 text-center">
                 {skill.icon}
                 <h3 className="text-xl font-semibold mb-2">{skill.title}</h3>
-                <p className="text-gray-400">{skill.description}</p>
+                <p className="text-foreground/60">{skill.description}</p>
               </CardContent>
             </Card>
           ))}

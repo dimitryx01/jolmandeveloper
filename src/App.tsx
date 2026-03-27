@@ -9,6 +9,8 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Thanks from "./pages/Thanks";
 import PayuResponse from './pages/PayuResponse';
+import AvisoLegal from './pages/AvisoLegal';
+import PoliticasPrivacidad from './pages/PoliticasPrivacidad';
 
 const queryClient = new QueryClient();
 
@@ -31,6 +33,8 @@ const App = () => (
               <Route path="/:lang" element={<Index />} />
               <Route path="/:lang/thanks" element={<Thanks />} />
               <Route path="/:lang/response" element={<PayuResponse />} />
+              <Route path="/:lang/aviso-legal" element={<AvisoLegal />} />
+              <Route path="/:lang/politicas-privacidad" element={<PoliticasPrivacidad />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

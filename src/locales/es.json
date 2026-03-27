@@ -1,11 +1,11 @@
-
 {
   "navbar": {
     "home": "Inicio",
     "about": "Sobre mí",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "changeTheme": "Cambiar tema"
+    "changeTheme": "Cambiar tema",
+    "menu": "Menú"
   },
   "hero": {
     "hello": "Hola, soy",
@@ -193,8 +193,68 @@
     "emailInfo": "Se ha enviado un comprobante de pago a tu correo electrónico. Si tienes alguna pregunta, no dudes en contactarme.",
     "backHome": "Volver al inicio"
   },
+  "legal": {
+    "avisoTitle": "Aviso Legal y Condiciones de Uso",
+    "avisoContent": [
+      "Esta página web cumple con la Ley 1581 de 2012 de Protección de Datos Personales, el Decreto 1377 de 2013, la Ley 1266 de 2008, la Ley 527 de 1999 sobre comercio electrónico y la Ley 23 de 1982 sobre derechos de autor, así como demás normas aplicables en la República de Colombia.",
+      "Las presentes Condiciones Generales regulan el acceso y uso del sitio web de Jolman Developer, incluyendo los contenidos y servicios puestos a disposición en él. Toda persona que acceda a la web https://jolmandeveloper.com acepta someterse a las Condiciones Generales vigentes en cada momento.",
+      "El usuario se compromete a utilizar el sitio web, sus servicios y contenidos conforme a la legislación colombiana, la buena fe y el orden público.",
+      "Queda prohibido el uso de la web con fines ilícitos o lesivos, o que de cualquier forma puedan causar perjuicio o impedir el normal funcionamiento del sitio web. Respecto de los contenidos de esta web, se prohíbe:",
+      "• Su reproducción, distribución o modificación, total o parcial, a menos que se cuente con autorización expresa de Jolman Developer como legítimo titular.",
+      "• Cualquier vulneración de los derechos del prestador o de Jolman Developer como legítimo titular.",
+      "• Su utilización para fines comerciales o publicitarios sin autorización.",
+      "El usuario se compromete a no llevar a cabo ninguna conducta que pueda dañar la imagen, los intereses y los derechos de Jolman Developer o de terceros, o que pueda dañar, inutilizar o sobrecargar el portal https://jolmandeveloper.com, o que impida, de cualquier forma, la normal utilización de la web.",
+      "En virtud de lo dispuesto en la Ley 23 de 1982 y demás normas sobre derechos de autor, quedan expresamente prohibidas la reproducción, distribución y comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Jolman Developer. El usuario se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de Jolman Developer.",
+      "El usuario conoce y acepta que la totalidad del sitio web, textos, contenidos (incluyendo estructura, selección, ordenación y presentación de los mismos), fotografías, material audiovisual y gráficos, está protegida por marcas, derechos de autor y otros derechos legítimos, de acuerdo con los tratados internacionales y la legislación colombiana vigente.",
+      "En caso de que un usuario o un tercero considere que se ha producido una violación de sus legítimos derechos de propiedad intelectual por la introducción de un determinado contenido en la web, deberá notificar dicha circunstancia a Jolman Developer indicando:",
+      "• Datos personales del interesado titular de los derechos presuntamente infringidos, o indicar la representación con la que actúa en caso de que la reclamación la presente un tercero distinto del interesado.",
+      "• Señalar los contenidos protegidos por los derechos de propiedad intelectual y su ubicación en la web, la acreditación de los derechos de propiedad intelectual señalados y declaración expresa en la que el interesado se responsabiliza de la veracidad de las informaciones facilitadas en la notificación.",
+      "Jolman Developer autoriza el establecimiento de enlaces entre otras webs y la suya, siempre que se respeten las siguientes condiciones:",
+      "• Que el enlace no se establezca desde una web cuyos contenidos resulten contrarios a la Ley, a la moral y al orden público.",
+      "• Que no se ofrezca una imagen de Jolman Developer o de sus productos que resulte distorsionada, perjudicial o equivocada.",
+      "• Que no se cree la impresión de que concurre una inexistente relación o vinculación comercial entre Jolman Developer y los titulares, responsables o anunciantes desde la que se crea el enlace, cuando éste no sea el caso.",
+      "• Que no se cree la impresión de que los contenidos o web de Jolman Developer pertenecen o han sido diseñados por los titulares, responsables o anunciantes en la web desde la que se establece el enlace.",
+      "Jolman Developer no otorga ninguna garantía ni se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran traer causa de:",
+      "• La falta de disponibilidad, mantenimiento y efectivo funcionamiento de la web, o de sus servicios y contenidos.",
+      "• La existencia de malware, programas maliciosos o lesivos en los contenidos.",
+      "• El uso ilícito, negligente, fraudulento o contrario a este Aviso Legal.",
+      "• La falta de licitud, calidad, fiabilidad, utilidad y disponibilidad de los servicios prestados por terceros y puestos a disposición de los usuarios en el sitio web.",
+      "El prestador no se hace responsable bajo ningún concepto de los daños que pudieran dimanar del uso ilegal o indebido de la presente página web.",
+      "Con carácter general, las relaciones entre Jolman Developer con los usuarios de sus servicios telemáticos presentes en esta web se encuentran sometidas a la legislación y jurisdicción de la República de Colombia y a sus tribunales ordinarios.",
+      "En caso de que cualquier usuario tuviese alguna duda acerca de estas Condiciones legales o cualquier comentario sobre la web https://jolmandeveloper.com, por favor diríjase a info@jolmandeveloper.com."
+    ],
+    "privacidadTitle": "Política de Privacidad",
+    "privacidadContent": [
+      "Jolman Developer, como responsable de este sitio web, asume el compromiso de procesar la información de los usuarios y clientes con plenas garantías y cumplir con los requisitos nacionales e internacionales que regulan la recopilación y uso de los datos personales, en especial la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia, así como, en lo posible, los principios del Reglamento (UE) 2016/679 (RGPD) del Parlamento Europeo.",
+      "Los datos personales comunicados por el usuario a Jolman Developer pueden ser almacenados en bases de datos cuya titularidad corresponde en exclusiva a Jolman Developer, asumiendo todas las medidas técnicas, organizativas y de seguridad que garantizan la confidencialidad, integridad y calidad de la información contenida en las mismas, de acuerdo con la normativa vigente en protección de datos. La comunicación entre los usuarios y la web utiliza un canal seguro, y los datos transmitidos son cifrados gracias a protocolos HTTPS, garantizando así las mejores condiciones de seguridad para la confidencialidad de los usuarios.",
+      "Compromisos de Jolman Developer:",
+      "• No solicitar información personal a menos que realmente sea necesaria para prestar un servicio concreto.",
+      "• Nunca compartir información personal de usuarios con nadie, excepto para cumplir con la ley o en caso de contar con su autorización expresa.",
+      "• Nunca utilizar datos personales con una finalidad diferente a la expresada en esta Política de Privacidad.",
+      "Esta Política de Privacidad podría variar en función de exigencias legislativas o de autorregulación. Será aplicable en caso de que los usuarios decidan rellenar algún formulario de contacto o formulario de pago online donde se recaben datos de carácter personal.",
+      "Recopilación de datos",
+      "Este sitio web recoge datos de los usuarios de las siguientes formas:",
+      "• Formulario de contacto: Para consultas, solicitudes o comunicación directa.",
+      "• Formulario de pago online: Para la gestión de pagos y abonos a través de la pasarela de pagos PayU.",
+      "Principios aplicados al tratamiento de datos personales",
+      "• Licitud, lealtad y transparencia: Siempre se requerirá el consentimiento del usuario para el tratamiento de sus datos personales, informando de forma clara la finalidad.",
+      "• Minimización de datos: Solo se solicitarán los datos estrictamente necesarios para cada caso.",
+      "• Limitación del plazo de conservación: Los datos serán mantenidos durante no más tiempo del necesario para los fines del tratamiento.",
+      "• Integridad y confidencialidad: Los datos serán tratados de tal manera que se garantice una seguridad adecuada y confidencialidad.",
+      "Jolman Developer se compromete a cancelar los datos personales cuando hayan dejado de ser necesarios o pertinentes para la finalidad para la cual fueron recogidos y a atender a las peticiones de información, actualización o borrado de datos solicitadas por el usuario, siendo el responsable del tratamiento Jolman Developer.",
+      "Derechos de los usuarios",
+      "El usuario podrá ejercer sus derechos de acceso, corrección, supresión, revocación o reclamo por infracción sobre sus datos, mediante solicitud escrita dirigida a info@jolmandeveloper.com, indicando en el asunto “Protección de Datos”.",
+      "Uso de cookies",
+      "Se informa a los usuarios del uso de cookies para obtener información y realizar análisis estadísticos sobre el uso del sitio web. Las cookies utilizadas por Jolman Developer son anónimas y no se refieren a datos personales del usuario ni permiten acceder a datos del disco duro del usuario. La identidad del usuario nunca es insertada directamente en la cookie y, por tanto, no se le puede identificar.",
+      "Limitación de responsabilidad",
+      "Jolman Developer declina toda responsabilidad en caso de que el acceso o las visitas a su web se vieran imposibilitadas o dificultadas debido a una interrupción o defectuosa prestación del suministro eléctrico, telefónico o de otros proveedores de telecomunicaciones ajenos a Jolman Developer, o en el caso de producirse conflictos sociales u otros supuestos de fuerza mayor, o cualquier actuación de un tercero, incluidos los requerimientos u órdenes administrativas o judiciales, sabotajes o saturaciones, intencionadas o no.",
+      "Se declina igualmente toda responsabilidad derivada de los daños y perjuicios que pudiera sufrir el visitante en sus medios informáticos o telemáticos a consecuencia de la producción de cualquiera de las circunstancias anteriormente expuestas.",
+      "Jolman Developer no garantiza la disponibilidad y continuidad del sitio web ni se hace responsable de cualesquiera daños y perjuicios producidos o que puedan producirse en el futuro, ni de los defectos técnicos, cualquiera que sea su naturaleza, que se deriven del uso de la información y de los contenidos del sitio web.",
+      "Con los límites establecidos en la Ley, Jolman Developer no asume ninguna responsabilidad derivada de la falta de actualización y precisión de los datos o informaciones que se contienen en sus páginas de Internet."
+    ]
+  },
   "meta": {
-  "title": "Jolman Developer | Desarrollo Web Freelance Profesional en Bogotá, Barcelona y Melbourne",
-  "description": "Soy Jolman Developer, experto en crear soluciones web que impulsan tu negocio. Desarrollo web profesional y personalizado. ¡Contáctame hoy!"
-}
+    "title": "Jolman Developer | Desarrollo Web Freelance Profesional en Bogotá, Barcelona y Melbourne",
+    "description": "Soy Jolman Developer, experto en crear soluciones web que impulsan tu negocio. Desarrollo web profesional y personalizado. ¡Contáctame hoy!"
+  }
 }
