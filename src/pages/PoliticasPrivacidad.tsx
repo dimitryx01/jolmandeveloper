@@ -1,8 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import { useLanguage } from '@/hooks/useLanguage';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export default function PoliticasPrivacidad() {
+  useLanguage();
   const { t } = useTranslation();
   const privacidadContent = t('legal.privacidadContent', { returnObjects: true }) as string[];
 

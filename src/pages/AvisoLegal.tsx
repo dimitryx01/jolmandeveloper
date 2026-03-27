@@ -1,8 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import { useLanguage } from '@/hooks/useLanguage';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export default function AvisoLegal() {
+  useLanguage();
   const { t } = useTranslation();
   const avisoContent = t('legal.avisoContent', { returnObjects: true }) as string[];
 

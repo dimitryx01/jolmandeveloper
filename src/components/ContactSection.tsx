@@ -1,24 +1,25 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
 import { useTranslation } from 'react-i18next';
-import { FaWhatsapp } from 'react-icons/fa';
 import { env, validateEnv } from '@/config/env';
 
 // Validate environment variables on module load
 validateEnv();
 
 export default function ContactSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language || 'es';
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const [acceptedPolicies, setAcceptedPolicies] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -32,6 +33,11 @@ export default function ContactSection() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!acceptedPolicies) {
+      toast({ title: t('contact.form.acceptPoliciesError') });
+      return;
+    }
 
     if (!recaptchaToken) {
       toast({ title: 'reCAPTCHA', description: 'Por favor completa el reCAPTCHA.' });
@@ -61,17 +67,13 @@ export default function ContactSection() {
 
       setFormData({ name: '', email: '', message: '' });
       setRecaptchaToken(null);
+      setAcceptedPolicies(false);
     } catch (error) {
       toast({ title: 'Error', description: 'Hubo un problema al enviar el mensaje.' });
     } finally {
       setIsSubmitting(false);
     }
   };
-
-  const socialLinks = [
-    { icon: <Mail className="h-5 w-5" />, label: 'Email', href: 'mailto:info@jolmandeveloper.com' },
-    { icon: <FaWhatsapp className="h-5 w-5" />, label: 'WhatsApp', href: 'https://wa.me/573108801832?text=Hola%2C%20me%20gustaría%20saber%20más%20sobre%20tus%20servicios%20de%20desarrollo%20web.' }
-  ];
 
   return (
     <section id="contact" className="bg-muted/30 section-padding">
@@ -84,9 +86,9 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <h3 className="text-xl font-semibold mb-6">{t('contact.form.title')}</h3>
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-background border border-border shadow-sm rounded-2xl p-8 md:p-10">
+            <h3 className="text-2xl font-semibold mb-8 text-center">{t('contact.form.title')}</h3>
             <form onSubmit={handleSubmit} ref={formRef} className="space-y-6">
               <Input
                 type="text"
@@ -95,7 +97,7 @@ export default function ContactSection() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background"
+                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background h-12"
               />
               <Input
                 type="email"
@@ -104,7 +106,7 @@ export default function ContactSection() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background"
+                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background h-12"
               />
               <Textarea
                 name="message"
@@ -113,9 +115,30 @@ export default function ContactSection() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background"
+                className="border-input focus:border-teal-500 focus:ring-teal-500 bg-background resize-none"
               />
-              <div className="flex justify-center">
+              <div className="flex items-center space-x-2 pt-2">
+                <input
+                  type="checkbox"
+                  id="policies"
+                  checked={acceptedPolicies}
+                  onChange={(e) => setAcceptedPolicies(e.target.checked)}
+                  className="w-4 h-4 text-primary border-border rounded focus:ring-primary cursor-pointer"
+                  required
+                />
+                <label htmlFor="policies" className="text-sm text-foreground/80 cursor-pointer">
+                  {t('contact.form.acceptPolicies')}{' '}
+                  <Link 
+                    to={`/${currentLang}/politicas-privacidad`} 
+                    className="text-primary hover:underline font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t('contact.form.seeMore')}
+                  </Link>
+                </label>
+              </div>
+              <div className="flex justify-center py-2">
                 <ReCAPTCHA
                   sitekey={env.recaptcha.siteKey}
                   onChange={handleReCAPTCHA}
@@ -124,29 +147,11 @@ export default function ContactSection() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-teal-500 hover:bg-teal-600 text-white"
+                className="w-full h-12 text-base font-semibold bg-teal-500 hover:bg-teal-600 text-white transition-colors"
               >
                 {isSubmitting ? t('contact.form.sending') : t('contact.form.send')}
               </Button>
             </form>
-          </div>
-
-          <div className="flex flex-col justify-center">
-            <h3 className="text-xl font-semibold mb-6">{t('contact.info.title')}</h3>
-            <div className="space-y-4">
-              {socialLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-3 text-foreground/70 hover:text-teal-500 transition-colors"
-                >
-                  {link.icon}
-                  <span>{link.label}</span>
-                </a>
-              ))}
-            </div>
           </div>
         </div>
       </div>

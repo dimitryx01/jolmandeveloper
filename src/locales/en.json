@@ -177,7 +177,10 @@
       "sending": "Sending...",
       "send": "Send message",
       "success": "Message sent",
-      "thankYou": "Thank you for contacting me. I will respond as soon as possible."
+      "thankYou": "Thank you for contacting me. I will respond as soon as possible.",
+      "acceptPolicies": "I accept the data processing policies.",
+      "seeMore": "See more",
+      "acceptPoliciesError": "You must accept the data processing policies to send the message."
     },
     "info": {
       "title": "Contact information",

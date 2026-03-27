@@ -177,7 +177,10 @@
       "sending": "Enviando...",
       "send": "Enviar mensaje",
       "success": "Mensaje enviado",
-      "thankYou": "Gracias por contactarme. Te responderé lo antes posible."
+      "thankYou": "Gracias por contactarme. Te responderé lo antes posible.",
+      "acceptPolicies": "Acepto las políticas de tratamiento de datos.",
+      "seeMore": "Ver más",
+      "acceptPoliciesError": "Debes aceptar las políticas de tratamiento de datos para poder enviar el mensaje."
     },
     "info": {
       "title": "Información de contacto",

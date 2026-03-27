@@ -13,12 +13,15 @@ const resources = {
   }
 };
 
+const match = typeof window !== 'undefined' ? window.location.pathname.match(/^\/(en|es)/) : null;
+const initialLang = match ? match[1] : 'es';
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
     fallbackLng: 'es',
-    lng: 'es',
+    lng: initialLang,
     interpolation: {
       escapeValue: false
     }
