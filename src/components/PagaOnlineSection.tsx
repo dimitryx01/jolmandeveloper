@@ -199,10 +199,11 @@ export default function PagaOnlineSection() {
               />
             </div>
             <div className="flex justify-center mt-6 mb-2">
-              <img 
-                src="https://prod-developers.s3.amazonaws.com/latam/images/BlancoVerde/Medios_Pago_Blanco_Verde_575x40.jpg" 
+              <img
+                src="https://prod-developers.s3.amazonaws.com/latam/images/BlancoVerde/Medios_Pago_Blanco_Verde_575x40.jpg"
                 title="PayU - Medios de pago"
                 alt="PayU - Medios de pago"
+                loading="lazy"
                 width="468"
                 height="60"
                 className="max-w-full h-auto"

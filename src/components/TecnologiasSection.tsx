@@ -121,10 +121,11 @@ export default function TecnologiasSection() {
                     "bg-secondary/30 dark:bg-secondary/10",
                     "border border-border/40"
                   )}>
-                    <img 
-                      src={tech.logo} 
-                      alt={`${tech.name} logo`} 
-                      className="h-16 w-16 object-contain mb-3" 
+                    <img
+                      src={tech.logo}
+                      alt={`${tech.name} logo`}
+                      loading="lazy"
+                      className="h-16 w-16 object-contain mb-3"
                     />
                     <span className="text-sm font-medium text-foreground">{tech.name}</span>
                   </div>

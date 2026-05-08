@@ -78,16 +78,16 @@
     "summary": "Everything you need to know before hiring my services: legal aspects, invoicing, confidentiality, and payment options.",
     "viewMore": "View more",
     "fullContent": {
-      "intro": "As an independent professional in Colombia, I comply with all current legal regulations for providing software development services. I can issue valid invoices for clients in both Colombia and abroad.",
+      "intro": "As an independent professional, I comply with all current legal regulations for providing software development services.",
       "programacionDirecta": {
         "title": "Direct Programming:",
-        "content": "I want to emphasize that I personally develop in all the technologies mentioned in my portfolio. This means that projects are carried out directly by me, guaranteeing a high level of quality and attention to detail. I only resort to subcontracting in very specific cases that require skills or knowledge outside my area of expertise."
+        "content": "I want to emphasize that I personally develop in all the technologies mentioned in my portfolio. Projects are carried out directly by me, guaranteeing a high level of quality and attention to detail. I only resort to subcontracting in very specific cases that require skills outside my area of expertise."
       },
       "quienPuedeContratarme": {
         "title": "Who can hire me?",
         "intro": "I am available to work with:",
         "list": [
-          "Individuals and companies in Colombia and abroad.",
+          "Individuals and companies across Latin America and abroad.",
           "Own projects or as part of a development team.",
           "Complete projects or specific collaborations."
         ],
@@ -95,7 +95,7 @@
       },
       "confidencialidad": {
         "title": "Confidentiality:",
-        "content": "To ensure the security of your project, I can sign a non-disclosure agreement (NDA) in which I commit not to disclose sensitive information or specific agreed details."
+        "content": "To ensure the security of your project, I can sign a non-disclosure agreement (NDA) committing not to disclose sensitive information or specific agreed details."
       },
       "pagos": {
         "title": "Payments:",
@@ -103,45 +103,119 @@
       },
       "pagosOnline": {
         "title": "Online Payments:",
-        "content": "For the convenience of my clients, especially those abroad, I accept online payments through the secure PayU Latam payment gateway integrated into my website. This facilitates transactions and guarantees payment security."
+        "content": "I accept payments via bank transfer, PayPal or agreed platforms depending on the client's country."
       }
     }
   },
   "tarifas": {
     "title": "Rates",
-    "summary": "Reference prices for various web and app projects. Inquire about your custom project!",
+    "summary": "Reference prices for the most common services. Every project is different — if you have something in mind that you don't see here, feel free to ask.",
     "viewMore": "View more",
     "fullContent": {
-      "intro": "These are the reference prices for the most common jobs I usually do. However, I am open to any type of project that requires programming. Feel free to ask!",
-      "cms": {
-        "title": "Website with CMS (WordPress, etc.): From 200 USD",
-        "content": "This type of project is based on a template adaptable to specific design or graphic requirements. It includes the installation of standard plugins (SEO, cookie notice, cache, etc.) and additional plugins that the client needs. It also includes data import, multi-language configuration, and any other adjustments needed to achieve the desired result."
-      },
-      "tiendaOnline": {
-        "title": "Online store with CMS (WooCommerce): From 400 USD",
-        "content": "Similar to the previous one, but with a higher level of complexity due to the configuration of rates, products, variations, discounts, payment gateways, etc. It can also include integrations with POS/ERP or APIs from various transport agencies."
-      },
-      "webAMedida": {
-        "title": "Custom website: From 650 USD",
-        "content": "This type of development offers total freedom regarding the theme and functionality of the page: portals, online stores, administration panels, etc. The design can be custom or based on a template. If the client has conducted an SEO study, I can apply the conclusions to the development. I usually program in MERN environments, but I can also work with other technologies as needed. The page can be multi-language at no additional cost. I can adapt the page to comply with accessibility standards (WCAG AA, etc.)."
-      },
-      "appHibrida": {
-        "title": "Hybrid app for iOS and Android: From 950 USD",
-        "content": "Developed with React Native. This type of development is easy to maintain, adapts to any design, is economical, and compatible with all devices. It includes the API Rest service and the data administration panel."
-      },
+      "intro": "Reference prices for the most common services. Every project is different — if you have something in mind that you don't see here, feel free to ask.",
+      "categories": [
+        {
+          "emoji": "🌐",
+          "title": "Websites",
+          "items": [
+            { "name": "Landing page", "price": "From $200 USD", "description": "Single-section page focused on conversion: product presentation, lead generation or event promotion. Clean design, fast load and contact form included." },
+            { "name": "Website with CMS (WordPress, etc.)", "price": "From $380 USD", "description": "Template-based development adapted to your design. Includes SEO, cookies, cache and form plugins, content import, multi-language setup and all necessary adjustments." },
+            { "name": "Redesign or migration of existing website", "price": "From $320 USD", "description": "Visual or technical update of an existing site, or migration between platforms or servers while preserving content, SEO and features." },
+            { "name": "Online store with CMS (WooCommerce)", "price": "From $850 USD", "description": "Full setup of products, variations, discounts, payment gateways and shipping. Can include ERP or transport agency API integration." },
+            { "name": "Custom website", "price": "From $1,600 USD", "description": "Full freedom of design and features: portals, admin panels, intranets, etc. Usual stack: MERN, though I adapt. Multi-language at no extra cost. WCAG AA compatible." },
+            { "name": "Hybrid app for iOS and Android", "price": "From $2,500 USD", "description": "Built with React Native. Includes REST API and administration panel. Easy to maintain and compatible with all devices." }
+          ]
+        },
+        {
+          "emoji": "🛠️ ",
+          "title": "Optimization & performance",
+          "items": [
+            { "name": "Full web audit", "price": "From $100 USD", "description": "Technical analysis of speed, on-page SEO, security, accessibility and user experience. Delivery of a detailed report with prioritized recommendations." },
+            { "name": "Speed & Core Web Vitals optimization", "price": "From $130 USD", "description": "Improvement of Google performance indicators: LCP, FID, CLS. Image optimization, caching, minification and server configuration." },
+            { "name": "Code audit & refactoring", "price": "From $220 USD", "description": "Review of existing code to detect errors, vulnerabilities, technical debt or performance issues. Includes improvement proposal." }
+          ]
+        },
+        {
+          "emoji": "📈",
+          "title": "SEO & analytics",
+          "items": [
+            { "name": "Technical SEO", "price": "From $220 USD", "description": "Technical optimization for search engines: URL structure, metadata, schema markup, sitemap, robots.txt, speed and mobile compatibility." },
+            { "name": "Google Analytics & Tag Manager setup", "price": "From $80 USD", "description": "Installation and configuration of event tracking, conversions and goals. Includes data verification and a basic reporting dashboard." },
+            { "name": "Pixel & ad tracking integration", "price": "From $80 USD", "description": "Setup of Meta Ads, Google Ads or other platform pixels for campaign tracking and remarketing." }
+          ]
+        },
+        {
+          "emoji": "⚙️ ",
+          "title": "Features & custom development",
+          "items": [
+            { "name": "Advanced forms & email automation", "price": "From $100 USD", "description": "Complex form creation (multi-step, conditional, budget calculators) with automated responses, notifications and CRM integration." },
+            { "name": "Payment gateway integration", "price": "From $160 USD", "description": "Setup of Stripe, PayPal, MercadoPago, PayU, Wompi or other gateways on any type of website or application." },
+            { "name": "REST API development", "price": "From $450 USD", "description": "Design and implementation of APIs to connect services, mobile apps or management panels with your platform." },
+            { "name": "Custom admin panel", "price": "From $850 USD", "description": "Tailored dashboard to manage data, users, orders or any type of content without relying on generic solutions." },
+            { "name": "Chatbot & AI integration", "price": "From $450 USD", "description": "Implementation of virtual assistants or AI-powered chatbots for customer support, lead capture or automation of frequent queries." },
+            { "name": "Automations & system integrations", "price": "From $320 USD", "description": "Connecting tools and platforms via APIs, webhooks or tools like n8n or Make. Automating repetitive processes to save time." }
+          ]
+        },
+        {
+          "emoji": "🤝",
+          "title": "Kommo CRM — Official Certified Partner",
+          "description": "I am an official certified partner of Kommo, the leading conversational CRM for sales teams. I help businesses implement, configure and get the most out of their CRM from day one.",
+          "items": [
+            { "name": "Kommo CRM implementation", "price": "From $280 USD", "description": "Full account setup: sales pipeline, stages, custom fields, users and permissions. Includes basic team training." },
+            { "name": "Messaging channel integration", "price": "From $160 USD", "description": "Connection of WhatsApp Business, Instagram, Facebook Messenger, Telegram or other channels directly in Kommo to centralize all conversations in one place." },
+            { "name": "Sales automation & follow-up", "price": "From $220 USD", "description": "Setup of robots and automatic triggers: welcome messages, scheduled follow-ups, automatic stage changes and team notifications based on customer behavior." },
+            { "name": "Kommo integration with external systems", "price": "From $320 USD", "description": "Connect Kommo with your website, online store, forms, payment gateways, ERP or other tools via API or webhooks. Data flows automatically without manual intervention." },
+            { "name": "Conversational chatbot in Kommo", "price": "From $450 USD", "description": "Design and implementation of a sales or customer support bot inside Kommo: automatic lead qualification, FAQ responses and routing to the right agent." },
+            { "name": "Audit & optimization of existing Kommo", "price": "From $130 USD", "description": "Review of an existing Kommo account to identify bottlenecks, misconfigured automations and improvement opportunities. Delivery of a report with recommendations." },
+            { "name": "Kommo training & consulting", "price": "$30 USD/hour", "description": "Training sessions for sales or customer support teams, Q&A and strategic advice on CRM usage." }
+          ]
+        },
+        {
+          "emoji": "☁️ ",
+          "title": "Infrastructure & hosting",
+          "items": [
+            { "name": "Private VPS hosting + staging environment", "price": "From $45 USD/month", "description": "Deployment on a private VPS with NGINX, SSL, automatic backups and a staging environment to test changes before publishing. No shared resources." },
+            { "name": "Hosting migration", "price": "From $80 USD", "description": "Transfer of website, database and configurations to a new server with zero downtime and no data loss." },
+            { "name": "Server setup & basic DevOps", "price": "From $160 USD", "description": "Initial VPS setup: domain, SSL, web server, automatic deployment from GitHub and basic monitoring." }
+          ]
+        },
+        {
+          "emoji": "🔄",
+          "title": "Maintenance & support",
+          "items": [
+            { "name": "Monthly maintenance & support", "price": "From $55 USD/month", "description": "CMS and plugin updates, backups, monitoring, minor content changes and priority technical support." },
+            { "name": "Hourly on-demand support", "price": "$20 USD/hour", "description": "For specific tasks, bug fixes, minor changes or technical queries without needing a maintenance contract." },
+            { "name": "Technology consulting", "price": "$30 USD/hour", "description": "Advice on architecture, technology selection, code review or project planning." }
+          ]
+        }
+      ],
       "aclaraciones": {
-        "title": "Important clarifications:",
+        "title": "Clarifications",
         "list": [
-          {
-            "title": "Hosting:",
-            "content": "Hosting services are the client's responsibility, who can manage them through platforms like GoDaddy or their preferred one."
-          },
-          {
-            "title": "Other developments:",
-            "content": "If you have a project in mind that doesn't fit into the above categories, don't hesitate to ask me! I have worked on diverse projects, including developments with AI, bots, IoT programming, etc."
-          }
+          { "title": "Hosting:", "content": "Except for the private VPS service, hosting is the client's responsibility." },
+          { "title": "Custom quote:", "content": "Listed prices are indicative in USD. Each project is quoted individually based on its actual scope." },
+          { "title": "Other projects:", "content": "I have worked on AI developments, bots, IoT and highly diverse custom projects — if you have something in mind, just ask." }
         ]
       }
+    }
+  },
+  "partnersSection": {
+    "title": "Automation & Integrations",
+    "description": "Certified partner of the leading tools in conversational CRM and workflow automation.",
+    "kommo": {
+      "badge": "Official Certified Partner",
+      "description": "I am an official certified partner of Kommo, the leading conversational CRM for sales teams. I implement, configure and integrate Kommo so your team can centralise conversations, automate follow-ups and close more deals from day one.",
+      "benefits": [
+        { "title": "Certified implementation", "description": "Professional setup backed by Kommo, from scratch or on an existing account." },
+        { "title": "Multichannel integrated", "description": "WhatsApp, Instagram, Telegram and more, in a single sales panel." },
+        { "title": "Sales automation", "description": "Pipelines, bots and automatic follow-ups so your team sells more without extra effort." }
+      ],
+      "cta": "Ask about Kommo"
+    },
+    "n8n": {
+      "title": "Flows with n8n",
+      "description": "I design and implement visual automations with n8n: connecting your CRM, store, forms, APIs and any tool without vendor lock-in. Open-source, powerful and on your own infrastructure.",
+      "cta": "Ask about automations"
     }
   },
   "pagaOnline": {

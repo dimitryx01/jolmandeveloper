@@ -18,7 +18,6 @@ export default defineConfig(({ mode }) => ({
     sourcemap: mode === 'development',
     minify: mode === 'production',
     emptyOutDir: true,
-    chunkSizeWarningLimit: 1500,
   },
 
   plugins: [
