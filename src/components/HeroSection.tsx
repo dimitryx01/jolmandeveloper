@@ -1,9 +1,53 @@
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
+import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
   const { t } = useTranslation();
+  const [typedText, setTypedText] = useState('');
+  
+  const baseRole = t('hero.role');
+  const guruText = t('hero.guru');
+
+  useEffect(() => {
+    let isMounted = true;
+    setTypedText('');
+    
+    const animate = async () => {
+      // 1. Esperar 3 segundos
+      if (!isMounted) return;
+      await new Promise(r => setTimeout(r, 3000));
+      
+      // 2. Animar 3 puntos suspensivos
+      for (let i = 1; i <= 3; i++) {
+        if (!isMounted) return;
+        setTypedText('.'.repeat(i));
+        await new Promise(r => setTimeout(r, 400));
+      }
+      
+      if (!isMounted) return;
+      await new Promise(r => setTimeout(r, 300));
+      
+      // 3. Escribir frase caracter por caracter
+      let currentAppend = '...\n';
+      setTypedText(currentAppend);
+      await new Promise(r => setTimeout(r, 200));
+
+      const chars = Array.from(guruText); 
+      for (let i = 1; i <= chars.length; i++) {
+        if (!isMounted) return;
+        setTypedText(currentAppend + chars.slice(0, i).join(''));
+        await new Promise(r => setTimeout(r, 40 + Math.random() * 40));
+      }
+    };
+    
+    animate();
+    
+    return () => {
+      isMounted = false;
+    };
+  }, [baseRole, guruText]);
   
   return (
     <section
@@ -20,14 +64,32 @@ export default function HeroSection() {
               <span className="text-teal-400">Jolman</span>
             </h1>
 
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-500 mb-8">
-              {t('hero.role')}
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-gray-400 mb-8 min-h-[60px] sm:min-h-[72px] md:min-h-[84px] whitespace-pre-wrap">
+              <span className="text-gray-500">{baseRole}</span>
+              <span className="text-teal-400/90">{typedText}</span>
+              <span className="animate-blink ml-1 inline-block w-1.5 h-6 md:h-8 bg-teal-400/70 align-middle"></span>
             </h2>
-            <p className="text-base sm:text-lg text-gray-400 max-w-2xl md:max-w-xl mx-auto md:mx-0 md:ml-auto mb-12">
+            <p className="text-base sm:text-lg text-gray-400 max-w-2xl md:max-w-xl mx-auto md:mx-0 md:ml-auto mb-8">
               {t('hero.description')}
             </p>
 
-           
+            {/* Kommo Partner Badge */}
+            <div className="flex items-center justify-center md:justify-end gap-3 pt-6 border-t border-border/20 mb-12">
+              <p className="text-xs font-semibold uppercase tracking-wider text-foreground/50 whitespace-nowrap">
+                {t('partnersSection.kommo.badge')}
+              </p>
+              <img
+                src="/kommo-dark.svg"
+                alt="Kommo CRM"
+                className="h-7 dark:hidden opacity-80 hover:opacity-100 transition-opacity shrink-0"
+              />
+              <img
+                src="/kommo-light.svg"
+                alt="Kommo CRM"
+                className="h-7 hidden dark:block opacity-80 hover:opacity-100 transition-opacity shrink-0"
+                style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.2))' }}
+              />
+            </div>
           </div>
 
           {/* Columna derecha: Memoji */}

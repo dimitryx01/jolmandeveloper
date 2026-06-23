@@ -8,6 +8,7 @@ import AboutSection from '@/components/AboutSection';
 import TecnologiasSection from '@/components/TecnologiasSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContratacionTarifasSection from '@/components/ContratacionTarifasSection';
+import KommoPartnerSection from '@/components/KommoPartnerSection';
 import PagaOnlineSection from '@/components/PagaOnlineSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -89,7 +90,11 @@ const Index = () => {
         <div className="fade-in-section">
           <ContratacionTarifasSection />
         </div>
-        
+
+        <div className="fade-in-section">
+          <KommoPartnerSection />
+        </div>
+
         <div className="fade-in-section">
           <PagaOnlineSection />
         </div>

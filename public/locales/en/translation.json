@@ -1,0 +1,372 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About me",
+    "projects": "Projects",
+    "contact": "Contact",
+    "changeTheme": "Toggle theme",
+    "menu": "Menu"
+  },
+  "hero": {
+    "hello": "Hello, I'm",
+    "role": "Web Designer & Developer",
+    "description": "I create attractive and functional digital experiences with a minimalist and user-centered approach.",
+    "contactMe": "Contact me",
+    "downloadCV": "Download CV",
+    "learnMore": "Learn more",
+    "guru": "Or your IT guru 👨🏼‍💻"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a passionate web developer with experience in creating modern websites and applications. My goal is to combine attractive design with intuitive functionality to create memorable digital experiences.",
+    "skills": {
+      "frontend": {
+        "title": "Frontend Development",
+        "description": "I create attractive and responsive interfaces using HTML, CSS, JavaScript and modern frameworks like React."
+      },
+      "backend": {
+        "title": "Backend Development",
+        "description": "I implement robust solutions using Node.js, Express, and SQL/NoSQL databases."
+      },
+      "uxui": {
+        "title": "UX/UI Design",
+        "description": "I design intuitive and accessible user experiences with a user-centered approach."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Technologies",
+    "description": "Specializing in web development, I build modern and scalable applications using React and Node.js, alongside robust backend solutions with Java. I also design and develop custom projects using PHP and WordPress, and manage both SQL and NoSQL database architectures. Beyond my primary tech stack, I stand out for my quick adaptability: if your project requires specific tools or technologies, I can seamlessly integrate them to provide the most efficient technical solution."
+  },
+  "projects": {
+    "sectionTitle": "Projects",
+    "sectionDescription": "Here are some of the projects I've worked on. Click on any project to see more details.",
+    "viewAll": "View all",
+    "viewProject": "View project",
+    "codeLink": "Code",
+    "technologiesTitle": "Technologies Used",
+    "visitSiteButton": "Visit Site",
+    "viewCodeButton": "View Code",
+    "codeProtectedTitle": "Source code not publicly available",
+    "codeProtectedDescription": "This project belongs to a third party (client or company) and its source code is protected by intellectual property rights, so it cannot be published or shared publicly.",
+    "project1": {
+      "title": "Auto Vidrios de Oriente (2021)",
+      "description": "Web solution for automotive glass company, featuring aerial promotional video, services, contact, and online quote.",
+      "fullDescription": "Corporate website developed in WordPress for a company specializing in the sale, installation, and repair of automotive glass. The portal (created in 2021) presents main services (repair, windshield replacement, waterproofing, tinting), contact information, branch locations, and an online quote form. Additionally, a promotional video with aerial shots taken by drone was produced and is featured in the main section of the site."
+    },
+    "project2": {
+      "title": "Jolman Developer",
+      "description": "Professional personal portfolio, featuring projects, skills, contact, and online payment integration.",
+      "fullDescription": "Personal portfolio website developed with Vite, React, and TypeScript, deployed on Vercel. Showcases a selection of featured projects, professional background, technical skills, contact form, and online payment integration. Perfect as a reference for anyone seeking a modern, mobile-optimized personal website with advanced features."
+    },
+    "project3": {
+      "title": "Induscom",
+      "description": "Importer of spare parts for trucks and heavy machinery, specialized in Chinese diesel engines, transmissions, and clutches.",
+      "fullDescription": "Corporate website for Induscom Colombia, a direct importer of spare parts for trucks and heavy machinery. Launched in 2025, the site features a clean layout showcasing their main product lines—Chinese diesel engines, transmissions, clutches, and specialized accessories—with a strong focus on technical advice, shipping within 24 hours, and WhatsApp support. It includes highlighted product sections, a quick quote request form, customer testimonials, and educational resources (blog). The platform builds trust through a clear warranty message and personalized assistance."
+    },
+    "project4": {
+      "title": "Fundació Kālida – Spain",
+      "description": "Development and maintenance of landing pages and the Agenda module for the Fundació Kālida website, including implementation of new features, component optimization, and production incident resolution.",
+      "fullDescription": "I collaborated on the development and maintenance of the Fundació Kālida website, working in a production environment oriented to high traffic and dynamic content. My tasks included creating and refactoring landing pages (campaigns, informational content, and online sections), ensuring correct semantic markup, solid performance, and consistency with the site’s global design. I also contributed to the evolution of the Agenda module, implementing functional and UI adjustments based on support tickets: bug fixing, minor behavior changes, improvements in the presentation of activities, and alignment with the communication team’s requirements. All of this following good maintainability practices, continuous review of changes, and a strong focus on user experience."
+    },
+    "project5": {
+      "title": "Feel Hospitality Advisor – Spain",
+      "description": "End‑to‑end development of the Feel Hospitality corporate website: architecture, responsive layout, contact form integration, and performance and accessibility optimization (WordPress).",
+      "fullDescription": "Complete development of the Feel Hospitality corporate website, a consultancy specialized in tourism accessibility. Starting from scratch, I defined the information architecture, implemented the responsive layout, and customized the WordPress theme in line with the brand’s identity. I integrated contact forms with validation and status messages, optimized performance (image loading, HTML structure, and assets), and took care of key accessibility aspects (heading hierarchy, contrast, alternative texts, and focus states in forms), aligned with the inclusive approach of the project. The result is a clear, conversion‑oriented landing experience that is easy to maintain and ready to scale in terms of content and services."
+    },
+    "project6": {
+      "title": "Max FM - Spain",
+      "description": "Online radio platform with a full admin panel, live presenter scheduling, news, Top 5 chart, and a real-time AI-moderated chat.",
+      "fullDescription": "Web platform for the Max FM online radio station (Spain), built with React and TypeScript with a PHP and SQLite backend. The site features dynamic hero banners, a programming section with a \"live now\" card plus previous/next slots, presenter profiles, a Top 5 song chart, a news carousel, and a persistent streaming audio player. All content (banners, shows, presenters, news, Top 5) is managed through a dedicated admin panel with token-based authentication. The station's live chat also includes an automated moderator built in Python, responsible for filtering messages and keeping the conversation within community guidelines in real time."
+    },
+    "project7": {
+      "title": "Economizo - France",
+      "description": "Collaboration as a developer within the Economizo team, a French online tech store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "Economizo is an online store targeting the French market, specialized in selling tech products: smartphones, computers, TVs, audio, gaming, wearables, and electronic accessories, with a catalog of over 300 brands, running on a membership model (\"Membre Privilège\") that converts unused payments into purchase credits. It's a large-scale project maintained by a development team, within which I collaborate as a developer providing support on the Shopify platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project9": {
+      "title": "ClubEcono - France",
+      "description": "Collaboration as a developer within the same Economizo team, on ClubEcono, a French online home goods store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "ClubEcono is an online store targeting the French market, specialized in home goods: furniture, decor, kitchenware, appliances, textiles, and cleaning and storage products, with a catalog of over 300 brands, running on the same membership model (\"Prix Spéciaux\") that converts unused payments into purchase credits. It belongs to the same group and development team as Economizo, reusing the same Shopify architecture but with a different product catalog and focus (home goods instead of tech). I collaborate as a developer providing support on the platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project10": {
+      "title": "AbonAvantage - France",
+      "description": "Collaboration as a developer within the same Economizo team, on AbonAvantage, a French online beauty and personal care store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "AbonAvantage is an online store targeting the French market, specialized in beauty and personal care: makeup, perfumes, jewelry, accessories, and wellness products, with a catalog of over 300 premium brands, running on the same membership model (\"Privilège\") that converts unused payments into purchase credits. It belongs to the same group and development team as Economizo, reusing the same Shopify architecture but with a different product catalog and focus (beauty instead of tech). I collaborate as a developer providing support on the platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project11": {
+      "title": "OffreMaline - France",
+      "description": "Collaboration as a developer within the same Economizo team, on OffreMaline, a French online DIY and gardening store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "OffreMaline is an online store targeting the French market, specialized in DIY, gardening, electrical, plumbing, heating, and home security products, with a catalog of over 300 brands, running on the same membership model (\"Prix Spéciaux\") that converts unused payments into purchase credits. It belongs to the same group and development team as Economizo, reusing the same Shopify architecture but with a different product catalog and focus (DIY instead of tech). I collaborate as a developer providing support on the platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project8": {
+      "title": "AI Automation + CRM - Induscom - Colombia",
+      "description": "n8n automation flow with an AI agent (ChatGPT) that handles customer conversations, collects key data (such as engine numbers), and automatically classifies it in the Kommo CRM.",
+      "fullDescription": "Automation project built for Induscom Colombia to streamline customer support and the logging of business information. An n8n flow was designed to connect the company's messaging channels with an AI agent based on ChatGPT, capable of automatically replying to customers, understanding their requests, and collecting business-relevant data (such as the engine number of the requested part, spare part type, and other technical details needed for follow-up). All of this information is automatically classified and logged in the Kommo CRM, organizing each conversation and its associated data within the corresponding sales pipeline. This allows Induscom's sales team to keep a structured history of every customer with no manual intervention, reducing response times and improving the productivity of the sales process."
+    }
+  },
+  "contratacion": {
+    "title": "Hiring",
+    "summary": "Everything you need to know before hiring my services: legal aspects, invoicing, confidentiality, and payment options.",
+    "viewMore": "View more",
+    "fullContent": {
+      "intro": "As an independent professional, I comply with all current legal regulations for providing software development services.",
+      "programacionDirecta": {
+        "title": "Direct Programming:",
+        "content": "I want to emphasize that I personally develop in all the technologies mentioned in my portfolio. Projects are carried out directly by me, guaranteeing a high level of quality and attention to detail. I only resort to subcontracting in very specific cases that require skills outside my area of expertise."
+      },
+      "quienPuedeContratarme": {
+        "title": "Who can hire me?",
+        "intro": "I am available to work with:",
+        "list": [
+          "Individuals and companies across Latin America and abroad.",
+          "Own projects or as part of a development team.",
+          "Complete projects or specific collaborations."
+        ],
+        "additional": "I have experience working with version control systems in collaborative environments. I often collaborate with graphic and multimedia design companies that need a programmer to complement their visual projects."
+      },
+      "confidencialidad": {
+        "title": "Confidentiality:",
+        "content": "To ensure the security of your project, I can sign a non-disclosure agreement (NDA) committing not to disclose sensitive information or specific agreed details."
+      },
+      "pagos": {
+        "title": "Payments:",
+        "content": "I am open to discussing different payment modalities that suit your needs, as long as the agreed terms are met."
+      },
+      "pagosOnline": {
+        "title": "Online Payments:",
+        "content": "I accept payments via bank transfer, PayPal or agreed platforms depending on the client's country."
+      }
+    }
+  },
+  "tarifas": {
+    "title": "Rates",
+    "summary": "Reference prices for the most common services. Every project is different — if you have something in mind that you don't see here, feel free to ask.",
+    "viewMore": "View more",
+    "fullContent": {
+      "intro": "Reference prices for the most common services. Every project is different — if you have something in mind that you don't see here, feel free to ask.",
+      "categories": [
+        {
+          "emoji": "🌐",
+          "title": "Websites",
+          "items": [
+            { "name": "Landing page", "price": "From $200 USD", "description": "Single-section page focused on conversion: product presentation, lead generation or event promotion. Clean design, fast load and contact form included." },
+            { "name": "Website with CMS (WordPress, etc.)", "price": "From $380 USD", "description": "Template-based development adapted to your design. Includes SEO, cookies, cache and form plugins, content import, multi-language setup and all necessary adjustments." },
+            { "name": "Redesign or migration of existing website", "price": "From $320 USD", "description": "Visual or technical update of an existing site, or migration between platforms or servers while preserving content, SEO and features." },
+            { "name": "Online store with CMS (WooCommerce)", "price": "From $850 USD", "description": "Full setup of products, variations, discounts, payment gateways and shipping. Can include ERP or transport agency API integration." },
+            { "name": "Custom website", "price": "From $1,600 USD", "description": "Full freedom of design and features: portals, admin panels, intranets, etc. Usual stack: MERN, though I adapt. Multi-language at no extra cost. WCAG AA compatible." },
+            { "name": "Hybrid app for iOS and Android", "price": "From $2,500 USD", "description": "Built with React Native. Includes REST API and administration panel. Easy to maintain and compatible with all devices." }
+          ]
+        },
+        {
+          "emoji": "🛠️ ",
+          "title": "Optimization & performance",
+          "items": [
+            { "name": "Full web audit", "price": "From $100 USD", "description": "Technical analysis of speed, on-page SEO, security, accessibility and user experience. Delivery of a detailed report with prioritized recommendations." },
+            { "name": "Speed & Core Web Vitals optimization", "price": "From $130 USD", "description": "Improvement of Google performance indicators: LCP, FID, CLS. Image optimization, caching, minification and server configuration." },
+            { "name": "Code audit & refactoring", "price": "From $220 USD", "description": "Review of existing code to detect errors, vulnerabilities, technical debt or performance issues. Includes improvement proposal." }
+          ]
+        },
+        {
+          "emoji": "📈",
+          "title": "SEO & analytics",
+          "items": [
+            { "name": "Technical SEO", "price": "From $220 USD", "description": "Technical optimization for search engines: URL structure, metadata, schema markup, sitemap, robots.txt, speed and mobile compatibility." },
+            { "name": "Google Analytics & Tag Manager setup", "price": "From $80 USD", "description": "Installation and configuration of event tracking, conversions and goals. Includes data verification and a basic reporting dashboard." },
+            { "name": "Pixel & ad tracking integration", "price": "From $80 USD", "description": "Setup of Meta Ads, Google Ads or other platform pixels for campaign tracking and remarketing." }
+          ]
+        },
+        {
+          "emoji": "⚙️ ",
+          "title": "Features & custom development",
+          "items": [
+            { "name": "Advanced forms & email automation", "price": "From $100 USD", "description": "Complex form creation (multi-step, conditional, budget calculators) with automated responses, notifications and CRM integration." },
+            { "name": "Payment gateway integration", "price": "From $160 USD", "description": "Setup of Stripe, PayPal, MercadoPago, PayU, Wompi or other gateways on any type of website or application." },
+            { "name": "REST API development", "price": "From $450 USD", "description": "Design and implementation of APIs to connect services, mobile apps or management panels with your platform." },
+            { "name": "Custom admin panel", "price": "From $850 USD", "description": "Tailored dashboard to manage data, users, orders or any type of content without relying on generic solutions." },
+            { "name": "Chatbot & AI integration", "price": "From $450 USD", "description": "Implementation of virtual assistants or AI-powered chatbots for customer support, lead capture or automation of frequent queries." },
+            { "name": "Automations & system integrations", "price": "From $320 USD", "description": "Connecting tools and platforms via APIs, webhooks or tools like n8n or Make. Automating repetitive processes to save time." }
+          ]
+        },
+        {
+          "emoji": "🤝",
+          "title": "Kommo CRM — Official Certified Partner",
+          "description": "I am an official certified partner of Kommo, the leading conversational CRM for sales teams. I help businesses implement, configure and get the most out of their CRM from day one.",
+          "items": [
+            { "name": "Kommo CRM implementation", "price": "From $280 USD", "description": "Full account setup: sales pipeline, stages, custom fields, users and permissions. Includes basic team training." },
+            { "name": "Messaging channel integration", "price": "From $160 USD", "description": "Connection of WhatsApp Business, Instagram, Facebook Messenger, Telegram or other channels directly in Kommo to centralize all conversations in one place." },
+            { "name": "Sales automation & follow-up", "price": "From $220 USD", "description": "Setup of robots and automatic triggers: welcome messages, scheduled follow-ups, automatic stage changes and team notifications based on customer behavior." },
+            { "name": "Kommo integration with external systems", "price": "From $320 USD", "description": "Connect Kommo with your website, online store, forms, payment gateways, ERP or other tools via API or webhooks. Data flows automatically without manual intervention." },
+            { "name": "Conversational chatbot in Kommo", "price": "From $450 USD", "description": "Design and implementation of a sales or customer support bot inside Kommo: automatic lead qualification, FAQ responses and routing to the right agent." },
+            { "name": "Audit & optimization of existing Kommo", "price": "From $130 USD", "description": "Review of an existing Kommo account to identify bottlenecks, misconfigured automations and improvement opportunities. Delivery of a report with recommendations." },
+            { "name": "Kommo training & consulting", "price": "$30 USD/hour", "description": "Training sessions for sales or customer support teams, Q&A and strategic advice on CRM usage." }
+          ]
+        },
+        {
+          "emoji": "☁️ ",
+          "title": "Infrastructure & hosting",
+          "items": [
+            { "name": "Private VPS hosting + staging environment", "price": "From $45 USD/month", "description": "Deployment on a private VPS with NGINX, SSL, automatic backups and a staging environment to test changes before publishing. No shared resources." },
+            { "name": "Hosting migration", "price": "From $80 USD", "description": "Transfer of website, database and configurations to a new server with zero downtime and no data loss." },
+            { "name": "Server setup & basic DevOps", "price": "From $160 USD", "description": "Initial VPS setup: domain, SSL, web server, automatic deployment from GitHub and basic monitoring." }
+          ]
+        },
+        {
+          "emoji": "🔄",
+          "title": "Maintenance & support",
+          "items": [
+            { "name": "Monthly maintenance & support", "price": "From $55 USD/month", "description": "CMS and plugin updates, backups, monitoring, minor content changes and priority technical support." },
+            { "name": "Hourly on-demand support", "price": "$20 USD/hour", "description": "For specific tasks, bug fixes, minor changes or technical queries without needing a maintenance contract." },
+            { "name": "Technology consulting", "price": "$30 USD/hour", "description": "Advice on architecture, technology selection, code review or project planning." }
+          ]
+        }
+      ],
+      "aclaraciones": {
+        "title": "Clarifications",
+        "list": [
+          { "title": "Hosting:", "content": "Except for the private VPS service, hosting is the client's responsibility." },
+          { "title": "Custom quote:", "content": "Listed prices are indicative in USD. Each project is quoted individually based on its actual scope." },
+          { "title": "Other projects:", "content": "I have worked on AI developments, bots, IoT and highly diverse custom projects — if you have something in mind, just ask." }
+        ]
+      }
+    }
+  },
+  "partnersSection": {
+    "title": "Automation & Integrations",
+    "description": "Certified partner of the leading tools in conversational CRM and workflow automation.",
+    "kommo": {
+      "badge": "Official Certified Partner",
+      "description": "I am an official certified partner of Kommo, the leading conversational CRM for sales teams. I implement, configure and integrate Kommo so your team can centralise conversations, automate follow-ups and close more deals from day one.",
+      "benefits": [
+        { "title": "Certified implementation", "description": "Professional setup backed by Kommo, from scratch or on an existing account." },
+        { "title": "Multichannel integrated", "description": "WhatsApp, Instagram, Telegram and more, in a single sales panel." },
+        { "title": "Sales automation", "description": "Pipelines, bots and automatic follow-ups so your team sells more without extra effort." }
+      ],
+      "cta": "Ask about Kommo"
+    },
+    "n8n": {
+      "title": "Flows with n8n",
+      "description": "I design and implement visual automations with n8n: connecting your CRM, store, forms, APIs and any tool without vendor lock-in. Open-source, powerful and on your own infrastructure.",
+      "cta": "Ask about automations"
+    }
+  },
+  "pagaOnline": {
+    "title": "Make Your Payment",
+    "description": "Have we already agreed on your service? Pay easily and securely directly from here using our secure payment gateway.",
+    "payButton": "Make Payment",
+    "form": {
+      "title": "Payment Form",
+      "description": "Complete the following information to securely process your payment through PayU Latam.",
+      "name": "Full name",
+      "email": "Email address",
+      "amount": "Amount to pay in Colombian Pesos (COP), without periods or commas.",
+      "comment": "Description or comment (optional)",
+      "cancel": "Cancel",
+      "submit": "Process Payment"
+    },
+    "messages": {
+      "processing": "Processing your payment",
+      "redirect": "You will be redirected to the payment gateway in a few seconds...",
+      "incomplete": "Incomplete data",
+      "requiredFields": "Please complete all required fields",
+      "error": "Processing error",
+      "tryAgain": "There was a problem processing your request. Please try again."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Do you have a question or want to collaborate on a project? Don't hesitate to contact me.",
+    "form": {
+      "title": "Send me a message",
+      "name": "Your name",
+      "email": "Your email",
+      "message": "Your message",
+      "sending": "Sending...",
+      "send": "Send message",
+      "success": "Message sent",
+      "thankYou": "Thank you for contacting me. I will respond as soon as possible.",
+      "acceptPolicies": "I accept the data processing policies.",
+      "seeMore": "See more",
+      "acceptPoliciesError": "You must accept the data processing policies to send the message."
+    },
+    "info": {
+      "title": "Contact information",
+      "description": "I am open to freelance work opportunities, collaborations, or full-time positions. Don't hesitate to contact me through any of the following means."
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "thanks": {
+    "title": "Thank you for your trust!",
+    "description": "We are processing your payment. You will soon receive an email from PayULatam with the status of your transaction.",
+    "appreciation": "I greatly appreciate that you have chosen my services to develop your web project. Your vision is important to me, and I am committed to delivering it with the highest quality and professionalism.",
+    "contact": "In the meantime, you can contact me if you have any questions about our project.",
+    "excited": "I am excited to start working together!",
+    "backHome": "Back to home"
+  },
+  "legal": {
+    "avisoTitle": "Legal",
+    "avisoContent": [
+      "This website complies with Law 1581 of 2012 on Personal Data Protection, Decree 1377 of 2013, Law 1266 of 2008, Law 527 of 1999 on Electronic Commerce and Law 23 of 1982 on Copyrights, as well as other applicable regulations in the Republic of Colombia.",
+      "These General Conditions regulate the access and use of Jolman Developer's website, including the contents and services made available on it. Any person accessing the website https://jolmandeveloper.com agrees to be bound by the General Conditions in force at any time.",
+      "The user agrees to use the website, its services, and contents in accordance with Colombian legislation, good faith, and public order.",
+      "The use of the website for illegal or harmful purposes, or in any way that may cause damage or prevent the normal functioning of the website, is prohibited. Regarding the contents of this website, the following is prohibited:",
+      "• Its reproduction, distribution, or modification, totally or partially, unless expressly authorized by Jolman Developer as the legitimate owner.",
+      "• Any violation of the rights of the provider or Jolman Developer as the legitimate owner.",
+      "• Its use for commercial or advertising purposes without authorization.",
+      "The user agrees not to engage in any conduct that could damage the image, interests, and rights of Jolman Developer or third parties, or that could damage, disable, or overload the portal https://jolmandeveloper.com, or that prevents, in any way, the normal use of the web.",
+      "In accordance with the provisions of Law 23 of 1982 and other copyright regulations, the reproduction, distribution, and public communication, including its modality of making available, of all or part of the contents of this website for commercial purposes, on any medium and by any technical means, without the authorization of Jolman Developer, are expressly prohibited. The user commits to respecting the Intellectual and Industrial Property rights owned by Jolman Developer.",
+      "The user acknowledges and accepts that the entire website, texts, contents (including the structure, selection, arrangement, and presentation thereof), photographs, audiovisual material, and graphics, are protected by trademarks, copyrights, and other legitimate rights, in accordance with international treaties and current Colombian legislation.",
+      "In the event that a user or a third party considers that a violation of their legitimate intellectual property rights has occurred due to the introduction of a specific content on the web, they must notify Jolman Developer of this circumstance indicating:",
+      "• Personal data of the interested party holding the rights allegedly infringed, or indicate the representation with which they are acting in the event that the claim is presented by a third party other than the interested party.",
+      "• Point out the contents protected by intellectual property rights and their location on the web, the accreditation of the intellectual property rights indicated, and an express declaration in which the interested party takes responsibility for the veracity of the information provided in the notification.",
+      "Jolman Developer authorizes the establishment of links between other websites and its own, provided that the following conditions are met:",
+      "• The link is not established from a website whose contents are contrary to the Law, morality, and public order.",
+      "• An image of Jolman Developer or its products is not offered that is distorted, harmful, or incorrect.",
+      "• The impression is not created that there is a non-existent commercial relationship or link between Jolman Developer and the owners, managers, or advertisers from which the link is created, when this is not the case.",
+      "• The impression is not created that the contents or website of Jolman Developer belong to or have been designed by the owners, managers, or advertisers of the website from which the link is established.",
+      "Jolman Developer grants no guarantee and is not responsible, in any case, for damages of any kind that could be caused by:",
+      "• The lack of availability, maintenance, and effective functioning of the web, or its services and contents.",
+      "• The existence of malware, malicious or harmful programs in the contents.",
+      "• The illegal, negligent, fraudulent use or contrary to this Legal Notice.",
+      "• The lack of legality, quality, reliability, usefulness, and availability of the services provided by third parties and made available to users on the website.",
+      "The provider is not responsible under any circumstances for the damages that may result from the illegal or improper use of this webpage.",
+      "Generally, the relations between Jolman Developer and the users of its telematics services present on this website are subject to the legislation and jurisdiction of the Republic of Colombia and its ordinary courts.",
+      "If any user has any doubt concerning these Legal Conditions or any comment on the portal https://jolmandeveloper.com, please contact info@jolmandeveloper.com."
+    ],
+    "privacidadTitle": "Privacy Policy",
+    "privacidadContent": [
+      "Jolman Developer, as responsible for this website, undertakes the commitment to process user and client information with full guarantees and comply with the national and international requirements regulating the collection and use of personal data, specifically Law 1581 of 2012 and Decree 1377 of 2013 of the Republic of Colombia, as well as, where possible, the principles of Regulation (EU) 2016/679 (GDPR) of the European Parliament.",
+      "The personal data communicated by the user to Jolman Developer may be stored in automated databases whose ownership belongs exclusively to Jolman Developer, assuming all technical, organizational, and security measures guaranteeing the confidentiality, integrity, and quality of the information contained therein, in accordance with current data protection regulations. Communication between users and the website uses a secure channel, and the transmitted data is encrypted thanks to HTTPS protocols, thus guaranteeing the best security conditions for user confidentiality.",
+      "Commitments of Jolman Developer:",
+      "• Not to request personal information unless it is completely necessary to provide a specific service.",
+      "• Never to share personal user information with anyone except to comply with the law or if expressly authorized.",
+      "• Never to use personal data for a purpose other than that expressed in this Privacy Policy.",
+      "This Privacy Policy may vary depending on legislative or self-regulatory requirements. It will apply if users choose to fill out any contact form or online payment form where personal data is collected.",
+      "Data Collection",
+      "This website collects user data in the following ways:",
+      "• Contact form: For inquiries, requests, or direct communication.",
+      "• Online payment form: For payment management processing via the PayU gateway.",
+      "Principles applied to personal data processing",
+      "• Lawfulness, loyalty, and transparency: We will always request the user's consent for the processing of their personal data, clearly indicating the intent.",
+      "• Data minimization: We will only request the data strictly necessary.",
+      "• Limitation of the storage period: The data will be kept for no longer than necessary for the purposes of the processing.",
+      "• Integrity and confidentiality: Your data will be processed in a way that guarantees adequate security to confidential personal data.",
+      "Jolman Developer agrees to cancel personal data when they are no longer necessary or relevant for the purpose for which they were collected, and to attend to requests for information, update, or deletion of data made by the user, with Jolman Developer being responsible for processing.",
+      "User Rights",
+      "Users may exercise their rights of access, correction, deletion, revocation, or claim for infringement of their data via a written request sent to info@jolmandeveloper.com, indicating 'Data Protection' in the subject line.",
+      "Use of cookies",
+      "Users are informed of the use of cookies to gather information and perform statistical analysis on the use of the website. The cookies used by Jolman Developer are anonymous and do not refer strictly to the user's personal data or allow access to data from the user's hard drive. The user's identity is never directly linked in the cookie, so they cannot be personally identified.",
+      "Limitation of Liability",
+      "Jolman Developer declines all responsibility in the event of access and website navigation being impossible or hindered due to an interruption, malfunctioning electricity telecommunications network, external servers outside of Jolman Developer's control, or in case of force majeure, cyber-sabotage, social conflicts, or court/administrative injunctions.",
+      "Any liability is equally declined for damages the visitor might sustain in their IT systems deriving from the aforementioned occurrences.",
+      "Jolman Developer does not guarantee the availability and continuous web portal service, nor assumes any responsibility for damages potentially occurring in the future from tech malfunctions related to reading the information here included.",
+      "Within the limits established by the Law, Jolman Developer assumes no responsibility arising from incomplete or outdated data or information found in its Internet pages."
+    ]
+  },
+  "meta": {
+    "title": "Jolman Developer | Professional Freelance Web Development in Bogotá, Barcelona and Melbourne",
+    "description": "I'm Jolman Developer, expert in creating web solutions that boost your business. Professional and customized web development. Contact me today!"
+  }
+}

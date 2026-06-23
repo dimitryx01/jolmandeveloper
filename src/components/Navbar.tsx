@@ -11,7 +11,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, setTheme } = useTheme();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language || 'es';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,10 +24,10 @@ export default function Navbar() {
   }, []);
 
   const navItems = [
-    { name: t('navbar.home'), href: '#home' },
-    { name: t('navbar.about'), href: '#about' },
-    { name: t('navbar.projects'), href: '#projects' },
-    { name: t('navbar.contact'), href: '#contact' },
+    { name: t('navbar.home'), href: `/${currentLang}/#home` },
+    { name: t('navbar.about'), href: `/${currentLang}/#about` },
+    { name: t('navbar.projects'), href: `/${currentLang}/#projects` },
+    { name: t('navbar.contact'), href: `/${currentLang}/#contact` },
   ];
 
   return (
@@ -39,7 +40,7 @@ export default function Navbar() {
       )}
     >
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        <a href="#home" className="text-lg font-semibold hover:text-primary transition-colors">
+        <a href={`/${currentLang}/#home`} className="text-lg font-semibold hover:text-primary transition-colors">
           Jolman Developer
         </a>
         

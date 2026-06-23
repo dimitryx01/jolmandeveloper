@@ -1,0 +1,372 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "changeTheme": "Cambiar tema",
+    "menu": "Menú"
+  },
+  "hero": {
+    "hello": "Hola, soy",
+    "role": "Diseñador & Desarrollador Web",
+    "description": "Creo experiencias digitales atractivas y funcionales con un enfoque minimalista y centrado en el usuario.",
+    "contactMe": "Contáctame",
+    "downloadCV": "Descargar CV",
+    "learnMore": "Saber más",
+    "guru": "O tu gurú informático 👨🏼‍💻"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Soy un desarrollador web apasionado con experiencia en la creación de sitios web y aplicaciones modernas. Mi objetivo es combinar diseño atractivo con funcionalidad intuitiva para crear experiencias digitales memorables.",
+    "skills": {
+      "frontend": {
+        "title": "Desarrollo Frontend",
+        "description": "Creo interfaces atractivas y responsivas utilizando HTML, CSS, JavaScript y frameworks modernos como React."
+      },
+      "backend": {
+        "title": "Desarrollo Backend",
+        "description": "Implemento soluciones robustas utilizando Node.js, Express, y bases de datos SQL/NoSQL."
+      },
+      "uxui": {
+        "title": "Diseño UX/UI",
+        "description": "Diseño experiencias de usuario intuitivas y accesibles con un enfoque centrado en el usuario."
+      }
+    }
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "description": "Especializado en desarrollo web, construyo aplicaciones modernas y escalables utilizando React y Node.js, además de soluciones robustas de backend con Java. También diseño y desarrollo proyectos a medida utilizando PHP y WordPress, y gestiono arquitecturas de datos tanto SQL como NoSQL. Más allá de mi stack principal, destaco por mi rápida capacidad de adaptación: si tu proyecto exige herramientas o tecnologías específicas, me integro con agilidad para ofrecerte la solución técnica más eficiente."
+  },
+  "projects": {
+    "sectionTitle": "Proyectos",
+    "sectionDescription": "Aquí hay algunos de los proyectos en los que he trabajado. Haz clic en cualquier proyecto para ver más detalles.",
+    "viewAll": "Ver todos",
+    "viewProject": "Ver proyecto",
+    "codeLink": "Código",
+    "technologiesTitle": "Tecnologías Utilizadas",
+    "visitSiteButton": "Visitar Sitio",
+    "viewCodeButton": "Ver Código",
+    "codeProtectedTitle": "Código fuente no disponible públicamente",
+    "codeProtectedDescription": "Este proyecto pertenece a un tercero (cliente o empresa) y su código fuente está protegido por derechos de propiedad intelectual, por lo que no puede ser publicado ni compartido públicamente.",
+    "project1": {
+      "title": "Auto Vidrios de Oriente",
+      "description": "Solución web para empresa de vidrios automotrices, con video publicitario aéreo, servicios, contacto y cotización online.",
+      "fullDescription": "Sitio web corporativo desarrollado en WordPress para una empresa especializada en la venta, instalación y reparación de vidrios automotrices. El portal (realizado en 2021) presenta los servicios principales (reparación, cambio de parabrisas, impermeabilización, polarizados), información de contacto, ubicación de sucursales y formulario de cotización en línea. Adicionalmente, se realizó la producción de un video publicitario con tomas aéreas realizadas con dron, que se muestra en la sección principal del sitio."
+    },
+    "project2": {
+      "title": "JolmanDeveloper.com",
+      "description": "Portafolio personal profesional, con proyectos, habilidades, contacto e integración de pagos en línea.",
+      "fullDescription": "Sitio web de portafolio personal desarrollado con Vite, React y TypeScript, desplegado en Vercel. Presenta una selección de proyectos destacados, información profesional, habilidades técnicas, formulario de contacto e integración de pagos en línea. Ideal como referencia para quienes buscan una web de presentación personal, moderna, optimizada para dispositivos móviles y con funcionalidades avanzadas."
+    },
+    "project3": {
+      "title": "Induscom Colombia",
+      "description": "Importadora de repuestos para camiones y maquinaria pesada, especializada en motores diésel chinos, transmisiones y embragues.",
+      "fullDescription": "Portal corporativo para Induscom Colombia, importadora directa de repuestos para camiones y maquinaria pesada. Desarrollada en 2025, la web presenta un diseño claro de sus líneas de producto —motores diésel chinos, transmisiones, embragues y accesorios especializados—, con énfasis en asesoría técnica, envíos en menos de 24 horas y soporte por WhatsApp. Incluye secciones de productos destacados, formulario de cotización rápida, testimonios de clientes y recursos educativos (blog). La plataforma transmite confianza mediante mensaje de garantía y atención personalizada."
+    },
+    "project4": {
+      "title": "Fundación Kalida - España",
+      "description": "Desarrollo y mantenimiento de landings y módulo de Agenda para la web de Fundació Kālida, incluyendo implementación de nuevas funcionalidades, optimización de componentes y resolución de incidencias en producción.",
+      "fullDescription": "Colaboré en el desarrollo y mantenimiento de la web de Fundació Kālida, trabajando sobre un entorno en producción orientado a alto tráfico y contenido dinámico. Mis tareas incluyeron la creación y refactorización de landing pages (campañas, contenidos informativos y secciones online), asegurando un marcado semántico correcto, buen rendimiento y consistencia con el diseño global del sitio. También participé en la evolución del módulo de Agenda, implementando ajustes funcionales y de interfaz a partir de tickets de soporte: corrección de bugs, pequeños cambios de comportamiento, mejoras en la presentación de actividades y alineación con los requisitos del equipo de comunicación. Todo ello siguiendo buenas prácticas de mantenibilidad, revisión continua de cambios y enfoque en la experiencia de usuario."
+    },
+    "project5": {
+      "title": "Feel Hospitality Advisor - España",
+      "description": "Desarrollo end-to-end de la web corporativa Feel Hospitality: arquitectura, maquetación responsive, integración de formularios de contacto y optimización de rendimiento y accesibilidad (WordPress).",
+      "fullDescription": "Desarrollo completo de la web corporativa de Feel Hospitality, una consultora especializada en accesibilidad turística. Partiendo de cero, definí la arquitectura de la información, implementé la maquetación responsive y personalicé el tema en WordPress alineado con la identidad de marca. Integré formularios de contacto con validación y mensajes de estado, optimicé el rendimiento (carga de imágenes, estructura HTML y recursos) y cuidé aspectos básicos de accesibilidad (jerarquía de encabezados, contraste, textos alternativos y foco en formularios), coherentes con el enfoque inclusivo del proyecto. El resultado es una landing clara orientada a conversión, fácil de mantener y preparada para escalar contenidos y servicios de la marca."
+    },
+    "project6": {
+      "title": "Max FM - España",
+      "description": "Radio online con panel de administración completo, programación en vivo de locutores, noticias, Top 5 y chat moderado por IA en tiempo real.",
+      "fullDescription": "Plataforma web para la emisora de radio online Max FM (España), desarrollada en React y TypeScript con un backend en PHP y SQLite. El sitio incluye banners dinámicos en el hero, sección de programación con tarjeta de \"en vivo\" y franjas anterior/siguiente, perfiles de locutores, ranking Top 5 de canciones, carrusel de noticias y reproductor de audio en streaming fijo en pantalla. Todo el contenido (banners, programas, locutores, noticias, top 5) se gestiona desde un panel de administración propio con autenticación por token. Además, el chat en vivo de la emisora cuenta con un moderador automático desarrollado en Python, encargado de filtrar mensajes y mantener la conversación dentro de las normas de la comunidad en tiempo real."
+    },
+    "project7": {
+      "title": "Economizo - Francia",
+      "description": "Colaboración como desarrollador dentro del equipo de Economizo, tienda online francesa de tecnología construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "Economizo es una tienda online dirigida al mercado francés especializada en la venta de productos de tecnología: smartphones, ordenadores, televisores, audio, gaming, wearables y accesorios electrónicos, con un catálogo de más de 300 marcas, bajo un modelo de membresía (\"Membre Privilège\") que convierte los pagos no utilizados en créditos de compra. Es un proyecto de gran escala mantenido por un equipo de desarrollo, dentro del cual colaboro como desarrollador dando soporte sobre la plataforma Shopify: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project9": {
+      "title": "ClubEcono - Francia",
+      "description": "Colaboración como desarrollador dentro del mismo equipo de Economizo, en ClubEcono, tienda online francesa de productos para el hogar construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "ClubEcono es una tienda online dirigida al mercado francés especializada en productos para el hogar: muebles, decoración, menaje de cocina, electrodomésticos, textiles y artículos de limpieza y almacenamiento, con un catálogo de más de 300 marcas, bajo el mismo modelo de membresía (\"Prix Spéciaux\") que convierte los pagos no utilizados en créditos de compra. Pertenece al mismo grupo y equipo de desarrollo que Economizo, reutilizando la misma arquitectura sobre Shopify pero con un catálogo y enfoque de producto distintos (hogar en lugar de tecnología). Colaboro como desarrollador dando soporte sobre la plataforma: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project10": {
+      "title": "AbonAvantage - Francia",
+      "description": "Colaboración como desarrollador dentro del mismo equipo de Economizo, en AbonAvantage, tienda online francesa de belleza y cuidado personal construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "AbonAvantage es una tienda online dirigida al mercado francés especializada en belleza y cuidado personal: maquillaje, perfumes, joyas, accesorios y productos de bienestar, con un catálogo de más de 300 marcas premium, bajo el mismo modelo de membresía (\"Privilège\") que convierte los pagos no utilizados en créditos de compra. Pertenece al mismo grupo y equipo de desarrollo que Economizo, reutilizando la misma arquitectura sobre Shopify pero con un catálogo y enfoque de producto distintos (belleza en lugar de tecnología). Colaboro como desarrollador dando soporte sobre la plataforma: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project11": {
+      "title": "OffreMaline - Francia",
+      "description": "Colaboración como desarrollador dentro del mismo equipo de Economizo, en OffreMaline, tienda online francesa de bricolaje y jardinería construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "OffreMaline es una tienda online dirigida al mercado francés especializada en bricolaje, jardinería, electricidad, fontanería, calefacción y seguridad del hogar, con un catálogo de más de 300 marcas, bajo el mismo modelo de membresía (\"Prix Spéciaux\") que convierte los pagos no utilizados en créditos de compra. Pertenece al mismo grupo y equipo de desarrollo que Economizo, reutilizando la misma arquitectura sobre Shopify pero con un catálogo y enfoque de producto distintos (bricolaje en lugar de tecnología). Colaboro como desarrollador dando soporte sobre la plataforma: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project8": {
+      "title": "Automatización IA + CRM - Induscom - Colombia",
+      "description": "Flujo de automatización en n8n con un agente de IA (ChatGPT) que atiende a los clientes, recopila datos clave (como el número de motor) y los clasifica automáticamente en el CRM Kommo.",
+      "fullDescription": "Proyecto de automatización desarrollado para Induscom Colombia con el objetivo de optimizar la atención al cliente y el registro de información comercial. Se diseñó un flujo en n8n que conecta los canales de mensajería de la empresa con un agente de inteligencia artificial basado en ChatGPT, capaz de responder automáticamente a los clientes, entender sus consultas y recolectar datos relevantes para el negocio (como el número de motor de la pieza solicitada, tipo de repuesto y otros datos técnicos necesarios para dar seguimiento). Toda esta información se clasifica y registra de forma automática en el CRM Kommo, organizando cada conversación y sus datos asociados en el embudo de ventas correspondiente. Esto permite al equipo comercial de Induscom tener un historial estructurado de cada cliente sin intervención manual, reduciendo tiempos de respuesta y mejorando la productividad del proceso de ventas."
+    }
+  },
+  "contratacion": {
+    "title": "Contratación",
+    "summary": "Todo lo que necesitas saber antes de contratar mis servicios: aspectos legales, facturación, confidencialidad y opciones de pago.",
+    "viewMore": "Ver más",
+    "fullContent": {
+      "intro": "Como profesional independiente, cumplo con todas las normativas legales vigentes para la prestación de servicios de desarrollo de software.",
+      "programacionDirecta": {
+        "title": "Programación Directa:",
+        "content": "Quiero destacar que yo mismo desarrollo en todas las tecnologías que menciono en mi portafolio. Esto significa que los proyectos son realizados directamente por mí, garantizando un alto nivel de calidad y atención al detalle. Solo recurro a la subcontratación en casos muy específicos que requieran habilidades fuera de mi área de expertise."
+      },
+      "quienPuedeContratarme": {
+        "title": "¿Quién puede contratarme?",
+        "intro": "Estoy disponible para trabajar con:",
+        "list": [
+          "Particulares y empresas en Latinoamérica y en el extranjero.",
+          "Proyectos propios o como parte de un equipo de desarrollo.",
+          "Proyectos completos o colaboraciones específicas."
+        ],
+        "additional": "Tengo experiencia trabajando con sistemas de control de versiones en entornos colaborativos. A menudo colaboro con empresas de diseño gráfico y multimedia que necesitan un programador para complementar sus proyectos visuales."
+      },
+      "confidencialidad": {
+        "title": "Confidencialidad:",
+        "content": "Para garantizar la seguridad de tu proyecto, puedo firmar un acuerdo de confidencialidad (NDA) en el que me comprometo a no divulgar información sensible o detalles específicos acordados."
+      },
+      "pagos": {
+        "title": "Pagos:",
+        "content": "Estoy abierto a discutir diferentes modalidades de pago que se ajusten a tus necesidades, siempre y cuando se cumplan los términos acordados."
+      },
+      "pagosOnline": {
+        "title": "Pagos Online:",
+        "content": "Acepto pagos mediante transferencia bancaria, PayPal o plataformas acordadas según el país del cliente."
+      }
+    }
+  },
+  "tarifas": {
+    "title": "Tarifas",
+    "summary": "Precios de referencia para los servicios más habituales. Cada proyecto es diferente — si tienes algo en mente que no ves aquí, consúltame sin compromiso.",
+    "viewMore": "Ver más",
+    "fullContent": {
+      "intro": "Precios de referencia para los servicios más habituales. Cada proyecto es diferente — si tienes algo en mente que no ves aquí, consúltame sin compromiso.",
+      "categories": [
+        {
+          "emoji": "🌐",
+          "title": "Sitios web",
+          "items": [
+            { "name": "Landing page", "price": "Desde $200 USD", "description": "Página de una sola sección enfocada a conversión: presentación de producto, captación de leads o promoción de un evento. Diseño limpio, carga rápida y formulario de contacto incluido." },
+            { "name": "Página web con CMS (WordPress, etc.)", "price": "Desde $380 USD", "description": "Desarrollo basado en plantilla adaptada a tu diseño. Incluye plugins de SEO, cookies, caché y formularios, importación de contenido, configuración multi-idioma y todos los ajustes necesarios." },
+            { "name": "Rediseño o migración de web existente", "price": "Desde $320 USD", "description": "Actualización visual o técnica de un sitio ya existente, o migración entre plataformas o servidores manteniendo el contenido, SEO y funcionalidades." },
+            { "name": "Tienda online con CMS (WooCommerce)", "price": "Desde $850 USD", "description": "Configuración completa de productos, variaciones, descuentos, pasarelas de pago y envíos. Puede incluir integración con ERP o APIs de agencias de transporte." },
+            { "name": "Página web a medida", "price": "Desde $1.600 USD", "description": "Desarrollo con total libertad de diseño y funcionalidades: portales, paneles de administración, intranets, etc. Stack habitual MERN, aunque me adapto. Multi-idioma sin coste adicional. Compatible con WCAG AA." },
+            { "name": "App híbrida para iOS y Android", "price": "Desde $2.500 USD", "description": "Desarrolladas con React Native. Incluye API REST y panel de administración. Fácil de mantener y compatible con todos los dispositivos." }
+          ]
+        },
+        {
+          "emoji": "🛠️ ",
+          "title": "Optimización y rendimiento",
+          "items": [
+            { "name": "Auditoría web completa", "price": "Desde $100 USD", "description": "Análisis técnico de velocidad, SEO on-page, seguridad, accesibilidad y experiencia de usuario. Entrega de informe detallado con recomendaciones priorizadas." },
+            { "name": "Optimización de velocidad y Core Web Vitals", "price": "Desde $130 USD", "description": "Mejora de los indicadores de rendimiento de Google: LCP, FID, CLS. Optimización de imágenes, caché, minificación y configuración de servidor." },
+            { "name": "Auditoría y refactorización de código", "price": "Desde $220 USD", "description": "Revisión de código existente para detectar errores, vulnerabilidades, deuda técnica o problemas de rendimiento. Incluye propuesta de mejoras." }
+          ]
+        },
+        {
+          "emoji": "📈",
+          "title": "SEO y analítica",
+          "items": [
+            { "name": "SEO técnico", "price": "Desde $220 USD", "description": "Optimización técnica del sitio para buscadores: estructura de URLs, metadatos, schema markup, sitemap, robots.txt, velocidad y compatibilidad móvil." },
+            { "name": "Configuración de Google Analytics y Tag Manager", "price": "Desde $80 USD", "description": "Instalación y configuración de seguimiento de eventos, conversiones y objetivos. Incluye verificación de datos y panel básico de informes." },
+            { "name": "Integración de píxeles y seguimiento publicitario", "price": "Desde $80 USD", "description": "Configuración de píxeles de Meta Ads, Google Ads u otras plataformas para seguimiento de campañas y remarketing." }
+          ]
+        },
+        {
+          "emoji": "⚙️ ",
+          "title": "Funcionalidades y desarrollo específico",
+          "items": [
+            { "name": "Formularios avanzados y automatización de emails", "price": "Desde $100 USD", "description": "Creación de formularios complejos (multi-paso, condicionales, cálculo de presupuestos) con automatización de respuestas, notificaciones y conexión con CRM." },
+            { "name": "Integración de pasarela de pago", "price": "Desde $160 USD", "description": "Configuración de Stripe, PayPal, MercadoPago, PayU, Wompi u otras pasarelas en cualquier tipo de web o aplicación." },
+            { "name": "Desarrollo de API REST", "price": "Desde $450 USD", "description": "Diseño e implementación de APIs para conectar servicios, aplicaciones móviles o paneles de gestión con tu plataforma." },
+            { "name": "Panel de administración personalizado", "price": "Desde $850 USD", "description": "Dashboard a medida para gestionar datos, usuarios, pedidos o cualquier tipo de contenido sin depender de soluciones genéricas." },
+            { "name": "Chatbot e integración de IA", "price": "Desde $450 USD", "description": "Implementación de asistentes virtuales o chatbots con IA integrada para atención al cliente, captación de leads o automatización de consultas frecuentes." },
+            { "name": "Automatizaciones e integraciones entre sistemas", "price": "Desde $320 USD", "description": "Conexión de herramientas y plataformas mediante APIs, webhooks o herramientas como n8n o Make. Automatización de procesos repetitivos para ahorrar tiempo." }
+          ]
+        },
+        {
+          "emoji": "🤝",
+          "title": "Kommo CRM — Partner Oficial Certificado",
+          "description": "Soy partner oficial certificado de Kommo, el CRM conversacional líder para equipos de ventas. Ayudo a empresas a implementar, configurar y sacar el máximo partido a su CRM desde el primer día.",
+          "items": [
+            { "name": "Implementación de Kommo CRM", "price": "Desde $280 USD", "description": "Configuración completa de la cuenta: pipeline de ventas, etapas, campos personalizados, usuarios y permisos. Incluye formación básica al equipo." },
+            { "name": "Integración de canales de mensajería", "price": "Desde $160 USD", "description": "Conexión de WhatsApp Business, Instagram, Facebook Messenger, Telegram u otros canales directamente en Kommo para centralizar todas las conversaciones en un solo lugar." },
+            { "name": "Automatización de ventas y seguimiento", "price": "Desde $220 USD", "description": "Configuración de robots y triggers automáticos: mensajes de bienvenida, seguimientos programados, cambios de etapa automáticos y notificaciones al equipo según el comportamiento del cliente." },
+            { "name": "Integración de Kommo con sistemas externos", "price": "Desde $320 USD", "description": "Conexión de Kommo con tu web, tienda online, formularios, pasarelas de pago, ERP u otras herramientas mediante API o webhooks. Los datos fluyen solos sin intervención manual." },
+            { "name": "Chatbot conversacional en Kommo", "price": "Desde $450 USD", "description": "Diseño e implementación de un bot de ventas o atención al cliente dentro de Kommo: cualificación automática de leads, respuestas a preguntas frecuentes y derivación al agente adecuado." },
+            { "name": "Auditoría y optimización de Kommo existente", "price": "Desde $130 USD", "description": "Revisión de una cuenta de Kommo ya en uso para identificar cuellos de botella, automatizaciones mal configuradas y oportunidades de mejora. Entrega de informe con recomendaciones." },
+            { "name": "Formación y consultoría Kommo", "price": "$30 USD/hora", "description": "Sesiones de formación para equipos comerciales o de atención al cliente, resolución de dudas y asesoramiento estratégico sobre el uso del CRM." }
+          ]
+        },
+        {
+          "emoji": "☁️ ",
+          "title": "Infraestructura y hosting",
+          "items": [
+            { "name": "Alojamiento en VPS propio + entorno de staging", "price": "Desde $45 USD/mes", "description": "Despliegue en servidor VPS privado con NGINX, SSL, backups automáticos y entorno de staging para probar cambios antes de publicar. Sin recursos compartidos." },
+            { "name": "Migración de hosting", "price": "Desde $80 USD", "description": "Traslado de web, base de datos y configuraciones a un nuevo servidor sin tiempo de inactividad y sin pérdida de datos." },
+            { "name": "Configuración de servidor y DevOps básico", "price": "Desde $160 USD", "description": "Configuración inicial de VPS: dominio, SSL, servidor web, despliegue automático desde GitHub y monitorización básica." }
+          ]
+        },
+        {
+          "emoji": "🔄",
+          "title": "Mantenimiento y soporte",
+          "items": [
+            { "name": "Mantenimiento y soporte mensual", "price": "Desde $55 USD/mes", "description": "Actualizaciones de CMS y plugins, copias de seguridad, monitorización, pequeños cambios de contenido y soporte técnico prioritario." },
+            { "name": "Soporte puntual por horas", "price": "$20 USD/hora", "description": "Para tareas concretas, corrección de errores, pequeños cambios o consultas técnicas sin necesidad de un contrato de mantenimiento." },
+            { "name": "Consultoría tecnológica", "price": "$30 USD/hora", "description": "Asesoramiento en arquitectura, elección de tecnologías, revisión de código o planificación de proyectos." }
+          ]
+        }
+      ],
+      "aclaraciones": {
+        "title": "Aclaraciones",
+        "list": [
+          { "title": "Hosting:", "content": "Salvo en el servicio de VPS propio, el alojamiento es responsabilidad del cliente." },
+          { "title": "Presupuesto personalizado:", "content": "Los precios indicados son orientativos en USD. Cada proyecto se presupuesta individualmente según su alcance real." },
+          { "title": "Otros proyectos:", "content": "He trabajado en desarrollos con IA, bots, IoT y proyectos a medida muy diversos — si tienes algo en mente, consúltame." }
+        ]
+      }
+    }
+  },
+  "partnersSection": {
+    "title": "Automatización e Integraciones",
+    "description": "Partner certificado de las herramientas líderes en CRM conversacional y automatización de flujos de trabajo.",
+    "kommo": {
+      "badge": "Partner Oficial Certificado",
+      "description": "Soy partner oficial certificado de Kommo, el CRM conversacional líder para equipos de ventas. Implemento, configuro e integro Kommo para que tu equipo centralice conversaciones, automatice seguimientos y cierre más oportunidades desde el primer día.",
+      "benefits": [
+        { "title": "Implementación certificada", "description": "Configuración profesional avalada por Kommo, desde cero o sobre una cuenta existente." },
+        { "title": "Multicanal integrado", "description": "WhatsApp, Instagram, Telegram y más, en un único panel de ventas." },
+        { "title": "Automatización de ventas", "description": "Pipelines, bots y seguimientos automáticos para vender más sin esfuerzo extra." }
+      ],
+      "cta": "Consultar sobre Kommo"
+    },
+    "n8n": {
+      "title": "Flujos con n8n",
+      "description": "Diseño e implemento automatizaciones visuales con n8n: conecto tu CRM, tienda, formularios, APIs y cualquier herramienta sin dependencias de plataformas cerradas. Código abierto, potente y en tu infraestructura.",
+      "cta": "Consultar automatizaciones"
+    }
+  },
+  "pagaOnline": {
+    "title": "Realiza tu Pago",
+    "description": "¿Ya acordamos tu servicio? Paga fácil y seguro directamente desde aquí utilizando nuestra pasarela de pagos segura.",
+    "payButton": "Realizar Pago",
+    "form": {
+      "title": "Formulario de Pago",
+      "description": "Completa los siguientes datos para procesar tu pago de forma segura a través de PayU Latam.",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "amount": "Monto a pagar en Peso Colombiano(COP), sin puntos ni comas",
+      "comment": "Descripción o comentario (opcional)",
+      "cancel": "Cancelar",
+      "submit": "Procesar Pago"
+    },
+    "messages": {
+      "processing": "Procesando tu pago",
+      "redirect": "Serás redirigido a la pasarela de pagos en unos segundos...",
+      "incomplete": "Datos incompletos",
+      "requiredFields": "Por favor completa todos los campos requeridos",
+      "error": "Error de procesamiento",
+      "tryAgain": "Hubo un problema al procesar tu solicitud. Inténtalo de nuevo."
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes alguna pregunta o quieres colaborar en un proyecto? No dudes en contactarme.",
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Tu nombre",
+      "email": "Tu email",
+      "message": "Tu mensaje",
+      "sending": "Enviando...",
+      "send": "Enviar mensaje",
+      "success": "Mensaje enviado",
+      "thankYou": "Gracias por contactarme. Te responderé lo antes posible.",
+      "acceptPolicies": "Acepto las políticas de tratamiento de datos.",
+      "seeMore": "Ver más",
+      "acceptPoliciesError": "Debes aceptar las políticas de tratamiento de datos para poder enviar el mensaje."
+    },
+    "info": {
+      "title": "Información de contacto",
+      "description": "Estoy abierto a oportunidades de trabajo freelance, colaboraciones o posiciones a tiempo completo. No dudes en contactarme a través de cualquiera de los siguientes medios."
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  },
+  "thanks": {
+    "title": "¡Gracias por tu confianza!",
+    "description": "Estamos procesando tu pago. Pronto recibirás un correo electrónico por parte de PayULatam con el estado de tu transacción.",
+    "appreciation": "Aprecio enormemente que hayas elegido mis servicios para desarrollar tu proyecto web. Tu visión es importante para mí, y estoy comprometido a entregarla con la más alta calidad y profesionalismo.",
+    "contact": "Mientras tanto, puedes contactarme si tienes cualquier pregunta sobre nuestro proyecto.",
+    "excited": "¡Estoy emocionado por comenzar a trabajar juntos!",
+    "backHome": "Volver al inicio"
+  },
+  "legal": {
+    "avisoTitle": "Aviso Legal y Condiciones de Uso",
+    "avisoContent": [
+      "Esta página web cumple con la Ley 1581 de 2012 de Protección de Datos Personales, el Decreto 1377 de 2013, la Ley 1266 de 2008, la Ley 527 de 1999 sobre comercio electrónico y la Ley 23 de 1982 sobre derechos de autor, así como demás normas aplicables en la República de Colombia.",
+      "Las presentes Condiciones Generales regulan el acceso y uso del sitio web de Jolman Developer, incluyendo los contenidos y servicios puestos a disposición en él. Toda persona que acceda a la web https://jolmandeveloper.com acepta someterse a las Condiciones Generales vigentes en cada momento.",
+      "El usuario se compromete a utilizar el sitio web, sus servicios y contenidos conforme a la legislación colombiana, la buena fe y el orden público.",
+      "Queda prohibido el uso de la web con fines ilícitos o lesivos, o que de cualquier forma puedan causar perjuicio o impedir el normal funcionamiento del sitio web. Respecto de los contenidos de esta web, se prohíbe:",
+      "• Su reproducción, distribución o modificación, total o parcial, a menos que se cuente con autorización expresa de Jolman Developer como legítimo titular.",
+      "• Cualquier vulneración de los derechos del prestador o de Jolman Developer como legítimo titular.",
+      "• Su utilización para fines comerciales o publicitarios sin autorización.",
+      "El usuario se compromete a no llevar a cabo ninguna conducta que pueda dañar la imagen, los intereses y los derechos de Jolman Developer o de terceros, o que pueda dañar, inutilizar o sobrecargar el portal https://jolmandeveloper.com, o que impida, de cualquier forma, la normal utilización de la web.",
+      "En virtud de lo dispuesto en la Ley 23 de 1982 y demás normas sobre derechos de autor, quedan expresamente prohibidas la reproducción, distribución y comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Jolman Developer. El usuario se compromete a respetar los derechos de Propiedad Intelectual e Industrial titularidad de Jolman Developer.",
+      "El usuario conoce y acepta que la totalidad del sitio web, textos, contenidos (incluyendo estructura, selección, ordenación y presentación de los mismos), fotografías, material audiovisual y gráficos, está protegida por marcas, derechos de autor y otros derechos legítimos, de acuerdo con los tratados internacionales y la legislación colombiana vigente.",
+      "En caso de que un usuario o un tercero considere que se ha producido una violación de sus legítimos derechos de propiedad intelectual por la introducción de un determinado contenido en la web, deberá notificar dicha circunstancia a Jolman Developer indicando:",
+      "• Datos personales del interesado titular de los derechos presuntamente infringidos, o indicar la representación con la que actúa en caso de que la reclamación la presente un tercero distinto del interesado.",
+      "• Señalar los contenidos protegidos por los derechos de propiedad intelectual y su ubicación en la web, la acreditación de los derechos de propiedad intelectual señalados y declaración expresa en la que el interesado se responsabiliza de la veracidad de las informaciones facilitadas en la notificación.",
+      "Jolman Developer autoriza el establecimiento de enlaces entre otras webs y la suya, siempre que se respeten las siguientes condiciones:",
+      "• Que el enlace no se establezca desde una web cuyos contenidos resulten contrarios a la Ley, a la moral y al orden público.",
+      "• Que no se ofrezca una imagen de Jolman Developer o de sus productos que resulte distorsionada, perjudicial o equivocada.",
+      "• Que no se cree la impresión de que concurre una inexistente relación o vinculación comercial entre Jolman Developer y los titulares, responsables o anunciantes desde la que se crea el enlace, cuando éste no sea el caso.",
+      "• Que no se cree la impresión de que los contenidos o web de Jolman Developer pertenecen o han sido diseñados por los titulares, responsables o anunciantes en la web desde la que se establece el enlace.",
+      "Jolman Developer no otorga ninguna garantía ni se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran traer causa de:",
+      "• La falta de disponibilidad, mantenimiento y efectivo funcionamiento de la web, o de sus servicios y contenidos.",
+      "• La existencia de malware, programas maliciosos o lesivos en los contenidos.",
+      "• El uso ilícito, negligente, fraudulento o contrario a este Aviso Legal.",
+      "• La falta de licitud, calidad, fiabilidad, utilidad y disponibilidad de los servicios prestados por terceros y puestos a disposición de los usuarios en el sitio web.",
+      "El prestador no se hace responsable bajo ningún concepto de los daños que pudieran dimanar del uso ilegal o indebido de la presente página web.",
+      "Con carácter general, las relaciones entre Jolman Developer con los usuarios de sus servicios telemáticos presentes en esta web se encuentran sometidas a la legislación y jurisdicción de la República de Colombia y a sus tribunales ordinarios.",
+      "En caso de que cualquier usuario tuviese alguna duda acerca de estas Condiciones legales o cualquier comentario sobre la web https://jolmandeveloper.com, por favor diríjase a info@jolmandeveloper.com."
+    ],
+    "privacidadTitle": "Política de Privacidad",
+    "privacidadContent": [
+      "Jolman Developer, como responsable de este sitio web, asume el compromiso de procesar la información de los usuarios y clientes con plenas garantías y cumplir con los requisitos nacionales e internacionales que regulan la recopilación y uso de los datos personales, en especial la Ley 1581 de 2012 y el Decreto 1377 de 2013 de la República de Colombia, así como, en lo posible, los principios del Reglamento (UE) 2016/679 (RGPD) del Parlamento Europeo.",
+      "Los datos personales comunicados por el usuario a Jolman Developer pueden ser almacenados en bases de datos cuya titularidad corresponde en exclusiva a Jolman Developer, asumiendo todas las medidas técnicas, organizativas y de seguridad que garantizan la confidencialidad, integridad y calidad de la información contenida en las mismas, de acuerdo con la normativa vigente en protección de datos. La comunicación entre los usuarios y la web utiliza un canal seguro, y los datos transmitidos son cifrados gracias a protocolos HTTPS, garantizando así las mejores condiciones de seguridad para la confidencialidad de los usuarios.",
+      "Compromisos de Jolman Developer:",
+      "• No solicitar información personal a menos que realmente sea necesaria para prestar un servicio concreto.",
+      "• Nunca compartir información personal de usuarios con nadie, excepto para cumplir con la ley o en caso de contar con su autorización expresa.",
+      "• Nunca utilizar datos personales con una finalidad diferente a la expresada en esta Política de Privacidad.",
+      "Esta Política de Privacidad podría variar en función de exigencias legislativas o de autorregulación. Será aplicable en caso de que los usuarios decidan rellenar algún formulario de contacto o formulario de pago online donde se recaben datos de carácter personal.",
+      "Recopilación de datos",
+      "Este sitio web recoge datos de los usuarios de las siguientes formas:",
+      "• Formulario de contacto: Para consultas, solicitudes o comunicación directa.",
+      "• Formulario de pago online: Para la gestión de pagos y abonos a través de la pasarela de pagos PayU.",
+      "Principios aplicados al tratamiento de datos personales",
+      "• Licitud, lealtad y transparencia: Siempre se requerirá el consentimiento del usuario para el tratamiento de sus datos personales, informando de forma clara la finalidad.",
+      "• Minimización de datos: Solo se solicitarán los datos estrictamente necesarios para cada caso.",
+      "• Limitación del plazo de conservación: Los datos serán mantenidos durante no más tiempo del necesario para los fines del tratamiento.",
+      "• Integridad y confidencialidad: Los datos serán tratados de tal manera que se garantice una seguridad adecuada y confidencialidad.",
+      "Jolman Developer se compromete a cancelar los datos personales cuando hayan dejado de ser necesarios o pertinentes para la finalidad para la cual fueron recogidos y a atender a las peticiones de información, actualización o borrado de datos solicitadas por el usuario, siendo el responsable del tratamiento Jolman Developer.",
+      "Derechos de los usuarios",
+      "El usuario podrá ejercer sus derechos de acceso, corrección, supresión, revocación o reclamo por infracción sobre sus datos, mediante solicitud escrita dirigida a info@jolmandeveloper.com, indicando en el asunto “Protección de Datos”.",
+      "Uso de cookies",
+      "Se informa a los usuarios del uso de cookies para obtener información y realizar análisis estadísticos sobre el uso del sitio web. Las cookies utilizadas por Jolman Developer son anónimas y no se refieren a datos personales del usuario ni permiten acceder a datos del disco duro del usuario. La identidad del usuario nunca es insertada directamente en la cookie y, por tanto, no se le puede identificar.",
+      "Limitación de responsabilidad",
+      "Jolman Developer declina toda responsabilidad en caso de que el acceso o las visitas a su web se vieran imposibilitadas o dificultadas debido a una interrupción o defectuosa prestación del suministro eléctrico, telefónico o de otros proveedores de telecomunicaciones ajenos a Jolman Developer, o en el caso de producirse conflictos sociales u otros supuestos de fuerza mayor, o cualquier actuación de un tercero, incluidos los requerimientos u órdenes administrativas o judiciales, sabotajes o saturaciones, intencionadas o no.",
+      "Se declina igualmente toda responsabilidad derivada de los daños y perjuicios que pudiera sufrir el visitante en sus medios informáticos o telemáticos a consecuencia de la producción de cualquiera de las circunstancias anteriormente expuestas.",
+      "Jolman Developer no garantiza la disponibilidad y continuidad del sitio web ni se hace responsable de cualesquiera daños y perjuicios producidos o que puedan producirse en el futuro, ni de los defectos técnicos, cualquiera que sea su naturaleza, que se deriven del uso de la información y de los contenidos del sitio web.",
+      "Con los límites establecidos en la Ley, Jolman Developer no asume ninguna responsabilidad derivada de la falta de actualización y precisión de los datos o informaciones que se contienen en sus páginas de Internet."
+    ]
+  },
+  "meta": {
+    "title": "Jolman Developer | Desarrollo Web Freelance Profesional en Bogotá, Barcelona y Melbourne",
+    "description": "Soy Jolman Developer, experto en crear soluciones web que impulsan tu negocio. Desarrollo web profesional y personalizado. ¡Contáctame hoy!"
+  }
+}
