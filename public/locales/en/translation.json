@@ -47,6 +47,8 @@
     "technologiesTitle": "Technologies Used",
     "visitSiteButton": "Visit Site",
     "viewCodeButton": "View Code",
+    "codeProtectedTitle": "Source code not publicly available",
+    "codeProtectedDescription": "This project belongs to a third party (client or company) and its source code is protected by intellectual property rights, so it cannot be published or shared publicly.",
     "project1": {
       "title": "Auto Vidrios de Oriente (2021)",
       "description": "Web solution for automotive glass company, featuring aerial promotional video, services, contact, and online quote.",
@@ -71,6 +73,36 @@
       "title": "Feel Hospitality Advisor – Spain",
       "description": "End‑to‑end development of the Feel Hospitality corporate website: architecture, responsive layout, contact form integration, and performance and accessibility optimization (WordPress).",
       "fullDescription": "Complete development of the Feel Hospitality corporate website, a consultancy specialized in tourism accessibility. Starting from scratch, I defined the information architecture, implemented the responsive layout, and customized the WordPress theme in line with the brand’s identity. I integrated contact forms with validation and status messages, optimized performance (image loading, HTML structure, and assets), and took care of key accessibility aspects (heading hierarchy, contrast, alternative texts, and focus states in forms), aligned with the inclusive approach of the project. The result is a clear, conversion‑oriented landing experience that is easy to maintain and ready to scale in terms of content and services."
+    },
+    "project6": {
+      "title": "Max FM - Spain",
+      "description": "Online radio platform with a full admin panel, live presenter scheduling, news, Top 5 chart, and a real-time AI-moderated chat.",
+      "fullDescription": "Web platform for the Max FM online radio station (Spain), built with React and TypeScript with a PHP and SQLite backend. The site features dynamic hero banners, a programming section with a \"live now\" card plus previous/next slots, presenter profiles, a Top 5 song chart, a news carousel, and a persistent streaming audio player. All content (banners, shows, presenters, news, Top 5) is managed through a dedicated admin panel with token-based authentication. The station's live chat also includes an automated moderator built in Python, responsible for filtering messages and keeping the conversation within community guidelines in real time."
+    },
+    "project7": {
+      "title": "Economizo - France",
+      "description": "Collaboration as a developer within the Economizo team, a French online tech store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "Economizo is an online store targeting the French market, specialized in selling tech products: smartphones, computers, TVs, audio, gaming, wearables, and electronic accessories, with a catalog of over 300 brands, running on a membership model (\"Membre Privilège\") that converts unused payments into purchase credits. It's a large-scale project maintained by a development team, within which I collaborate as a developer providing support on the Shopify platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project9": {
+      "title": "ClubEcono - France",
+      "description": "Collaboration as a developer within the same Economizo team, on ClubEcono, a French online home goods store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "ClubEcono is an online store targeting the French market, specialized in home goods: furniture, decor, kitchenware, appliances, textiles, and cleaning and storage products, with a catalog of over 300 brands, running on the same membership model (\"Prix Spéciaux\") that converts unused payments into purchase credits. It belongs to the same group and development team as Economizo, reusing the same Shopify architecture but with a different product catalog and focus (home goods instead of tech). I collaborate as a developer providing support on the platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project10": {
+      "title": "AbonAvantage - France",
+      "description": "Collaboration as a developer within the same Economizo team, on AbonAvantage, a French online beauty and personal care store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "AbonAvantage is an online store targeting the French market, specialized in beauty and personal care: makeup, perfumes, jewelry, accessories, and wellness products, with a catalog of over 300 premium brands, running on the same membership model (\"Privilège\") that converts unused payments into purchase credits. It belongs to the same group and development team as Economizo, reusing the same Shopify architecture but with a different product catalog and focus (beauty instead of tech). I collaborate as a developer providing support on the platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project11": {
+      "title": "OffreMaline - France",
+      "description": "Collaboration as a developer within the same Economizo team, on OffreMaline, a French online DIY and gardening store built on Shopify, with a Liquid theme and a complementary PHP backend.",
+      "fullDescription": "OffreMaline is an online store targeting the French market, specialized in DIY, gardening, electrical, plumbing, heating, and home security products, with a catalog of over 300 brands, running on the same membership model (\"Prix Spéciaux\") that converts unused payments into purchase credits. It belongs to the same group and development team as Economizo, reusing the same Shopify architecture but with a different product catalog and focus (DIY instead of tech). I collaborate as a developer providing support on the platform: customizing templates and components in Liquid, and integrating additional logic through a PHP backend for complementary processes. My involvement is focused on specific development and maintenance tasks within that team, not on the authorship or ownership of the project."
+    },
+    "project8": {
+      "title": "AI Automation + CRM - Induscom - Colombia",
+      "description": "n8n automation flow with an AI agent (ChatGPT) that handles customer conversations, collects key data (such as engine numbers), and automatically classifies it in the Kommo CRM.",
+      "fullDescription": "Automation project built for Induscom Colombia to streamline customer support and the logging of business information. An n8n flow was designed to connect the company's messaging channels with an AI agent based on ChatGPT, capable of automatically replying to customers, understanding their requests, and collecting business-relevant data (such as the engine number of the requested part, spare part type, and other technical details needed for follow-up). All of this information is automatically classified and logged in the Kommo CRM, organizing each conversation and its associated data within the corresponding sales pipeline. This allows Induscom's sales team to keep a structured history of every customer with no manual intervention, reducing response times and improving the productivity of the sales process."
     }
   },
   "contratacion": {

@@ -47,6 +47,8 @@
     "technologiesTitle": "Tecnologías Utilizadas",
     "visitSiteButton": "Visitar Sitio",
     "viewCodeButton": "Ver Código",
+    "codeProtectedTitle": "Código fuente no disponible públicamente",
+    "codeProtectedDescription": "Este proyecto pertenece a un tercero (cliente o empresa) y su código fuente está protegido por derechos de propiedad intelectual, por lo que no puede ser publicado ni compartido públicamente.",
     "project1": {
       "title": "Auto Vidrios de Oriente",
       "description": "Solución web para empresa de vidrios automotrices, con video publicitario aéreo, servicios, contacto y cotización online.",
@@ -71,6 +73,36 @@
       "title": "Feel Hospitality Advisor - España",
       "description": "Desarrollo end-to-end de la web corporativa Feel Hospitality: arquitectura, maquetación responsive, integración de formularios de contacto y optimización de rendimiento y accesibilidad (WordPress).",
       "fullDescription": "Desarrollo completo de la web corporativa de Feel Hospitality, una consultora especializada en accesibilidad turística. Partiendo de cero, definí la arquitectura de la información, implementé la maquetación responsive y personalicé el tema en WordPress alineado con la identidad de marca. Integré formularios de contacto con validación y mensajes de estado, optimicé el rendimiento (carga de imágenes, estructura HTML y recursos) y cuidé aspectos básicos de accesibilidad (jerarquía de encabezados, contraste, textos alternativos y foco en formularios), coherentes con el enfoque inclusivo del proyecto. El resultado es una landing clara orientada a conversión, fácil de mantener y preparada para escalar contenidos y servicios de la marca."
+    },
+    "project6": {
+      "title": "Max FM - España",
+      "description": "Radio online con panel de administración completo, programación en vivo de locutores, noticias, Top 5 y chat moderado por IA en tiempo real.",
+      "fullDescription": "Plataforma web para la emisora de radio online Max FM (España), desarrollada en React y TypeScript con un backend en PHP y SQLite. El sitio incluye banners dinámicos en el hero, sección de programación con tarjeta de \"en vivo\" y franjas anterior/siguiente, perfiles de locutores, ranking Top 5 de canciones, carrusel de noticias y reproductor de audio en streaming fijo en pantalla. Todo el contenido (banners, programas, locutores, noticias, top 5) se gestiona desde un panel de administración propio con autenticación por token. Además, el chat en vivo de la emisora cuenta con un moderador automático desarrollado en Python, encargado de filtrar mensajes y mantener la conversación dentro de las normas de la comunidad en tiempo real."
+    },
+    "project7": {
+      "title": "Economizo - Francia",
+      "description": "Colaboración como desarrollador dentro del equipo de Economizo, tienda online francesa de tecnología construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "Economizo es una tienda online dirigida al mercado francés especializada en la venta de productos de tecnología: smartphones, ordenadores, televisores, audio, gaming, wearables y accesorios electrónicos, con un catálogo de más de 300 marcas, bajo un modelo de membresía (\"Membre Privilège\") que convierte los pagos no utilizados en créditos de compra. Es un proyecto de gran escala mantenido por un equipo de desarrollo, dentro del cual colaboro como desarrollador dando soporte sobre la plataforma Shopify: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project9": {
+      "title": "ClubEcono - Francia",
+      "description": "Colaboración como desarrollador dentro del mismo equipo de Economizo, en ClubEcono, tienda online francesa de productos para el hogar construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "ClubEcono es una tienda online dirigida al mercado francés especializada en productos para el hogar: muebles, decoración, menaje de cocina, electrodomésticos, textiles y artículos de limpieza y almacenamiento, con un catálogo de más de 300 marcas, bajo el mismo modelo de membresía (\"Prix Spéciaux\") que convierte los pagos no utilizados en créditos de compra. Pertenece al mismo grupo y equipo de desarrollo que Economizo, reutilizando la misma arquitectura sobre Shopify pero con un catálogo y enfoque de producto distintos (hogar en lugar de tecnología). Colaboro como desarrollador dando soporte sobre la plataforma: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project10": {
+      "title": "AbonAvantage - Francia",
+      "description": "Colaboración como desarrollador dentro del mismo equipo de Economizo, en AbonAvantage, tienda online francesa de belleza y cuidado personal construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "AbonAvantage es una tienda online dirigida al mercado francés especializada en belleza y cuidado personal: maquillaje, perfumes, joyas, accesorios y productos de bienestar, con un catálogo de más de 300 marcas premium, bajo el mismo modelo de membresía (\"Privilège\") que convierte los pagos no utilizados en créditos de compra. Pertenece al mismo grupo y equipo de desarrollo que Economizo, reutilizando la misma arquitectura sobre Shopify pero con un catálogo y enfoque de producto distintos (belleza en lugar de tecnología). Colaboro como desarrollador dando soporte sobre la plataforma: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project11": {
+      "title": "OffreMaline - Francia",
+      "description": "Colaboración como desarrollador dentro del mismo equipo de Economizo, en OffreMaline, tienda online francesa de bricolaje y jardinería construida sobre Shopify, con tematización en Liquid y backend complementario en PHP.",
+      "fullDescription": "OffreMaline es una tienda online dirigida al mercado francés especializada en bricolaje, jardinería, electricidad, fontanería, calefacción y seguridad del hogar, con un catálogo de más de 300 marcas, bajo el mismo modelo de membresía (\"Prix Spéciaux\") que convierte los pagos no utilizados en créditos de compra. Pertenece al mismo grupo y equipo de desarrollo que Economizo, reutilizando la misma arquitectura sobre Shopify pero con un catálogo y enfoque de producto distintos (bricolaje en lugar de tecnología). Colaboro como desarrollador dando soporte sobre la plataforma: personalización de plantillas y componentes en Liquid, e integración de lógica adicional mediante un backend en PHP para procesos complementarios. Mi participación se centra en tareas de desarrollo y mantenimiento puntuales dentro de ese equipo, no en la autoría ni propiedad del proyecto."
+    },
+    "project8": {
+      "title": "Automatización IA + CRM - Induscom - Colombia",
+      "description": "Flujo de automatización en n8n con un agente de IA (ChatGPT) que atiende a los clientes, recopila datos clave (como el número de motor) y los clasifica automáticamente en el CRM Kommo.",
+      "fullDescription": "Proyecto de automatización desarrollado para Induscom Colombia con el objetivo de optimizar la atención al cliente y el registro de información comercial. Se diseñó un flujo en n8n que conecta los canales de mensajería de la empresa con un agente de inteligencia artificial basado en ChatGPT, capaz de responder automáticamente a los clientes, entender sus consultas y recolectar datos relevantes para el negocio (como el número de motor de la pieza solicitada, tipo de repuesto y otros datos técnicos necesarios para dar seguimiento). Toda esta información se clasifica y registra de forma automática en el CRM Kommo, organizando cada conversación y sus datos asociados en el embudo de ventas correspondiente. Esto permite al equipo comercial de Induscom tener un historial estructurado de cada cliente sin intervención manual, reduciendo tiempos de respuesta y mejorando la productividad del proceso de ventas."
     }
   },
   "contratacion": {
