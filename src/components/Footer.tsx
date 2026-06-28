@@ -61,17 +61,19 @@ export default function Footer() {
               <p className="text-xs font-semibold uppercase tracking-wider text-foreground/50 whitespace-nowrap">
                 {t('partnersSection.kommo.badge')}
               </p>
-              <img
-                src="/kommo-dark.svg"
-                alt="Kommo CRM"
-                className="h-7 dark:hidden opacity-80 hover:opacity-100 transition-opacity shrink-0"
-              />
-              <img
-                src="/kommo-light.svg"
-                alt="Kommo CRM"
-                className="h-7 hidden dark:block opacity-80 hover:opacity-100 transition-opacity shrink-0"
-                style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.2))' }}
-              />
+              <a href="https://www.kommo.com/es/" target="_blank" rel="noopener noreferrer" className="shrink-0">
+                <img
+                  src="/kommo-dark.svg"
+                  alt="Kommo CRM"
+                  className="h-7 dark:hidden opacity-80 hover:opacity-100 transition-opacity"
+                />
+                <img
+                  src="/kommo-light.svg"
+                  alt="Kommo CRM"
+                  className="h-7 hidden dark:block opacity-80 hover:opacity-100 transition-opacity"
+                  style={{ filter: 'drop-shadow(0 0 6px rgba(255,255,255,0.2))' }}
+                />
+              </a>
             </div>
           </div>
 
